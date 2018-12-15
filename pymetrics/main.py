@@ -2,12 +2,13 @@
 from benchmark import BenchmarkRunner
 import python_solver
 import numba_solver
-# from python_runner import PythonSolver
+import cython_solver
 
 if __name__ == '__main__':
     runner = BenchmarkRunner(solvers=[
         python_solver.PythonSolver(),
-        numba_solver.NumbaSolver()
+        numba_solver.NumbaSolver(),
+        cython_solver.CythonSolver()
     ])
     runner.time_it()
     runner.verify_results()

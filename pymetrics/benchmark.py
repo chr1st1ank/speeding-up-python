@@ -42,15 +42,16 @@ class BenchmarkRunner:
             for r in results:
                 if r.solution != first_result:
                     raise RuntimeError(f"Benchmark '{b}' yields differing result for solver {r.solver}")
+        return True
 
-    def time_it(self):
+    def time_it(self, repeats=10, number=3):
         for solver in self.solvers:
             print(solver.description())
             for benchmark, input in self._benchmarks.items():
                 print(f"\t{benchmark}")
                 f = getattr(solver, benchmark)
                 timer =timeit.Timer('f(input)', globals=dict(f=f, input=input), )
-                t = timer.repeat(repeat=10, number=3)
+                t = timer.repeat(repeat=repeats, number=number)
                 sol = f(input)
                 self.results.append(BenchmarkResult(
                     solver=solver.description(),
