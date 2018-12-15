@@ -12,7 +12,7 @@ Note that it is not considered important whether pure Python code is used (as wi
 
 ## Benchmarks used for comparison
 **1. Mergesort** 
-[Mergesort](https://en.wikipedia.org/wiki/Merge_sort) is a very common because efficient array sorting algorithm. It is interesting for performance measurement, because it is a realistic type of algorithm with recursion, loops and if/else statements. But still it is easy enough to implement. The implementations used represent the
+[Mergesort](https://en.wikipedia.org/wiki/Merge_sort) is a common and efficient array sorting algorithm. It is interesting for performance measurement, because it is a realistic type of algorithm with recursion, loops and if/else statements. But still it is easy enough to implement. The implementations used represent the
 "Top-down implementation" sketched out on wikipedia.
 
 
@@ -46,7 +46,20 @@ Notes:
 
 
 **5. Julia**
+Solver using the [Julia programming language](https://julialang.org/) which has a comfortable binding for Python.
 
+Prerequisites:
+    * Install Julia itself and the python module PyJulia (with `pip install julia`)
+
+Notes:
+    * Julia has to be written in separate *.jl files, but they don't have to be compiled explicitly. Instead they are
+      compile just-in-time when the functions are executed for the first time.
+    * With the approach taken here (`julia.include(<filename>)`) only the last function of a *.jl file is imported.
+      There is also an alternative `importall` method.
+    * The code assumes that the standard "high-level" mode of PyJulia can be used, which needs Julia to be on the PATH
+      variable. Alternative approaches are described on the [PyJulia page](https://github.com/JuliaPy/pyjulia)
+      
+      
 ## Contributing
 
 If you are interested in contributing, feel free to contact me or to just write a pull request. I am particularly interested in:

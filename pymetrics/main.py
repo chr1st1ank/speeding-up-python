@@ -3,12 +3,16 @@ from benchmark import BenchmarkRunner
 import python_solver
 import numba_solver
 import cython_solver
+import julia_solver
+
 
 if __name__ == '__main__':
     runner = BenchmarkRunner(solvers=[
         python_solver.PythonSolver(),
         numba_solver.NumbaSolver(),
-        cython_solver.CythonSolver()
+        cython_solver.CythonSolver(),
+        julia_solver.JuliaSolver()
+
     ])
     runner.time_it()
     runner.verify_results()
