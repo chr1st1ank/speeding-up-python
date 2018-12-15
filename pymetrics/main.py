@@ -4,6 +4,7 @@ import python_solver
 import numba_solver
 import cython_solver
 import julia_solver
+import cpp_solver
 
 
 if __name__ == '__main__':
@@ -11,7 +12,8 @@ if __name__ == '__main__':
         python_solver.PythonSolver(),
         numba_solver.NumbaSolver(),
         cython_solver.CythonSolver(),
-        julia_solver.JuliaSolver()
+        julia_solver.JuliaSolver(),
+        cpp_solver.CppSolver
 
     ])
     runner.time_it()

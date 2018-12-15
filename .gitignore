@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
-
 # Distribution / packaging
 .Python
 build/
@@ -84,4 +81,10 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# Pycharm folder
 .idea/
+
+# Ignore generated C++ stuff
+pymetrics/cpp/build/
+pymetrics/cpp/mergesortcpp.cpp
+*.so

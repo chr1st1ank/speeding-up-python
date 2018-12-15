@@ -19,6 +19,7 @@ Note that it is not considered important whether pure Python code is used (as wi
 ## Comments on the frameworks / languages used
 
 **1. Pure Python**
+The implementation in pure Python serves as reference for all other solutions.
 
 **2. Numba**
 [Numba](http://numba.pydata.org/) is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code. It used the [LLVM JIT compiler](https://llvm.org/).
@@ -29,6 +30,7 @@ Prerequisites:
 Notes:
 - Individual methods of Python classes cannot be compiled with the fast "nopython" mode, but the very slow "object" mode has to be used.
 - Entire Python classes could be compiled, but not if they inherit from a pure Python class which is not compiled with Numba
+
 
 **3. Cython**
 [Cython](https://cython.org/) is a Python module which allows to access C or C++ code in an uncomplicated manner. In addition it offers the option to write code in a Python dialect with optional fixed typing which can be compiled by a C compiler and therefore runs faster afterwards. This option is what is meant by "Cython" here. Using Cython for C++ access is covered separately.
@@ -42,7 +44,23 @@ Notes:
     * The functions to be compiled have to be in a separate file with *.pyx ending. Compilation can be done "on the fly"
       as done here (with "pyximport"), or it can be done once beforehand with setup.py.
       
+      
 **4. C++ via Cython**
+C++ implementation which is compiled and called with Cython.
+
+Prerequisites:
+    * The Python module Cython has to be installed and the C/C++ compiler used to compile the other Python modules
+      has to be available (gcc on Linux and Mac, on windows most likely the Microsoft compiler is necessary).
+      See <https://cython.readthedocs.io/en/latest/pymetrics/quickstart/install.html> for details.
+    * Run the build script in pymetrics/cpp/build.sh to compile the C++ code before running the program.
+
+Notes:
+    * Using C++ needs some overhead before it works:
+      - A pyx file has to be written to describe the Python view of the C++ function
+      - A pxd file needs to be there to declare the C++ functions to be sued
+      - The C++ code itself goes into header (.h or .hpp) files and source files (.cpp)
+      - A setup.py is necessary to define the compilation steps
+      - The compilation has to be carried out before running the Python program
 
 
 **5. Julia**

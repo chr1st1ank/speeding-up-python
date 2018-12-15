@@ -4,13 +4,15 @@ import python_solver
 import numba_solver
 import cython_solver
 import julia_solver
+import cpp_solver
 import pytest
 
 
 @pytest.fixture(scope="module", params=[
     numba_solver.NumbaSolver,
     cython_solver.CythonSolver,
-    julia_solver.JuliaSolver
+    julia_solver.JuliaSolver,
+
 ])
 def solver(request):
     return request.param()
