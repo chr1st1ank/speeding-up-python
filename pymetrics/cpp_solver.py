@@ -23,12 +23,15 @@ from benchmark import BenchmarkSolver
 from typing import List
 
 class CppSolver(BenchmarkSolver):
-    def description(cls):
+    @staticmethod
+    def description():
         return "C++"
 
-    def direct_dependencies(cls):
+    @staticmethod
+    def direct_dependencies():
         return ['cython']
 
-    def mergesort(self, l: List) -> List:
+    @staticmethod
+    def mergesort(l: List) -> List:
         return mergesortcpp.mergesort(l)
 

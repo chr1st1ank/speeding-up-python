@@ -6,6 +6,28 @@ import cython_solver
 import julia_solver
 import cpp_solver
 
+import sys
+import platform
+from collections import Counter
+
+
+def system_info():
+    print("\nSystem information:\n")
+
+    # Architecture
+    print(f"Architecture: {platform.machine()} / {platform.architecture()[0]}")
+    print(f"System: {platform.system()} / {platform.release()}")
+    print(f"Python: {platform.python_implementation()} {platform.python_version()} built with {platform.libc_ver()}")
+
+    print("Processors: ")  # TODO: Unix specific!
+    try:
+        with open("/proc/cpuinfo", "r")  as f:
+            cpu_info = Counter([x.strip().split(":")[1] for x in f.readlines() if "model name" in x])
+            for name, count in cpu_info.items():
+                print(f"    {count} x {name}")
+    except:
+        print(platform.processor())  # May return empty string!
+
 
 if __name__ == '__main__':
     runner = BenchmarkRunner(solvers=[
@@ -27,3 +49,5 @@ if __name__ == '__main__':
         print(mark)
         for s in runner.solver_names:
             print(f"\t{round(results[mark][s]*1000)}ms - {s}")
+
+    system_info()
