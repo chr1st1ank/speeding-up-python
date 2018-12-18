@@ -13,7 +13,7 @@ Notes:
 from typing import List
 import numba
 
-from benchmark import BenchmarkSolver
+from benchmark_solver import BenchmarkSolver
 
 
 @numba.jit(nopython=True)
@@ -48,11 +48,27 @@ class NumbaSolver(BenchmarkSolver):
         self.mergesort([1,4,2])
         pass
 
-    def description(cls):
+    @staticmethod
+    def description():
         return "Numba"
 
-    def direct_dependencies(cls):
+    @staticmethod
+    def direct_dependencies():
         return ['numba']
 
-    def mergesort(cls, input):
+    @staticmethod
+    def mergesort(input):
         return mergesort(input)
+
+    @staticmethod
+    def groupby(data):
+        keys = set(data['keys'])
+        results = {
+            key: {
+                'values1': 0,
+                'values2': 0
+            } for key in keys
+        }
+        for i in enumerate
+        df = pd.DataFrame(data=data)
+        return df.groupby('keys').sum().to_dict(orient='index')

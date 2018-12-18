@@ -13,7 +13,7 @@ Notes:
 import pyximport; pyximport.install(language_level=3)
 import cython_backend
 
-from benchmark import BenchmarkSolver
+from benchmark_solver import BenchmarkSolver
 from typing import List
 
 class CythonSolver(BenchmarkSolver):
@@ -25,3 +25,4 @@ class CythonSolver(BenchmarkSolver):
 
     def mergesort(self, l: List) -> List:
         return cython_backend.mergesort_cy(l)
+

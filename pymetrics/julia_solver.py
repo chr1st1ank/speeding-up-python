@@ -14,7 +14,7 @@ Notes:
 """
 
 from typing import List
-from benchmark import BenchmarkSolver
+from benchmark_solver import BenchmarkSolver
 
 import os
 import julia

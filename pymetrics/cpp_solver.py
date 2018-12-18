@@ -19,7 +19,7 @@ Notes:
 import pyximport; pyximport.install(language_level=3)
 from cpp import mergesortcpp
 
-from benchmark import BenchmarkSolver
+from benchmark_solver import BenchmarkSolver
 from typing import List
 
 class CppSolver(BenchmarkSolver):
@@ -34,4 +34,3 @@ class CppSolver(BenchmarkSolver):
     @staticmethod
     def mergesort(l: List) -> List:
         return mergesortcpp.mergesort(l)
-

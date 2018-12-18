@@ -1,5 +1,6 @@
 
-from benchmark import BenchmarkRunner
+from benchmark_runner import BenchmarkRunner
+import benchmark
 import python_solver
 import numba_solver
 import cython_solver
@@ -31,13 +32,16 @@ def system_info():
 
 if __name__ == '__main__':
     runner = BenchmarkRunner(solvers=[
-        python_solver.PythonSolver(),
-        numba_solver.NumbaSolver(),
-        cython_solver.CythonSolver(),
-        julia_solver.JuliaSolver(),
-        cpp_solver.CppSolver
-
-    ])
+            python_solver.PythonSolver(),
+            numba_solver.NumbaSolver(),
+            cython_solver.CythonSolver(),
+            julia_solver.JuliaSolver(),
+            cpp_solver.CppSolver
+        ],
+        benchmarks=[
+            benchmark.mergesort_benchmark
+        ]
+    )
     runner.time_it()
     runner.verify_results()
 
