@@ -85,8 +85,8 @@ venv.bak/
 .idea/
 
 # Ignore generated C++ stuff
-pymetrics/cpp/build/
-pymetrics/cpp/mergesortcpp.cpp
+pyspeed/cpp/build/
+pyspeed/cpp/mergesortcpp.cpp
 *.so
 
 
