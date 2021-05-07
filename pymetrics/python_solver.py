@@ -28,16 +28,25 @@ class PythonSolver(BenchmarkSolver):
 
         return result
 
-    @staticmethod
-    def mergesort(l: List) -> List:
-        #return sorted(l)  # Note that Python's sorted() is way faster. But it's a different algorithm and in plain C.
+    def mergesort(self, l: List) -> List:
+        # return sorted(l)  # Note that Python's sorted() is way faster. But it's a different algorithm and in plain C.
         if len(l) <= 1:
             return l
-        left = PythonSolver.mergesort(l[:int(len(l) / 2)])
-        right = PythonSolver.mergesort(l[int(len(l) / 2):])
-        return PythonSolver.merge(left, right)
+        left = self.mergesort(l[:int(len(l) / 2)])
+        right = self.mergesort(l[int(len(l) / 2):])
+        return self.merge(left, right)
 
-    @staticmethod
-    def groupby(data):
-        df = pd.DataFrame(data=data)
-        return df.groupby('keys').sum().to_dict(orient='index')
+    def groupby_sum(self, data_dict):
+        # df = pd.DataFrame(data=data)
+        # return df.groupby('keys').sum().to_dict(orient='list')
+        sorted_keys = sorted(set(data_dict["keys"]))
+        output = {
+            "keys": sorted_keys
+        }
+        columns = [c for c in data_dict.keys() if c != "keys"]
+        for column in columns:
+            output[column] = {k: 0 for k in sorted_keys}
+            for k, v in zip(data_dict["keys"], data_dict[column]):
+                output[column][k] += v
+            output[column] = [output[column][k] for k in sorted_keys]
+        return output

@@ -24,7 +24,7 @@ class BenchmarkRunner:
             results = list(filter(lambda x: x.benchmark == b, self.results))
             first_result = results[0].solution
             for r in results:
-                if r.solution != first_result:
+                if r.solution is not None and r.solution != first_result:
                     raise RuntimeError(f"Benchmark '{b}' yields differing result for solver {r.solver}")
         return True
 
@@ -33,13 +33,21 @@ class BenchmarkRunner:
             print(solver.description())
             for benchmark, input in self._benchmarks.items():
                 print(f"\t{benchmark}")
-                f = getattr(solver, benchmark)
-                timer =timeit.Timer('f(input)', globals=dict(f=f, input=input), )
-                t = timer.repeat(repeat=repeats, number=number)
-                sol = f(input)
-                self.results.append(BenchmarkResult(
-                    solver=solver.description(),
-                    benchmark=benchmark,
-                    time=min(t),
-                    solution=sol
-                ))
+                if not hasattr(solver, benchmark):
+                    self.results.append(BenchmarkResult(
+                        solver=solver.description(),
+                        benchmark=benchmark,
+                        time=None,
+                        solution=None
+                    ))
+                else:
+                    f = getattr(solver, benchmark)
+                    timer =timeit.Timer('f(input)', globals=dict(f=f, input=input), )
+                    t = timer.repeat(repeat=repeats, number=number)
+                    sol = f(input)
+                    self.results.append(BenchmarkResult(
+                        solver=solver.description(),
+                        benchmark=benchmark,
+                        time=min(t),
+                        solution=sol
+                    ))

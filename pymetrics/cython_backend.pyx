@@ -25,3 +25,17 @@ def mergesort_cy(l):
     left = mergesort_cy(l[:x])
     right = mergesort_cy(l[x:])
     return merge_cy(left, right)
+
+
+def groupby_sum_cy(data_dict):
+    sorted_keys = sorted(set(data_dict["keys"]))
+    output = {
+        "keys": sorted_keys
+    }
+    columns = [c for c in data_dict.keys() if c != "keys"]
+    for column in columns:
+        output[column] = {k: 0 for k in sorted_keys}
+        for k, v in zip(data_dict["keys"], data_dict[column]):
+            output[column][k] += v
+        output[column] = [output[column][k] for k in sorted_keys]
+    return output

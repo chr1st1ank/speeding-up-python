@@ -68,7 +68,7 @@ class NumbaSolver(BenchmarkSolver):
         return mergesort(l)
 
     # @staticmethod
-    # def groupby(data):
+    # def groupby_sum(data):
     #     keys = set(data['keys'])
     #     results = {
     #         key: {

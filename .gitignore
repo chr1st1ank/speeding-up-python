@@ -88,3 +88,8 @@ venv.bak/
 pymetrics/cpp/build/
 pymetrics/cpp/mergesortcpp.cpp
 *.so
+
+
+# Added by cargo
+
+/target

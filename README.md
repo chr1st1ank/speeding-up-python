@@ -15,6 +15,9 @@ Note that it is not considered important whether pure Python code is used (as wi
 [Mergesort](https://en.wikipedia.org/wiki/Merge_sort) is a common and efficient array sorting algorithm. It is interesting for performance measurement, because it is a realistic type of algorithm with recursion, loops and if/else statements. But still it is easy enough to implement. The implementations used represent the
 "Top-down implementation" sketched out on wikipedia.
 
+### 2. Groupby-Sum
+The task is to calculate sums per group key on tabular data. Input is a dictionary of columns, output is a dictionary of aggregates in columns.
+
 
 ## Comments on the frameworks / languages used
 

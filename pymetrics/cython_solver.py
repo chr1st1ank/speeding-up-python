@@ -13,6 +13,8 @@ Notes:
 import pyximport; pyximport.install(language_level=3)
 import cython_backend
 
+import pandas as pd
+
 from benchmark_solver import BenchmarkSolver
 from typing import List
 
@@ -26,3 +28,6 @@ class CythonSolver(BenchmarkSolver):
     def mergesort(self, l: List) -> List:
         return cython_backend.mergesort_cy(l)
 
+    @staticmethod
+    def groupby_sum(data):
+        return cython_backend.groupby_sum_cy(data)

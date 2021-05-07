@@ -39,7 +39,8 @@ if __name__ == '__main__':
             cpp_solver.CppSolver
         ],
         benchmarks=[
-            benchmark.mergesort_benchmark
+            benchmark.mergesort_benchmark,
+            benchmark.groupby_sum_benchmark
         ]
     )
     runner.time_it()
@@ -51,7 +52,8 @@ if __name__ == '__main__':
 
     for mark in runner.benchmarks:
         print(mark)
-        for s in runner.solver_names:
-            print(f"\t{round(results[mark][s]*1000)}ms - {s}")
+        for solver_name in runner.solver_names:
+            solver_time = " -" if results[mark][solver_name] is None else f"{round(results[mark][solver_name] * 1000)}ms"
+            print(f"\t{solver_time.rjust(7)} - {solver_name}")
 
     system_info()

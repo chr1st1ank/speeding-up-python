@@ -40,10 +40,18 @@ def test_mergesort(solver):
     assert s == [-1, 1, 3, 5]
 
 
-def test_groupby():
-    bench = benchmark.groupby_benchmark
-    p = python_solver.PythonSolver().groupby(bench.data)
-    print(p)
+def test_groupby_sum():
+    data_table = {
+        "keys": [-5, 10, 4, -5],
+        "v1": [1, 2, 3, 4],
+        "v2": [-1, -2, -3, -4],
+    }
+    p = python_solver.PythonSolver().groupby_sum(data_table)
+    assert p == {
+        "keys": [-5, 4, 10],
+        "v1": [5, 3, 2],
+        "v2": [-5, -3, -2],
+    }
 
 
 def test_solver_results(runner):
