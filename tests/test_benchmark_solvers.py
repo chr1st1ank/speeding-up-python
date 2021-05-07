@@ -8,21 +8,24 @@ import numba_solver
 import cython_solver
 import julia_solver
 import cpp_solver
+import rust_solver
 import pytest
 
 
-@pytest.fixture(scope="module", params=[
+@pytest.fixture(scope="function", params=[
+    python_solver.PythonSolver,
     numba_solver.NumbaSolver,
     cython_solver.CythonSolver,
     julia_solver.JuliaSolver,
-    cpp_solver.CppSolver
+    cpp_solver.CppSolver,
+    rust_solver.RustSolver
 
 ])
 def solver(request):
     return request.param()
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="function")
 def runner(solver):
     _runner = BenchmarkRunner(solvers=[
             python_solver.PythonSolver(),
@@ -40,13 +43,13 @@ def test_mergesort(solver):
     assert s == [-1, 1, 3, 5]
 
 
-def test_groupby_sum():
+def test_groupby_sum(solver):
     data_table = {
         "keys": [-5, 10, 4, -5],
         "v1": [1, 2, 3, 4],
         "v2": [-1, -2, -3, -4],
     }
-    p = python_solver.PythonSolver().groupby_sum(data_table)
+    p = solver.groupby_sum(data_table)
     assert p == {
         "keys": [-5, 4, 10],
         "v1": [5, 3, 2],

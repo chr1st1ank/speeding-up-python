@@ -61,7 +61,7 @@ class NumbaSolver(BenchmarkSolver):
     def mergesort(input):
         l = List()
         [l.append(x) for x in input]
-        return mergesort(l)
+        return list(mergesort(l))
 
     # @staticmethod
     # def groupby_sum(data):
