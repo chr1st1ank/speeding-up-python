@@ -63,7 +63,7 @@ Notes:
   - A pxd file needs to be there to declare the C++ functions to be sued
   - The C++ code itself goes into header (.h or .hpp) files and source files (.cpp)
   - A setup.py is necessary to define the compilation steps
-  - The compilation has to be carried out before running the Python program
+  - The compilation has to be carried out before running the Python program (done by the build_cpp.sh script).
 
 
 ### 5. Julia
@@ -85,6 +85,13 @@ Notes:
 - The code assumes that the standard "high-level" mode of PyJulia can be used, which needs Julia to be on the PATH
   variable. Alternative approaches are described on the [PyJulia page](https://github.com/JuliaPy/pyjulia)
       
+### 6. Rust
+Implementation in the Rust programming language using the [Pyo3 bindings](https://pyo3.rs). It allows to compile native Python extensions with minimal overhead.
+
+Prerequisites:
+- Run `cargo init` on the repository root, add pyo3 as dependency in the Cargo.toml and define a library as build target.
+- Run `cargo build --release` when the Rust code is finished
+- Copy or link the .so file to the Python package (done by the build_rust.sh script).
       
 ## Contributing
 

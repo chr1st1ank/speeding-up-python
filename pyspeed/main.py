@@ -3,6 +3,7 @@ from benchmark_runner import BenchmarkRunner
 import benchmark
 import python_solver
 import numba_solver
+import rust_solver
 import cython_solver
 import julia_solver
 import cpp_solver
@@ -36,7 +37,8 @@ if __name__ == '__main__':
             numba_solver.NumbaSolver(),
             cython_solver.CythonSolver(),
             julia_solver.JuliaSolver(),
-            cpp_solver.CppSolver
+            cpp_solver.CppSolver,
+            rust_solver.RustSolver()
         ],
         benchmarks=[
             benchmark.mergesort_benchmark,

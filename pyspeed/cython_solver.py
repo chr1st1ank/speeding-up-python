@@ -22,9 +22,6 @@ class CythonSolver(BenchmarkSolver):
     def description(cls):
         return "Cythonized Python"
 
-    def direct_dependencies(cls):
-        return ['cython']
-
     def mergesort(self, l: List) -> List:
         return cython_backend.mergesort_cy(l)
 

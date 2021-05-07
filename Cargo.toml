@@ -1,0 +1,14 @@
+[package]
+name = "pyspeed_rust"
+version = "0.1.0"
+authors = ["chr1st1ank <chr1st1ank@krudewig-online.de>"]
+edition = "2018"
+
+[lib]
+name = "pyspeed_rust"
+path = "src/pyspeed.rs"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.13.2"
+features = ["extension-module"]

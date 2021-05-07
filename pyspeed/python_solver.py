@@ -9,9 +9,6 @@ class PythonSolver(BenchmarkSolver):
     def description(cls):
         return "Pure Python"
 
-    def direct_dependencies(cls):
-        return []
-
     @staticmethod
     def merge(l: List, r: List) -> List:
         result = []

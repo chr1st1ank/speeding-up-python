@@ -28,9 +28,6 @@ class JuliaSolver(BenchmarkSolver):
     def description(cls):
         return "Julia"
 
-    def direct_dependencies(cls):
-        return ["julia"]
-
     def mergesort(self, l: List) -> List:
         return list(self.mergesort_jl(l))
 

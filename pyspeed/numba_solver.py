@@ -58,10 +58,6 @@ class NumbaSolver(BenchmarkSolver):
         return "Numba"
 
     @staticmethod
-    def direct_dependencies():
-        return ['numba']
-
-    @staticmethod
     def mergesort(input):
         l = List()
         [l.append(x) for x in input]
