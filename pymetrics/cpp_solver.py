@@ -16,7 +16,7 @@ Notes:
 
 """
 
-import pyximport; pyximport.install(language_level=3)
+# import pyximport; pyximport.install(language_level=3)
 from cpp import mergesortcpp
 
 from benchmark_solver import BenchmarkSolver
@@ -29,7 +29,7 @@ class CppSolver(BenchmarkSolver):
 
     @staticmethod
     def direct_dependencies():
-        return ['cython']
+        return ['Cython']
 
     @staticmethod
     def mergesort(l: List) -> List:

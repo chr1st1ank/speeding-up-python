@@ -60,15 +60,15 @@ class NumbaSolver(BenchmarkSolver):
     def mergesort(input):
         return mergesort(input)
 
-    @staticmethod
-    def groupby(data):
-        keys = set(data['keys'])
-        results = {
-            key: {
-                'values1': 0,
-                'values2': 0
-            } for key in keys
-        }
-        for i in enumerate
-        df = pd.DataFrame(data=data)
-        return df.groupby('keys').sum().to_dict(orient='index')
+    # @staticmethod
+    # def groupby(data):
+    #     keys = set(data['keys'])
+    #     results = {
+    #         key: {
+    #             'values1': 0,
+    #             'values2': 0
+    #         } for key in keys
+    #     }
+    #     for i in enumerate
+    #     df = pd.DataFrame(data=data)
+    #     return df.groupby('keys').sum().to_dict(orient='index')

@@ -1,7 +1,7 @@
 # distutils: language = c++
-# distutils: sources = mergesort.cpp
+# distutils: sources = pymetrics/cpp/mergesort.cpp
 
-from mergesortcpp cimport mergesortcpp
+from . cimport mergesortcpp
 from typing import List
 
 def mergesort(lst: List) -> List:
