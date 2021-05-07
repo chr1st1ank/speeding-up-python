@@ -23,7 +23,6 @@ class JuliaSolver(BenchmarkSolver):
     def __init__(self):
         self.julia = julia.Julia()
         directory = os.path.realpath(os.path.dirname(__file__))
-        print(directory)
         self.mergesort_jl = self.julia.include(os.path.join(directory, "julia/mergesort.jl"))
 
     def description(cls):

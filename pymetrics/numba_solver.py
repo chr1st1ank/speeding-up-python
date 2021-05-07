@@ -10,15 +10,16 @@ Notes:
     * Entire Python classes could be compiled, but not if they inherit from a pure Python class which is not compiled
       with Numba
 """
-from typing import List
 import numba
+from numba import int64
+from numba.typed import List
 
 from benchmark_solver import BenchmarkSolver
 
 
 @numba.jit(nopython=True)
-def merge(l: List, r: List) -> List:
-    result = []
+def merge(l: List[int64], r: List[int64]) -> List[int64]:
+    result: List[int64] = List()
 
     while len(l) and len(r):
         if l[0] <= r[0]:
@@ -26,15 +27,17 @@ def merge(l: List, r: List) -> List:
         else:
             result.append(r.pop(0))
     if l:
-        return result + l
+        for i in l:
+            result.append(i)
     if r:
-        return result + r
+        for i in r:
+            result.append(i)
 
     return result
 
 
 @numba.jit(nopython=True)
-def mergesort(l: List) -> List:
+def mergesort(l: List[int64]) -> List[int64]:
     if len(l) <= 1:
         return l
     left = mergesort(l[:int(len(l) / 2)])
@@ -45,7 +48,9 @@ def mergesort(l: List) -> List:
 class NumbaSolver(BenchmarkSolver):
     def __init__(self):
         # Run once to cache compilation
-        self.mergesort([1,4,2])
+        l = List()
+        [l.append(x) for x in [1, 4, 2]]
+        self.mergesort(l)
         pass
 
     @staticmethod
@@ -58,7 +63,9 @@ class NumbaSolver(BenchmarkSolver):
 
     @staticmethod
     def mergesort(input):
-        return mergesort(input)
+        l = List()
+        [l.append(x) for x in input]
+        return mergesort(l)
 
     # @staticmethod
     # def groupby(data):
