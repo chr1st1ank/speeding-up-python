@@ -15,6 +15,6 @@ class RustSolver(BenchmarkSolver):
     def mergesort(self, l: List) -> List:
         return pyspeed_rust.mergesort(l)
 
-    # @staticmethod
-    # def groupby_sum(data):
-    #     return cython_backend.groupby_sum_cy(data)
+    @staticmethod
+    def groupby_sum(data):
+        return pyspeed_rust.groupby_sum(data)

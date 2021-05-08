@@ -13,6 +13,6 @@ groupby_sum_benchmark = Benchmark(
         'keys': [random.randint(0, 100) for _ in range(l)],
         'uints': [random.randint(-1000000, 1000000) for _ in range(l)],
         'ints': [random.randint(0, 1000000) for _ in range(l)],
-        'floats': [(random.random() - 0.5) * 1000  for _ in range(l)]
+        # 'floats': [(random.random() - 0.5) * 1000  for _ in range(l)]
     }
 )
