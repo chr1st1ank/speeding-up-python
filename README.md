@@ -9,6 +9,7 @@ This small project should help to:
 
 Note that it is not considered important whether pure Python code is used (as with numba or with leveraging specialized Python modules. Also using other languages with an easy binding to Python such as Julia or C++ are a feasible option for practical use cases.
 
+The benchmarks can't tell if a certain language or framework is fast or slow. First only the combination with Python is tested and secondly the benchmarks are picked mostly for being easily implementable and for giving a feeling of how to use a certain framework from Python in different scenarios. And lastly also the environment where I run these things is not controlled. Results might look very different on a different machine or platform.
 
 ## Benchmarks used for comparison
 ### 1. Mergesort 
@@ -95,6 +96,41 @@ Prerequisites:
 - Run `cargo build --release` when the Rust code is finished
 - Copy or link the .so file to the Python package (done by the build_rust.sh script).
       
+## Latest results
+Output of the last run on my laptop:
+
+```
+mergesort
+	  236ms - Pure Python
+	  285ms - Numba
+	   90ms - Cythonized Python
+	   57ms - Julia
+	   17ms - C++
+	   11ms - Rust from Python
+groupby_sum
+	  130ms - Pure Python
+	      - - Numba
+	   79ms - Cythonized Python
+	      - - Julia
+	      - - C++
+	  100ms - Rust from Python
+string_slice
+	  196ms - Pure Python
+	      - - Numba
+	  150ms - Cythonized Python
+	      - - Julia
+	      - - C++
+	  410ms - Rust from Python
+
+System information:
+
+Architecture: x86_64 / 64bit
+System: Linux / 5.11.11-arch1-1
+Python: CPython 3.9.2 built with ('glibc', '2.33')
+Processors: 
+    4 x  Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz
+```
+
 ## Contributing
 
 If you are interested in contributing, feel free to contact me or to just write a pull request. I am particularly interested in:

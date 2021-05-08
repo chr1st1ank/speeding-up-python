@@ -2,6 +2,7 @@ use pyo3::prelude::*;
 use pyo3::wrap_pyfunction;
 use pyo3::types::PyDict;
 use std::collections::HashMap;
+use substring::Substring;
 
 fn merge(left: &[i64], right: &[i64]) -> Vec<i64> {
     let mut ret: Vec<i64> = Vec::new();
@@ -116,6 +117,15 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
     Ok(result_dict.into_py(py))
 }
 
+#[pyfunction]
+fn string_slice(strings: Vec<String>, start: usize, end: usize) -> PyResult<Vec<String>> {
+    let mut new_strings = Vec::with_capacity(strings.len());
+    for s in strings {
+        new_strings.push(s.substring(start, end+1).to_string());
+    }
+    Ok(new_strings)
+}
+
 #[pymodule]
 fn pyspeed_rust(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add("__version__", env!("CARGO_PKG_VERSION"))?;
@@ -123,6 +133,7 @@ fn pyspeed_rust(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(sum_as_string, m)?)?;
     m.add_function(wrap_pyfunction!(sum_of_list, m)?)?;
     m.add_function(wrap_pyfunction!(groupby_sum, m)?)?;
+    m.add_function(wrap_pyfunction!(string_slice, m)?)?;
 
     Ok(())
 }

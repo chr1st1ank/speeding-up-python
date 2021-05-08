@@ -34,15 +34,15 @@ def system_info():
 if __name__ == '__main__':
     runner = BenchmarkRunner(solvers=[
             python_solver.PythonSolver(),
-            # numba_solver.NumbaSolver(),
+            numba_solver.NumbaSolver(),
             cython_solver.CythonSolver(),
-            # julia_solver.JuliaSolver(),
-            # cpp_solver.CppSolver,
+            julia_solver.JuliaSolver(),
+            cpp_solver.CppSolver(),
             rust_solver.RustSolver()
         ],
         benchmarks=[
-            # benchmark.mergesort_benchmark(),
-            # benchmark.groupby_sum_benchmark(),
+            benchmark.mergesort_benchmark(),
+            benchmark.groupby_sum_benchmark(),
             benchmark.string_slice_benchmark()
         ]
     )

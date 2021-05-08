@@ -53,12 +53,10 @@ class NumbaSolver(BenchmarkSolver):
         self.mergesort(l)
         pass
 
-    @staticmethod
-    def description():
+    def description(self):
         return "Numba"
 
-    @staticmethod
-    def mergesort(input):
+    def mergesort(self, input):
         l = List()
         [l.append(x) for x in input]
         return list(mergesort(l))

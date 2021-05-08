@@ -23,10 +23,8 @@ from benchmark_solver import BenchmarkSolver
 from typing import List
 
 class CppSolver(BenchmarkSolver):
-    @staticmethod
-    def description():
+    def description(self):
         return "C++"
 
-    @staticmethod
-    def mergesort(l: List) -> List:
+    def mergesort(self, l: List) -> List:
         return mergesortcpp.mergesort(l)
