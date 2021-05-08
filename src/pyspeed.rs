@@ -83,7 +83,8 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
     groups.sort();
     groups.dedup();
 
-    let result_dict = PyDict::new(py);
+    // let result_dict = PyDict::new(py);
+    let mut result_dict : HashMap<String, Vec<i64>> = HashMap::new();
 
     for (column, values) in data_table.iter() {
         let column: String = column.extract()?;
@@ -91,16 +92,14 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
             continue;
         }
         let mut sums = HashMap::new();
-        for k in &groups {
-            sums.insert(k, 0);
-        }
         let values: Vec<i64> = values.extract()?;
         for i in 0..values.len() {
             if let Some(key) = keys.get(i) {
-                let mut s = 0;
-                if let Some(old_sum) = sums.get(key) {
-                    s = values[i] + old_sum
-                }
+                let s = if let Some(old_sum) = sums.get(key) {
+                    values[i] + old_sum
+                }else{
+                    values[i]
+                };
                 sums.insert(key, s);
             }
         }
@@ -110,9 +109,9 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
                 sum_vec.push(*sum);
             }
         }
-        let _ = result_dict.set_item(column, sum_vec);
+        result_dict.insert(column, sum_vec);
     }
-    let _ = result_dict.set_item("keys", groups);
+    result_dict.insert("keys".to_string(), groups);
 
     Ok(result_dict.into_py(py))
 }
