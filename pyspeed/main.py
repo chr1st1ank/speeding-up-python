@@ -1,16 +1,15 @@
 
-from benchmark_runner import BenchmarkRunner
-import benchmark
-import python_solver
-import numba_solver
-import rust_solver
-import cython_solver
-import julia_solver
-import cpp_solver
-
-import sys
 import platform
 from collections import Counter
+
+import benchmark
+import cpp_solver
+import cython_solver
+import julia_solver
+import numba_solver
+import python_solver
+import rust_solver
+from benchmark_runner import BenchmarkRunner
 
 
 def system_info():
@@ -38,7 +37,7 @@ if __name__ == '__main__':
             cython_solver.CythonSolver(),
             julia_solver.JuliaSolver(),
             cpp_solver.CppSolver(),
-            rust_solver.RustSolver()
+            rust_solver.RustSolver(),
         ],
         benchmarks=[
             benchmark.mergesort_benchmark(),

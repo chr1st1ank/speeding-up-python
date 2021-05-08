@@ -118,10 +118,10 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
 }
 
 #[pyfunction]
-fn string_slice(strings: Vec<String>, start: usize, end: usize) -> PyResult<Vec<String>> {
+fn string_slice(strings: Vec<&str>, start: usize, end: usize) -> PyResult<Vec<&str>> {
     let mut new_strings = Vec::with_capacity(strings.len());
     for s in strings {
-        new_strings.push(s.substring(start, end+1).to_string());
+        new_strings.push(s.substring(start, end+1));
     }
     Ok(new_strings)
 }

@@ -20,7 +20,7 @@ The benchmarks can't tell if a certain language or framework is fast or slow. Fi
 The task is to calculate sums per group key on tabular data. Input is a dictionary of columns, output is a dictionary of aggregates in columns.
 
 ### 3. String slice
-Input is a list of unicode strings. Every string has to be sliced and the first n characters have to be returned. The difficulty lies in the proper handling of unicode characters. ASCII characters are heavily overrepresented in the test strings (like in many real applications), so that handling of utf-8 strings pays off compared to a dump wchar approach. 
+Input is a list of unicode strings. Every string has to be sliced and the first n characters have to be returned. The difficulty lies in the proper handling of unicode characters. ASCII characters are overrepresented in the test strings (like in many real applications).
 
 ## Comments on the frameworks / languages used
 
@@ -95,32 +95,38 @@ Prerequisites:
 - Run `cargo init` on the repository root, add pyo3 as dependency in the Cargo.toml and define a library as build target.
 - Run `cargo build --release` when the Rust code is finished
 - Copy or link the .so file to the Python package (done by the build_rust.sh script).
+
+Notes:
+- The integration is really smooth and almost boilerplate free
+- Pyo3 automatically converts from and to python objects
+- Python's string implementation allows for faster slicing (because of fixed-size wide characters within one object) than Rust's string type with variable-sized utf-8
+- Using Python strings directly would only work through Pyo3's "unsafe" ffi module
       
 ## Latest results
 Output of the last run on my laptop:
 
 ```
 mergesort
-	  236ms - Pure Python
-	  285ms - Numba
-	   90ms - Cythonized Python
-	   57ms - Julia
+	  238ms - Pure Python
+	  284ms - Numba
+	   91ms - Cythonized Python
+	   56ms - Julia
 	   17ms - C++
 	   11ms - Rust from Python
 groupby_sum
 	  130ms - Pure Python
 	      - - Numba
-	   79ms - Cythonized Python
+	   80ms - Cythonized Python
 	      - - Julia
 	      - - C++
 	  100ms - Rust from Python
 string_slice
-	  196ms - Pure Python
+	   25ms - Pure Python
 	      - - Numba
-	  150ms - Cythonized Python
+	   20ms - Cythonized Python
 	      - - Julia
 	      - - C++
-	  410ms - Rust from Python
+	   62ms - Rust from Python
 
 System information:
 

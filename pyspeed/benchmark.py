@@ -27,7 +27,7 @@ def string_slice_benchmark() -> Benchmark:
     include_ranges = [
         (0x0021, 0x0021, 1),
         (0x0023, 0x0026, 1),
-        (0x0028, 0x007E, 100),
+        (0x0028, 0x007E, 10),
         (0x00A1, 0x00AC, 1),
         (0x00AE, 0x00FF, 1),
         (0x0100, 0x017F, 1),
@@ -49,12 +49,12 @@ def string_slice_benchmark() -> Benchmark:
     def rand_string(max_len):
         return ''.join(random.choice(allowed_chars) for _ in range(random.randint(0, max_len)))
 
-    l = 200000
+    l = 20000
     return Benchmark(
         name="string_slice",
         data={
-            "strings": [rand_string(50) for _ in range(l)],
-            "start": 5,
-            "end": 20
+            "strings": [rand_string(200) for _ in range(l)],
+            "start": 105,
+            "end": 120
         }
     )
