@@ -25,6 +25,11 @@ class CythonSolver(BenchmarkSolver):
     def mergesort(self, l: List) -> List:
         return cython_backend.mergesort_cy(l)
 
-    @staticmethod
-    def groupby_sum(data):
+    def groupby_sum(self, data):
         return cython_backend.groupby_sum_cy(data)
+
+    def string_slice(self, test_data):
+        string_list: List[str] = test_data["strings"]
+        start: int = test_data["start"]
+        end: int = test_data["end"]
+        return cython_backend.string_slice(string_list, start, end)

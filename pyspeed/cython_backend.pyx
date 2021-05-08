@@ -39,3 +39,7 @@ def groupby_sum_cy(data_dict):
             output[column][k] += v
         output[column] = [output[column][k] for k in sorted_keys]
     return output
+
+
+def string_slice(string_list, start: int, end: int):
+    return [s[start:end+1] for s in string_list]

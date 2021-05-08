@@ -1,5 +1,5 @@
 
-from typing import List
+from typing import List, Dict
 from benchmark_solver import BenchmarkSolver
 import pandas as pd
 
@@ -47,3 +47,9 @@ class PythonSolver(BenchmarkSolver):
                 output[column][k] += v
             output[column] = [output[column][k] for k in sorted_keys]
         return output
+
+    def string_slice(self, test_data: Dict):
+        string_list: List[str] = test_data["strings"]
+        start: int = test_data["start"]
+        end: int = test_data["end"]
+        return [s[start:end+1] for s in string_list]

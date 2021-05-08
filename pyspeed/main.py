@@ -41,8 +41,9 @@ if __name__ == '__main__':
             rust_solver.RustSolver()
         ],
         benchmarks=[
-            benchmark.mergesort_benchmark,
-            benchmark.groupby_sum_benchmark
+            # benchmark.mergesort_benchmark(),
+            # benchmark.groupby_sum_benchmark(),
+            benchmark.string_slice_benchmark()
         ]
     )
     runner.time_it()

@@ -18,6 +18,8 @@ Note that it is not considered important whether pure Python code is used (as wi
 ### 2. Groupby-Sum
 The task is to calculate sums per group key on tabular data. Input is a dictionary of columns, output is a dictionary of aggregates in columns.
 
+### 3. String slice
+Input is a list of unicode strings. Every string has to be sliced and the first n characters have to be returned. The difficulty lies in the proper handling of unicode characters. ASCII characters are heavily overrepresented in the test strings (like in many real applications), so that handling of utf-8 strings pays off compared to a dump wchar approach. 
 
 ## Comments on the frameworks / languages used
 

@@ -33,14 +33,7 @@ class BenchmarkRunner:
             print(solver.description())
             for benchmark, input in self._benchmarks.items():
                 print(f"\t{benchmark}")
-                if not hasattr(solver, benchmark):
-                    self.results.append(BenchmarkResult(
-                        solver=solver.description(),
-                        benchmark=benchmark,
-                        time=None,
-                        solution=None
-                    ))
-                else:
+                try:
                     f = getattr(solver, benchmark)
                     timer =timeit.Timer('f(input)', globals=dict(f=f, input=input), )
                     t = timer.repeat(repeat=repeats, number=number)
@@ -50,4 +43,11 @@ class BenchmarkRunner:
                         benchmark=benchmark,
                         time=min(t),
                         solution=sol
+                    ))
+                except NotImplementedError:
+                    self.results.append(BenchmarkResult(
+                        solver=solver.description(),
+                        benchmark=benchmark,
+                        time=None,
+                        solution=None
                     ))

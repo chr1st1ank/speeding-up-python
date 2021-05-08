@@ -57,6 +57,24 @@ def test_groupby_sum(solver):
     }
 
 
+def test_string_slice(solver: BenchmarkSolver):
+    data = {
+        "strings": [
+            "asdfgjkl",
+            "北京冬奥会多策并举力争实现碳中和",
+            ""
+        ],
+        "start": 3,
+        "end": 8
+    }
+    p = solver.string_slice(data)
+    assert p == [
+        "fgjkl",
+        "奥会多策并举",
+        ""
+    ]
+
+
 def test_solver_results(runner):
     runner.time_it(1, 1)
     assert runner.verify_results()
