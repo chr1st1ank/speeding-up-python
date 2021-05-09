@@ -1,4 +1,4 @@
-
+import collections
 from typing import List, Dict
 from benchmark_solver import BenchmarkSolver
 import pandas as pd
@@ -63,8 +63,4 @@ class PythonSolver(BenchmarkSolver):
 
 def count_ngrams(s, n):
     padded = "$"*(n-1) + s + "$"*(n-1)
-    counts = {}
-    for i in range(len(padded) - n + 1):
-        k = padded[i: i + n]
-        counts[k] = counts.get(k, 0) + 1
-    return counts
+    return collections.Counter(padded[i: i + n] for i in range(len(padded) - n + 1))
