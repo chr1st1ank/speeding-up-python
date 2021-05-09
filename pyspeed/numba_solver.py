@@ -12,7 +12,7 @@ Notes:
 """
 import numba
 from numba import int64
-from numba.typed import List
+from numba.typed import Dict, List
 
 from benchmark_solver import BenchmarkSolver
 
@@ -44,6 +44,20 @@ def mergesort(l: List[int64]) -> List[int64]:
     right = mergesort(l[int(len(l) / 2):])
     return merge(left, right)
 
+@numba.jit(nopython=True)
+def count_ngrams(string_list: List[str], n: numba.int32):
+    all_counts = List()
+    for s in string_list:
+        padded = "$" * (n - 1) + s + "$" * (n - 1)
+        counts = Dict()
+        for i in range(len(padded) - n + 1):
+            k = padded[i: i + n]
+            if k in counts:
+                counts[k] += 1
+            else:
+                counts[k] = 1
+        all_counts.append(counts)
+    return all_counts
 
 class NumbaSolver(BenchmarkSolver):
     def __init__(self):
@@ -60,6 +74,11 @@ class NumbaSolver(BenchmarkSolver):
         l = List()
         [l.append(x) for x in input]
         return list(mergesort(l))
+
+    def ngram_count(self, test_data):
+        string_list: List[str] = test_data["strings"]
+        ngram_n: int = test_data["ngram_n"]
+        return list(count_ngrams(string_list, ngram_n))
 
     # @staticmethod
     # def groupby_sum(data):
