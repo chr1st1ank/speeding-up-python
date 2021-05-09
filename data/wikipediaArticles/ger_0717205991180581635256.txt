@@ -1,0 +1,34 @@
+
+## Interstate 76
+
+Interstate ’76 ist ein Computerspiel der Firma Activision aus dem Jahre 1997, welches auf der Grundlage der MechWarrior-2-Engine Elemente von Action- und Rennspiel vereint. Zu Interstate ’76 gab es ein Add-on (Nitro Riders) und eine Fortsetzung mit dem Titel Interstate ’82.
+
+# Handlung 
+
+Der Hintergrund von Interstate ’76 ist ein alternatives Geschichtsszenario des Jahres 1976. Die Vereinigten Staaten wurden von der Ölkrise im Jahre 1973 umso härter getroffen, was zu einer enormen Preissteigerung für Benzin und Erdölprodukte führte. Infolge dieser Krise steigt die Kriminalität, vor allem kommt eine Art motorisiertes Banditentum in Mode. Gegen diese motorisierten Banditen setzen sich sogenannte Vigilanten zur Wehr, Selbstjustizler, welche nach eigenen Angaben der von Korruption durchzogenen Polizei helfen wollen, aber von dieser ebenfalls bekämpft werden. Sowohl Banditen als auch Polizisten und Vigilanten haben ihre Fahrzeuge mit allerlei Waffen ausgerüstet, mit welchen auf den Interstate Highways, den „Landstraßen“ der Vereinigten Staaten, gekämpft wird.
+Der Spieler übernimmt die Rolle von Groove Champion, der einer Rennfahrerfamilie entstammt. Sein Vater gewann die Daytona 500, Groove und seine Schwester Jade (genannt Speed Cat) sind im Rennsport tätig. Doch Jade schließt sich den Vigilanten an und kämpft auf der Straße gegen das Verbrechen. Dabei kommt sie dem Schmuggler und Drogenhändler Antonio Malochio auf die Spur, welcher den Plan hegt, mit einer Atombombe die amerikanische Ölindustrie endgültig auszuschalten, um die Ölkrise zu verschärfen und das Land bis zur Anarchie zu destabilisieren. Doch bei den Nachforschungen wird Jade erschossen. Groove übernimmt daraufhin ihren Platz und ihren Wagen und nimmt, unterstützt vom schwarzen Dichter und Bürgerrechtler Taurus und dem Mechaniker Skeeter den Kampf gegen Malochio und die korrupte Polizei auf.
+Die Handlung weist grundsätzliche Parallelen zum James-Bond-Film Goldfinger auf. Auch hier wollte der Bösewicht in den Vereinigten Staaten ein wichtiges Rohstofflager (Fort Knox) zu seinem eigenen Vorteil verstrahlen, auch hier fiel eine Frau auf Nachforschungen dem Schurken zum Opfer, und vor allem stand Bond in diesem Film mit dem modifizierten Aston Martin DB5 erstmals ein mit Schusswaffen ausgestattetes Auto zur Verfügung.
+
+# Spielinhalt 
+
+Kernstück des Spiels ist eine Kampagne, welche den Rachefeldzug Groove Champions darstellt. Zwar beschränken sich die Missionen meist auf „Fahre von A nach B und schalte alle Gegner aus“, jedoch werden diese mit Zwischensequenzen und Funksprüchen in Szene gesetzt. Motivierendes Spielelement ist die Möglichkeit, aus abgeschossenen Fahrzeugen Waffen und Ausrüstungsgegenstände zu bergen und in den eigenen Wagen einzubauen.
+In der Kampagne ist man immer im selben Fahrzeug (einem Plymouth Barracuda) unterwegs, nur vor dem finalen Duell gegen Malochio und seine Chevrolet Corvette hat man die Wahl zwischen drei anderen Fahrzeugen und einem Helikopter. Im Mehrspielermodus sind dagegen diverse Fahrzeuge anwählbar und lassen sich in vielerlei Hinsicht modifizieren. Die Auswahl umfasst zahlreiche amerikanische Personenwagen der 1970er Jahre, in erster Linie Muscle-Cars, und daneben sogar Busse, Buggys und Trucks. Mittels eines Cheats ist es sogar möglich, Panzer und Hubschrauber zu steuern. Für die Verwendung der originalen Fahrzeugnamen erwarben die Entwickler des Spiels jedoch keine Lizenz, so dass sämtliche Fahrzeuge und Marken unter Fantasienamen zu finden sind. Zum Beispiel heißt der Volvo 240 im Spiel Vikea 420LG, Chevrolet nennt sich Coucherval und Lincoln heißt nun Jefferson.
+Die Auswahl der Waffen bleibt recht konventionell und umfasst Maschinengewehre, Maschinenkanonen, Raketen, Flammenwerfer und Mörser. Außerdem kann die Passierbarkeit der Straße durch den Abwurf von Ölschlick, Napalm oder Landminen eingeschränkt werden. Bei der Ausrüstung der Fahrzeuge mit Waffen und Panzerungen wirkt sich das Gewicht negativ auf die Fahreigenschaften aus.
+
+# Technik 
+
+Die Grafikengine entspricht der von MechWarrior 2. Auffällig ist vor allem die eintönige, aber realistische Darstellung der Wüstenlandschaften des amerikanischen Westens, in der nur die Fahrzeuge für farbliche Abwechslung sorgen. Andererseits erzeugt die öde Landschaft zusammen mit der sonstigen Atmosphäre und dem blauen Himmel im Hintergrund ein passendes, ergreifendes Western-Gefühl, nicht zuletzt auch durch die vielen zeitgenössischen Stil-Elemente. Ebenfalls bemerkenswert ist die sehr detaillierte Darstellung des Innenlebens der Fahrzeuge; somit verschafft die Cockpit-Ansicht dem Spieler eine besonders realistische Projektion von sich in die Welt von Interstate ’76. Die Zwischensequenzen sind in der Spielengine gehalten. Dabei wird der spielstandsabhängige Zustand der Fahrzeuge hinsichtlich Bewaffnung und Beschädigungen weitgehend berücksichtigt.
+Eine Aktualisierung von Anfang 1998, welches parallel zum Add-on Nitro Riders veröffentlicht wurde, machte die Grafik Direct3D-fähig.
+Die Soundkulisse wird von der Hintergrundmusik dominiert. Diese passt ebenfalls sehr gut zur 1970er-Western-Atmosphäre und umfasst Instrumentalstücke der Stile Funk und Soul (im CDA-Format auf der Spiel-CD). Motoren- und Waffengeräusche sind sehr authentisch; die Sprachausgabe in Form von Funksprüchen und Kommentaren von Groove, Taurus und diverser Nebenrollen greift den Stil ebenfalls auf.
+Der Mehrspielermodus ist für Netzwerk und Internet gedacht und bietet für bis zu acht Spieler die Möglichkeit, sich als „Asphalt-Cowboys“ zu behaupten.
+
+# Kritik und Rezeption 
+
+Durch die kompetente Umsetzung und das neuartige Szenario der damals gerade wieder in Mode gekommenen 1970er Jahre konnte Interstate ’76 Kritiker und Spieler begeistern. Das Spiel erreichte in allen Fachzeitschriften hohe Wertungen und wurde in der Power Play zum Rennspiel des Jahres 1997 gekürt. Weiter fasste ein Kritiker der PC Action seine Begeisterung wie folgt in Worte: „Von dieser High-Speed-Action werde ich wohl erst ablassen, wenn die Bordkanone für meine Vespa endlich geliefert ist.“
+Insgesamt blieb Interstate ’76 jedoch ein Nischenprodukt. Der Nachfolger Interstate ’82 von 1999 stellte eine technische Aktualisierung des Spiels dar und verlegte das Szenario in die nicht weniger klischeebeladenen 1980er Jahre, konnte den Erfolg seines Vorgängers aber nicht wiederholen, so dass die Serie in der Versenkung verschwand. Eine große Community bildete sich um Interstate ’76 nie.
+
+# Weblinks 
+
+Interstate ’76 bei MobyGames (englisch)
+Interstate ’76: Nitro Riders bei MobyGames (englisch)
+Rezension der Power Play

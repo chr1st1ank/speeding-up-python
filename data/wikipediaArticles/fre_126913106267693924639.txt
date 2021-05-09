@@ -1,0 +1,20 @@
+
+## Packet Tracer
+
+Packet Tracer est un simulateur de matériel réseau Cisco (routeurs, commutateurs).
+Cet outil est créé par Cisco Systems qui le fournit gratuitement aux centres de formation, étudiants et diplômés participant, ou ayant participé, aux programmes de formation Cisco (Cisco Networking Academy).
+Le but de Packet Tracer est d'offrir aux élèves et aux professeurs un outil permettant d'apprendre les principes du réseau, tout en acquérant des compétences aux technologies spécifiques de Cisco. Il peut être utilisé pour s’entraîner, se former, préparer les examens de certification Cisco, mais également pour de la simulation réseau.
+
+# Programmes semblables 
+
+GNS3, un logiciel sous la licence libre GNU GPLv3
+Junosphere, de Juniper
+eNSP, de Huawei
+
+# Notes et références 
+
+# Voir aussi 
+
+# Liens externes 
+
+www.packettracernetwork.com : Exercices et tutoriels gratuits pour Packet Tracer à destination des étudiants préparant les examens Cisco CCNA et CCNP Portail des réseaux informatiques Portail de l’informatique Portail des télécommunications

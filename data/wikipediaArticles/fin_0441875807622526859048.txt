@@ -1,0 +1,74 @@
+
+## AMD Phenom
+
+Phenom II on AMD:n suoritinmallisarja. AMD Phenom II -suorittimia on tarjolla 2 - 6-ytimisinä malleina. Phenom II seuraa mallina Phenomia. Phenom II julkaistiin marraskuussa 2008 AM2+-suoritinkantaisena Phenomin tavoin. Helmikuussa 2009 julkaistiin DDR3-muisteja tukevalla AM3-suoritinkannalla valmistettavat mallit. Huhtikuussa 2010 julkaistiin AM3-kantaisia Phenom II X6-siruja. Uudet X6-sirut sisältävät myös turbo-toiminnon.
+
+# Ominaisuudet 
+
+Phenom II sisältää suuren, 6 Mt kokoisen L3-välimuistin. Toinen suorituskykyä lisäävä muutos on Cool 'n Quiet -toiminnon muuttaminen siten, ettei sen käyttö enää aiheuta käyttöjärjestelmästä johtuvia suorituskykyongelmia.AM3-kantaiset Phenom II -suorittimet ovat taaksepäin yhteensopivia AM2+-kantaisten emolevyjen kanssa. Phenom II:n muistiohjain tukee DDR2 ja DDR3 -muisteja. DDR3-muisteja voidaan käyttää kuitenkin vain AM3-kantaisen emolevyn kanssa.
+Phenom II -suorittimia on neljää eri mallia. 1000 ja 900-sarja on kaikki ominaisuudet sisältävä lippulaiva. Muut mallit ovat osittain karsittuja versioita. Ytimien tuotantoprosessissa osa ytimistä tulee ulos vajaatoimisina, mutta näitä ytimiä voidaan hyödyntää esimerkiksi käyttämällä niitä kolmeytimisinä tai vähemmällä L3-välimuistilla. Osa 500- ja 700-sarjojen suorittimista on "rampautettu" tahallisesti, jotta edullisempien suorittimien kysyntä voidaan tyydyttää. Näin ollen osasta näistä prosessoreista voidaan ohjelmallisesti kytkeä lukittuja ytimiä uudelleen käyttöön.
+
+1000-sarja: Lippulaivamallisto, jossa on kuusi ydintä ja 6 Mt L3-välimuisti.
+900-sarja: Lippulaivamallisto, jossa on neljä ydintä ja 6 Mt L3-välimuisti.
+800-sarja: Näistä suorittimista on poistettu käytöstä 2 Mt L3-välimuistia, jolloin käyttöön jää 4 Mt.
+700-sarja: Näissä suorittimissa on poistettu käytöstä yksi ydin, eli käytössä on kolme ydintä (mallimerkintä X3). L3-välimuisti on täydet 6 Mt.
+500-sarja: Kaksi ydintä on poistettu käytöstä ja kaksi on käytössä (mallimerkintä X2). L3-välimuistia on 6 Mt.
+
+# Ylikellottaminen 
+
+Phenom II -suorittimet ovat ylikellottuneet jopa yli kaksikertaa alkuperäistä suurempiin kellotaajuuksiin.
+Suomalainen Sami "Macci" Mäkinen onnistui kellottamaan Phenom II X4 940 -suorittimen 6,5 GHz -nopeuteen. Ennätys tehtiin CES-messuilla Las Vegasissa tammikuussa 2009 käyttämällä apuna nestemäistä typpeä ja nestemäistä heliumia. LimitTeam-niminen ryhmä puolestaan paransi tulosta Phenom II X4 955 -suorittimella, joka kellotettiin 7,1 GHz nopeuteen.
+
+# Piirit 
+
+# Thuban (45 nm SOI) 
+
+Kuusi AMD K10-ydintä
+L1-välimuisti: 64+64 kt per ydin
+L2-välimuisti: 512 kt per ydin
+L3-välimuisti: 6 Mt (1000-sarja)
+Muistiohjain: Kaksikanavainen DDR2-1066 MHz / kaksikanavainen DDR3-1333 (AM3)
+Suoritinkanta: AM2+/AM3
+TDP: 95, 125 W
+Kellotaajuus: 2 600–3 300 MHz
+Mallit: Phenom II X6 1035T – 1100T
+Turbo Core: 400–500 Mhz kellotaajuuden nosto, kun rasitetaan kolmea ydintä.
+
+# Deneb (45 nm SOI) 
+
+Neljä AMD K10-ydintä
+L1-välimuisti: 64+64 kt per ydin
+L2-välimuisti: 512 kt per ydin
+L3-välimuisti: 6 Mt (900-sarja)/ 4Mt (800-sarja)
+Muistiohjain: Kaksikanavainen DDR2-1066 MHz / kaksikanavainen DDR3-1333 (AM3)
+Suoritinkanta: AM2+/AM3
+TDP: 65, 95, 125 ja 140 W
+Kellotaajuus: 2 500–3 700 MHz
+Mallit: Phenom II X4 805 – 980
+
+# Heka (45 nm SOI) 
+
+Kolme AMD K10-ydintä
+L1-välimuisti: 64+64 kt per ydin
+L2-välimuisti: 512 kt per ydin
+L3-välimuisti: 6 Mt
+Muistiohjain: Kaksikanavainen DDR2-1066 MHz / kaksikanavainen DDR3-1333 (AM3)
+Suoritinkanta: AM2+/AM3
+TDP: 65 ja 95 W
+Kellotaajuus: 2 500–3 000 MHz
+Mallit: Phenom II X3 705e – 740
+
+# Callisto (45 nm SOI) 
+
+Kaksi AMD K10-ydintä
+L1-välimuisti: 64+64 kt per ydin
+L2-välimuisti: 512 kt per ydin
+L3-välimuisti: 6 Mt (500-sarja)
+Muistiohjain: Kaksikanavainen DDR2-1066 MHz / kaksikanavainen DDR3-1333 (AM3)
+Suoritinkanta: AM2+/AM3
+TDP: 80 W
+Kellotaajuus: 3 000–3 400 MHz
+Mallit: Phenom II X2 545 – 565
+
+# Lähteet 
+

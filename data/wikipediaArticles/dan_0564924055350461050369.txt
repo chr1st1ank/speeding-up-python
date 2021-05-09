@@ -1,0 +1,38 @@
+
+## Ringart
+
+En ringart er inden for biologi en sammenhængende serie af nabopopulationer, som hver især kan få afkom med de nærmeste populationer, men hvor der findes mindst to "ende"-populationer i serien som er for fjernt beslægtede til at parre sig med hinanden selvom der kan ske en potentiel genudveksling gennem de sammenhængende populationer. Sådanne ikke-parrende, omend genetisk forbundne, "ende"-populationer kan sameksistere i det samme område.
+Ringarter giver et vidnesbyrd om evolution idet de illustrerer hvad der sker over tid når polulationerne genetisk flytter sig fra hinanden, og er specielle ved at de repræsenterer i levende populationer hvad der normalt sker over tid mellem for længst døde forfædre populationer og levende populationer, hvor de mellemlæggende trin er uddøde. Richard Dawkins bemærker at ringarter "viser os kun i den rumlige dimension noget som altid må ske i tidsdimensionen."Formelt set, er sagen at fertilitet mellem populationer ikke er en transitiv relation (hvis A kan parre sig med B, and B kan parre sig med C, følger det ikke at A kan parre sig med C), og det definerer således ikke en ækvivalensrelation. En ringart er en art som giver et modeksempel til transitivitet.
+
+# Problem med artsdefinitionen 
+
+Ringarter er et interessant tilfælde af de problemer der er med at definere hvad en art er for de som søger at inddele de levende organismer i adskilte arter. Det eneste som adskiller en ringart fra to separate arter, er nemlig eksistensen af de forbindende populationer. Hvis der forsvandt tilstrækkeligt mange af de forbindende populationer til at afbryde yngleforbindelsen, ville en ringarts ende-populationer blive anerkendte som selvstændige arter.
+Problemet er så om man skal betragte hele ringen som én art på trods af at ikke alle individer kan parre sig med hinanden, eller om man skal klassificere hver population som en selvstændig art på trods at individerne kan parre sig sig med individerne i nabopopulationerne. Ringarter illustrerer således at artsbegrebet ikke er så klart som man umiddelbart kunne tro.
+
+# Kendte eksempler 
+
+# Historie 
+
+I øjeblikket er der fire kendte livsformer som synes at passe med definitionen på en ringart. Det klassiske eksempel er mågerne i slægten Larus som Jonathan Dwight i 1925 fandt udgjorde en cirkumpolar ring af varianter, men på det seneste er det betvivlet om de virkelig udgør en ringart. I 1938 foreslog Claud Buchanan Ticehurst at lundsangeren kunne have spredt sig fra Nepal begge veje rundt om det Tibetanske plateau, mens den tilpassede sig til omgivelser undervejs, og mødtes igen i Sibirien hvor enderne ikke kunne parre sig med hinanden. Disse og andre opdagelser førte til at Ernst Mayr først formulerede en teori om ringarter i hans værk fra 1942 Systematics and the Origin of Species. Også i 1940'erne fandt Robert C. Stebbins at salamander-slægten Ensatina udgjorde en ringart rundt om Central Valley i Californien, imidlertid er dens status som ringart nu betragtet som tvivlsom. Endelig blev det første eksempel på en ringart for planter fundet i 2012 med medlemmer af Vortemælks-familien udbredt rundt om det Caribiske Hav.
+
+# Larus-måger 
+
+Et klassisk eksempel på en ringart var måger i slægten Larus som udgjorde en ring omkring Nordpolen som normalt ikke krydses af individuelle måger.
+Sølvmågen (L. argentatus argenteus), som lever i Nordeuropa kan parre sig med Amerikansk sølvmåge (L. smithsonianus) som lever i Nordamerika, og den kan parre sig med Vegamågen (L. vegae), hvis vestlige underart Birulas måge (L. vegae birulai) kan parre sig med Sibirisk måge (L. heuglini), som igen kan parre sig med Sildemåge (L. fuscus). De sidste fire lever udover det nordlige Sibirien, og Sildemågen også tilbage i Nordeuropa sammen med Sølvmågen.
+Sølvmåge og Sildemåge er tilstrækkeligt forskellige til at de normalt ikke parrer sig men hinanden, så gruppen af måger udgør således et kontinuum undtagen hvor de mødes i Europa.
+Imidlertid viste en genetisk undersøgelse i 2004 at dette eksempel er langt mere kompliceret end præsenteret her (Liebers et al., 2004):Eksemplet omtaler kun komplekset af måger fra Sildemåge til Sølvmåge. Der er adskillige andre taksonomisk uklare ekasempler som tilhører samme overartskompleks, såsom Middelhavssølvmåge (L. michahellis), Gråmåge (L. hyperboreus) og Kaspisk måge (L. cachinnans).
+
+# Lundsanger 
+
+Lundsangeren (Phylloscopus trochiloides) udgør en ringart omkring Himalaya. Den formodes at have spredt sig fra Nepal rundt om det ugæstfrie Tibetanske Plateau for at genforenes i Siberien, hvor underarterne plumbeitarsus og viridanus synes ikke længere at være i stand til at parre sig.
+
+# Sangspurv 
+
+Sangspurven (Melospiza melodia) laver en ring rundt om Sierra Nevada-bjergkæden i Californien hvor underarterne heermanni og fallax mødes i omegnen af San Gorgonio-passet.
+
+# Euphorbia tithymaloides 
+
+Euphorbia tithymaloides er en gruppe i Vortemælk-familien (Euphorbiaceae) som har spredt sig og udviklet sig i en ring gennem Centralamerika og Caribien, for at mødes på Jomfruøerne hvor de er morfologisk og økologisk adskilte.
+
+# Referencer 
+

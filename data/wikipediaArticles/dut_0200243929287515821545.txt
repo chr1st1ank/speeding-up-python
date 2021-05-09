@@ -1,0 +1,36 @@
+
+## Arduino (computerplatform)
+
+Arduino is een opensource-computerplatform bedoeld om microcontrollers eenvoudig te maken. Dit platform is bedoeld voor hobbyisten, artiesten, kunstenaars en iedereen die geïnteresseerd is in het maken en ontwerpen van slimme en creatieve objecten.
+Met Arduino is het mogelijk apparaten en objecten te creëren die reageren op hun omgeving door middel van digitale en analoge inputsignalen. Op basis van deze input kan een Arduinoschakeling autonome actie initiëren door het afgeven van digitale en analoge outputsignalen. Input kan bijvoorbeeld worden gegenereerd door schakelaars, lichtsensoren, bewegingsmeters, afstandsmeters, temperatuursensoren, of op basis van commando's afkomstig van internet, een radiomodule of een ander apparaat met een seriële interface. Outputsignalen kunnen bijvoorbeeld motoren, lampjes, pompjes en beeldschermen aansturen, maar ook input genereren voor een andere Arduinomodule.
+Daarnaast bestaan ook zogenaamde "shields". Deze integreren vaak verschillende sensoren en modules in één printplaat. Deze kan dan gemakkelijk op de Arduino aangesloten worden door hem te plaatsen op de input-/outputpinnen van de Arduino. Vele van deze shields worden verkocht als kit en dienen dus zelf nog gesoldeerd te worden. Veelvoorkomend zijn de wifi- en gps-kits. Naast deze kits kan ook een ProtoShield gekocht worden die dienstdoet als breadboard om op te experimenteren.
+
+# Geschiedenis 
+
+Rond 2004 ontwikkelde een team in Italië onder leiding van Massimo Banzi een compact, goedkoop en eenvoudig te gebruiken bord, voortbordurend op het Wiringplatform van Hernando Barragán. Het schema en de broncode is open source, waardoor iedereen de hardware en software kan aanpassen met standaardversies die online beschikbaar zijn. De eerste Arduino kwam uit in 2005 en dit was het begin van het Arduino-platform. De Arduino werd in korte tijd populair en was een opstap voor andere projecten die later volgden.
+
+# Soorten 
+
+Het Arduinoplatform kent allerlei uitvoeringen van de hardware. Arduino's zijn beschikbaar in verschillende "smaken": groot, klein, met extra functionaliteit. Enkele van de meest gebruikte modules zijn:
+
+Arduino UNO. Arduino UNO is de nieuwste versie van het ontwikkelbord en de opvolger van Arduino Duemilanove. De UNO heeft een andere USB-to-Serialchip in zich dan de vorige versies, namelijk de ATmega8U2 USB-naar-TTL. Het heeft net als zijn voorgangers een USB-B-connectie en heeft verder een bootloader die slechts 0,5 kB van het totale geheugen gebruikt, de voorganger gebruikte 2,0 kB.
+Arduino Duemilanove. Dit is de opvolger van de Diecimila en wordt opgevolgd door de UNO. Verschil met de Diecimila is dat de Duemilanove automatisch omschakelt tussen USB-voeding en een losse adapter. De Duemilanove is de meest eenvoudig te gebruiken versie van Arduino omdat deze direct op de computer kan worden aangesloten en makkelijk te gebruiken aansluitcontacten heeft. Er is een mogelijkheid om zogenaamde shields op het Arduinobord te plaatsen waardoor de mogelijkheden worden uitgebreid. Voorbeelden zijn shields waarmee communicatie mogelijk is tussen twee Arduino's, een shield voor het besturen van servomotoren, een shield voor het aansturen van RGB-leds of een ethernetadapter om de Arduino aan te sluiten op het internet. Het is mogelijk om meerdere shields op elkaar te zetten, waardoor een soort flat ontstaat. De geprogrammeerde code wordt geüpload via USB-B. De kosten van een Arduino Duemilanove liggen rond de 26 euro. De Atmega-chip is geplaatst in een DIP-socket en is makkelijk te vervangen, bijvoorbeeld als de chip overbelast is geraakt door aangesloten randapparatuur.
+Arduino Mega. Er zijn momenteel twee versies van de Arduino Mega, de eerste versie, met de Atmega 1280-chip, is wat software betreft gelijkaardig aan de Duemilanove. Wel heeft deze 128 kB programmeerbaar geheugen in plaats van 16 / 32 kB bij de Duemilanove. Ook heeft de Arduino Mega 70 programmeerbare aansluitingen (54 digitaal + 16 analoog), tegenover 20 (14 digitaal + 6 analoog) bij de Duemilanove.De Arduino Mega 2560, met de Atmega 2560-chip, is dan weer gelijklopend met de Arduino UNO. Dit met weer als verschil meer programmeerbaar geheugen (256 kB in plaats van 32 kB) en meer programmeerbare aansluitingen (70 in plaats van 20).
+Arduino Nano. Dit is een kleine versie met precies dezelfde mogelijkheden als de Duemilanove, maar hij mist een 6V-adapter-plug en is op een breadboard te plaatsen. De afmeting is zo klein doordat gebruik wordt gemaakt van een vastgesoldeerde Atmega-chip in een SMT TQFP-behuizing. De communicatie met de pc gaat met USB mini-B. Door de breadboardpinnen is het minder eenvoudig om shields te gebruiken. Er is een adapterboard of een bandkabel als verbinding nodig.
+Arduino BT. Dit Arduinoboard is uitgevoerd met een bluetooth-chip, waardoor deze via software kan communiceren via bluetooth. De BT-versie is een board met vergelijkbare afmetingen en aansluitingen als de Duemilanove, maar zonder verwisselbare controllerchip van Atmega.
+Arduino mini. Ongeveer hetzelfde als de nano, maar dan nog kleiner, omdat een USB-controller en bijbehorende connector ontbreken. Voor communicatie met een pc is een optionele USB-B- of RS-232-adapter nodig.
+Arduino (pro-)micro. De arduino pro-micro is heel gelijkend aan de mini, maar gebruikt een ATmega32U4 microcontroller. Doordat er een micro-usb aansluiting gebruikt wordt kan je deze makkelijk aan je pc verbinden en programmeren. Door het gebruik van de ATmega32U4 chip kan deze arduino ook een muis en toetsenbord emuleren als deze is verbonden met een pc. Tot nu toe is dit de kleinste arduino.Naast deze volledig werkend geleverde versies zijn er ook Arduino-bouwpakketten te koop waarbij zelf alle componenten op een printplaat gesoldeerd moeten worden. Voorbeelden zijn de BoArduino van Adafruit of de Bare Bones Arduino Board Kit van Makezine. Aangezien dit Amerikaanse versies zijn en Arduino een Europees product is, zal voor de Europese gebruiker het zelf bouwen weinig financieel voordeel geven.
+
+# Arduino IDE 
+
+De Arduino kan worden geprogrammeerd door middel van de Arduino IDE. Deze software maakt het gemakkelijk om eigen code te schrijven en die te uploaden naar een Arduino. Een programma gemaakt in de Arduino IDE heet een "sketch". Er zijn bibliotheken beschikbaar voor al bekende taken, zoals het verbinden met Wi-Fi. Het is ook mogelijk om bibliotheken te downloaden, of een eigen bibliotheek te schrijven om vaak herhalende code te reduceren. De Arduino IDE is open source en kan gratis gedownload worden op de site van Arduino.
+
+# Zie ook 
+
+Dwengo, ontwikkelaar van het Dwengo-bord
+Raspberry Pi
+Singleboardcomputer
+
+# Externe link 
+
+(en) Arduino.cc: De thuishaven van het Arduinoplatform

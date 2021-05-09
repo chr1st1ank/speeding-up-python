@@ -1,0 +1,13 @@
+
+## Nettohinta
+
+Nettohinta tarkoittaa hintaa, josta on vähennetty alennukset. Nettohinta voi tarkoittaa myös hintaa, josta ei ole tarkoitettu tehtäväksi mitään vähennyksiä. Nettohinnalla voidaan myös ymmärtää hintaa ilman arvonlisäveroa.
+Nettohinnan vastinpari on bruttohinta.
+
+# Katso myös 
+
+Nettolaskutus
+
+# Lähteet 
+
+Taloustiedon taloussanasto, Taloustieto r.y. 1987, ISBN 951-628-145-1

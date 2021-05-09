@@ -1,0 +1,36 @@
+
+## Air duct
+
+Un air duct (ou airduct) est un conduit en plastique à fixer à l'intérieur de la tour (souvent sur le côté) d'un ordinateur. L'air duct permet, grâce à l'utilisation conjointe d'un ventilateur, de diriger l'air frais provenant de l'extérieur de la tour directement sur l'endroit à refroidir, sans que cet air frais ne se disperse dans l'air plus chaud de la tour.
+
+# Utilisation 
+
+La plupart du temps, un air duct sert à diriger l'air frais sur le CPU, ou plus rarement sur le GPU.
+L'utilisation d'un ventilateur étant nécessaire (un air duct sans aucun ventilateur serait inutile), l'air duct entre dans le domaine de l'aircooling actif.
+
+# Type d'air duct 
+
+On peut distinguer deux types d'air duct :
+
+# Air duct solide 
+
+L'une des extrémités de l'air duct est fixée à un ventilateur monté en suckhole sur la tour, et la seconde débouche au niveau de l'endroit à refroidir, un radiateur par exemple, sans pour autant y être fixée.
+
+# Air duct flexible 
+
+Dans le cas d'un air duct flexible, la seconde extrémité de l'air duct est directement fixé sur le système de refroidissement, souvent un ventirad. La première extrémité est toujours fixée au boîtier, mais l'utilisation d'un ventilateur de boîtier n'est alors plus nécessaire, le ventilateur du ventirad se chargeant seul d'aspirer l'air extérieur.
+
+# Annexes 
+
+# Articles connexes 
+
+Refroidissement à air
+Suckhole
+Blowhole
+
+# Liens externes 
+
+Photo d'un air duct solide - InfoMods.com [image]
+Photo d'un air duct flexible - PC Case Gear [image]
+
+ Portail de l’informatique

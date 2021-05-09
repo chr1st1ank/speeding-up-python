@@ -1,0 +1,32 @@
+
+## REFLEX-Studie
+
+Die REFLEX-Studie ist ein von der Europäischen Union im Rahmen des Quality of Life and Management of Living Resources−Programms gefördertes und von der Stiftung für Verhalten und Umwelt, einer vom Verband der Cigarettenindustrie gegründeten Stiftung, durchgeführtes Projekt zur Erforschung möglicher Schädigungen des Erbguts durch hochfrequente elektromagnetischer Felder (HF-EMF), wie sie beispielsweise bei der Mobilfunk-Technologie verwendet werden. Diese Studie wurde durchgeführt, da nach Ansicht der Autoren der Studie bei allen vorherigen epidemiologischen und tierexperimentellen Forschungen zu diesem Thema keine Klarheit erzielt werden konnte.
+
+# Ergebnisse der Studie 
+
+Laut der REFLEX-Studie sollen sowohl DCS 1800 als auch GSM 900 bereits unterhalb des gesetzlichen Grenzwertes von 2 W/kg Schädigungen an der Struktur und Funktion der menschlichen Gene verursachen können. Es sollen sowohl bei intermittierender als auch bei kontinuierlicher Exposition verstärkt Einzel- und Doppelstrangbrüche der DNA menschlicher Fibroblasten sowie HL60-Zellen und Granulosazellen von Ratten auf, aber nicht in menschlichen Lymphozyten aufgetreten sein. Ferner soll eine Zunahme von Mikrokernen und Chromosomenaberrationen in menschlichen Fibroblasten sowie Veränderungen der Genexpression in mehreren Zellarten, insbesondere in menschlichen Endothelzellen und embryonalen Stammzellen von Mäusen festgestellt worden sein. Ein bedeutsamer Anstieg der DNA-Strangbrüche war laut Studie in menschlichen Fibroblasten bereits bei dem SAR-Wert von 0,3 W/kg nachweisbar.
+
+# Finanzierung 
+
+Die Förderung lief bei der EU unter der Bezeichnung QLK4-CT-1999-01574, der Name REFLEX steht für „risk evaluation of potential environmental hazards from low energy electromagnetic field exposure using sensitive in vitro methods“. Die Forschungen wurden in den Jahren 2000–2004 von zwölf Forschergruppen (elf plus das Untersuchungs-führende Institut) aus sieben europäischen Ländern durchgeführt und waren mit Mitteln in Höhe von mehr als 2 Millionen Euro sowie weiteren zusammen rund 1 Million Euro von der Schweizer und der Finnischen Regierung sowie Eigenmitteln der Stiftung für Verhalten und Umwelt ausgestattet. Diese Forschungen liefen im Rahmen des 5. Forschungsrahmenprogramms der EU-Kommission.
+
+# Fälschungsvorwürfe 
+
+Laut Medienberichten gilt die REFLEX-Studie hinsichtlich angeblich festgestellter Strangbrüche im Erbgut als ungültig, da Laborergebnisse offenbar bewusst gefälscht worden seien. Die bewusste Fälschung konnten von zwei unabhängigen Gremien weder belegt noch widerlegt werden: Die Österreichische Agentur für wissenschaftliche Integrität stellte fest, dass „die Fälschungsvorwürfe nicht verifiziert werden“ konnten, die „Dokumentation der Originaldaten und deren Darstellung“ allerdings nicht der „wissenschaftlichen Praxis“ entsprächen. Der Rat für Wissenschaftsethik der Medizinischen Universität Wien kritisierte in seinem Endbericht die Vorgehensweise und die Mitautorenschaft einer Labormitarbeiterin, die 2015 ein Unterlassungsurteil gegen den Fälschungsvorwurf erwirkte.
+
+# Verifizierung 
+
+Während bei einer vom Humangenetiker Günter Speit geleiteten Wiederholung der Experimente die Ergebnisse nicht reproduziert werden konnten, gelang dies einem Autor, der an der REFLEX-Studie beteiligt war, und weiteren Forschern. In den beiden ATHEM-Reports der AUVA wird auch die Existenz empfindlicher und strahlungs-unempfindlicher Zellen aufgezeigt, was das negative Ergebnis von Speit erklärt. Auch die Existenz einer Latenzzeit (Beginn der Exposition bis zum Auftreten von Wirkungen) wurde dabei bestätigt. Als zellulärer Mechanismus – also wie es bei sensiblen Zellen zu DNA-Veränderungen kommen kann – wurde festgestellt, dass HF-EMF Exposition die DNA oxidieren und somit brüchig machen kann. Bei Zellen unter zusätzlichem Stress erhöhte die HF-EMF Exposition die DNA-Bruchrate.
+
+# Sonstiges 
+
+Eine Forschergruppe wollte das Resümee des Projektkoordinators Franz Adlkofer nicht mittragen.Die Reflex-Studie hatte zunächst scheinbar gezeigt, dass bei extrem starken Feldern ein reproduzierbarer Zusammenhang zwischen alltäglicher elektromagnetischer Strahlung und Zellschädigungen bestehen kann. Diese Laborergebnisse ließen, auch unter der Annahme dass sie richtig sind, keinen Schluss auf Krankheiten zu, die durch derartige Strahlung hervorgerufen werden.
+
+# Weblinks 
+
+Vortrag von Franz Adlkofer: Ergebnisse aus dem REFLEX-Projekt (PDF; 621 kB), Vortrag beim 7. Workshop „Elektromagnetische Felder in der Umwelt“; Ministerium für Umwelt und Naturschutz, Landwirtschaft und Verbraucherschutz NRW, Düsseldorf; 2. Dezember 2004
+Tina Goebel: Rufunterdrückung: Das Sittenbild hinter den angeblich gefälschten Handystudien In: profil. 24. November 2008
+
+# Einzelnachweise 
+

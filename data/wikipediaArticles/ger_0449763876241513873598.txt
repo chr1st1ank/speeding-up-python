@@ -1,0 +1,17 @@
+
+## Guitarix
+
+Guitarix ist eine freie Software für Linux, die das Verhalten und die Fähigkeiten eines Gitarrenverstärkers nachbildet. Zusätzlich zur Verstärkeremulation bietet Guitarix diverse Effekte, darunter einen teilparametrischen Grafik-Equalizer, Kompressor, Distortion, Overdrive, Echo, Chorus, Phaser, Flanger, Reverb und Wah-Wah. Im Verstärkermodul lassen sich verschiedene Röhren- und Lautsprecheremulationen auswählen. Guitarix bindet außerdem die Convolver-Software zita-convolver von Fons Adriaensen ein. Neben den Sound-Effekten bietet Guitarix ein Stimmgerät, eine detaillierte, konfigurierbare Signalstärkeanzeige und ein Modul, das die gespielten Töne in MIDI-Noten umwandeln kann. Die Bedienoberfläche lässt sich von einem MIDI-Controller aus fernsteuern.
+Intern rechnet Guitarix mit Hilfe der an der Stanford University entwickelten Signalverarbeitungs-Software Faust. Neben der eigenständigen Variante bietet Guitarix auch eine gx_head genannte Bedienoberfläche, die sich optisch stärker an realen Verstärkern orientiert sowie die Verstärkeremulation und die Effekte als einzelne LADSPA- und LV2-Plugins.
+Guitarix benutzt das Pro-Audio-System JACK.
+Guitarix ist unter der GNU General Public License frei verfügbar.
+
+# Siehe auch 
+
+Rakarrack
+
+# Einzelnachweise 
+
+# Weblinks 
+
+Offizielle Website (englisch)

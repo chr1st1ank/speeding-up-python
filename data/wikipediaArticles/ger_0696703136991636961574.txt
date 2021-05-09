@@ -1,0 +1,120 @@
+
+## Maschinenhammer
+
+Ein Maschinenhammer, je nach Ausführung im Einzelfall auch Fallhammer, Feder(fall)hammer, Dampfhammer oder Lufthammer genannt, ist eine zum Schmieden, seltener auch Treiben verwendete Umformmaschine.
+Kennzeichnend für den mechanisierten Schmiedehammer ist, dass das Verformungswerkzeug im Gegensatz zur eher langsamen Bewegung in einer Presse mit hoher Geschwindigkeit die Verformungsenergie auf das Werkstück abgibt. Das Werkzeug zur Energieabgabe auf das Werkstück wird als Hammerbär bezeichnet. Während Fallhämmer mit Antrieb über Wasserkraft (Wasserrad) schon im Spätmittelalter in Gebrauch waren, wurden die ersten Dampfhämmer während der industriellen Revolution in den Jahren 1842 und 1843 in England durch James Nasmyth sowie in Frankreich von François Bourdon verwirklicht. Zum ausgehenden 19. Jahrhundert wurde der Federhammer und wenig später Lufthämmer entwickelt, welche heute in ihrer weiterentwickelten Form und robusten Bauweise neben den Pressen handwerklich (z. B. Kunstschmieden) und industriell zum Schmieden eingesetzt werden.
+
+# Bauformen von maschinellen Schmiedehämmern 
+
+Grundsätzlich werden folgende Formen unterschieden:
+
+# Fallhammer 
+
+Bei dieser Art Hammer wird der Bär lediglich infolge der auf ihm wirkenden Gewichtskraft auf eine Aufschlagsgeschwindigkeit auf dem Werkstück von rund 5 bis 8 m/s beschleunigt.
+Das Hochheben des Hammerbärs in die Ausgangslage kann auf verschiedene Art und Weise erfolgen.
+
+Bereits vor der industriellen Revolution waren Maschinenhämmer in Gebrauch, bei denen der Hammerbär an einen mit Drehzapfen versehenen Stiel befestigt ist und Stiel und Bär um die Drehachse der Zapfen sich wie ein Hebel auf und ab bewegen. Der Antrieb erfolgt, oftmals durch Wasserkraft, mittels einer mit Daumen versehenen rotierenden Antriebswelle (Daumenwelle). Deren Daumen erfassen Stiel oder Bär zeitweilig, heben diese hoch und anschließend wieder frei, so dass der Bär durch seine Gewichtskraft beschleunigt auf das Werkstück aufschlägt. Je nach Angriffsposition der Daumen spricht man vom Stirnhammer (Angriff am Bär selber), Brusthammer (Angriff zwischen Bär und Drehzapfen) oder Schwanzhammer (Angriff an einer Verlängerung des Stieles auf der dem Bär gegenüberliegenden Seite der Drehzapfen).
+Bei einer zweckmäßigeren Konstruktion wird der Bär so in der Vertikalen geführt, dass im Gegensatz zu den Stielhämmern unabhängig von der Werkstückhöhe stets parallel zum Unterbär, der Schabotte, auf das Werkstück trifft (sogenannter Vertikalhammer). Der Bär wird bei diesen Hammerbauarten durch einen Elektromotor, eine Riementransmission oder aber durch einen mit Dampf, Druckluft oder Druckflüssigkeit zu beaufschlagenden Kolben angehoben. Bei letzteren muss während des Fallvorganges des Bären das Druckmedium aus dem Kolben zur Meidung von Drosselverlusten möglichst schnell und ungehindert entweichen können. Dieses Modell eines Maschinenhammers wird auch als realer Fallhammer bezeichnet. Die Auftreffenergie berechnet sich nach folgender Formel: 
+ 
+ 
+ 
+ E
+ 
+
+ m
+ ⋅
+ a
+ ⋅
+ H
+ 
+ 
+ 
+ {\displaystyle E=m\cdot a\cdot H\,}
+ , wobei m = Masse des Bären; H = Fallhöhe. Hier ist jedoch zu beachten, dass gilt: 
+ 
+ 
+ 
+ a
+ <
+ g
+ 
+ 
+ 
+ {\displaystyle a<g\,}
+ , wobei g die Erdbeschleunigung darstellt. Fallhämmer besitzen ein Arbeitsvermögen von 1,5 kNm bis ca. 40 kNm. Die Bärmasse bewegt sich zwischen 100 und 2000 kg.
+
+# Oberdampfhammer 
+
+Beim Oberdampfhammer wird der Hammerbär zusätzlich zur einwirkenden Gewichtskraft noch durch Dampf oder Druckluft über einen direkt mit dem Bär über eine Kolbenstange verbundenen Kolben beschleunigt. Hierdurch ergibt sich ein größeres Leistungsvermögen der Umformmaschine, aber auch ein höherer Energieverbrauch. Dampfhämmer dieser Bauart werden auch als doppeltwirkend bezeichnet.
+
+# Oberdruckhammer 
+
+Im Unterschied zum einfachen Fallhammer und Oberdampfhammer wird beim Hochheben des Bären eines Oberdruckhammers ein Gaspolster über dem Bär verdichtet. Die Rückbewegung des Bären erfolgt in diesem Falle regelmäßig durch einen Hydraulikzylinder. Das über dem Hammer befindliche Gaspolster speichert Energie und gibt diese bei der Abwärtsbewegung an den Kolben ab. Somit wirkt hier ebenfalls zusätzlich zur Beschleunigung durch die Gewichtskraft eine weitere, durch den Gasdruck hervorgerufene Kraft. Diese Art des Fallhammers wird auch als idealer Fallhammer bezeichnet. Die Auftreffenergie kann nach folgender Formel berechnet werden: 
+ 
+ 
+ 
+ E
+ 
+
+ (
+ m
+ ⋅
+ a
+ +
+ A
+ ⋅
+ p
+ )
+ ⋅
+ H
+ 
+ 
+ 
+ {\displaystyle E=(m\cdot a+A\cdot p)\cdot H\,}
+ , wobei A die Fläche des Kolbens bezeichnet, welcher gegen das Gaspolster drückt und p den im Gaspolster herrschenden Druck. Beim Oberdruckhammer stehen Arbeitsvermögen zwischen 10 und 250 kNm zur Verfügung. Die Bärmasse beträgt zwischen 15 und 10.000 kg. 
+
+# Gegenschlaghammer 
+
+Im Gegensatz zu den anderen Hammerarten ist beim Gegenschlaghammer die Schabotte, also der untere Bär, nicht fest gelagert. Die Schabotte bewegt sich vielmehr nach oben, während der Oberbär sich nach unten bewegt. Hierzu ist eine Kopplung der beiden Bären nötig. Diese Kopplung kann über zwei Prinzipien erfolgen. Es kann eine mechanische Kopplung über eine Verbindung der beiden Bären durch Metallbänder erfolgen oder eine hydraulische Kopplung über Hydraulikzylinder. Beim Gegenschlaghammer muss die Masse des unteren Bären wesentlich größer sein als die Masse des oberen Bären. Um trotzdem ein Kräftegleichgewicht zu erreichen, bewegt sich aber der untere Bär wesentlich langsamer als der obere Bär. Mit Gegenschlaghämmern können Arbeitsvermögen zwischen 63 und 1000 kNm realisiert werden. Die Bärmassen bewegen sich zwischen 10.000 und 205.000 kg. Im Vergleich mit anderen Bauformen ergeben sich beim Gegenschlaghammer spezifische Vor- und Nachteile.
+Der größte Gegenschlaghammer der Welt (Firma Ladish) hat ein Arbeitsvermögen von 1250 KJ, die Firma Müller Weingarten baut momentan noch einen Größeren mit 1400 KJ (ca. 54000 t Presskraft).
+Gegenschlaghämmer benötigen im Gegensatz zu anderen Bauformen der Maschinenhämmer bei gleichem Arbeitsvermögen eine um rund 35 % geringere Baumasse. Im Betrieb erzeugen sie weniger Vibrationen und belasten damit das Hammerfundament bzw. das Gesamtbauwerk der Einsatzstelle weniger. Aufgrund der wesentlich höheren Masse des Unterbärs im Vergleich zum Oberbär wird bei einem Ausfall des Hammers das Werkstück „selbsttätig“ wieder freigegeben. Nachteilig ist allerdings die aufwändigere Bauweise und damit verbundenen höheren Kosten.
+
+# Einsatzbereiche von Maschinenhämmern 
+
+Maschinenhämmer werden sowohl in der Serienfertigung, zum Beispiel beim Gesenkschmieden von Kurbelwellen (siehe Gesenkschmiedehammer) wie auch in der Einzelteilfertigung beim Freiformschmieden von Werkstücken aller Größenklassen verwendet. Gelegentlich erfolgt auch ein Einsatz beim Prägen.
+
+# Bestandteile von Hämmern 
+
+Fundament
+Gestell
+Führungssäulen
+Schabotte
+Bär
+Fallhöhe (kein materiell existentes Element)
+Sattel (Obersattel und Untersattel)
+
+# Vorteile von Hämmern 
+
+hohe Auftreffgeschwindigkeit
+niedrige Druckberührzeit
+geringe Investitionskosten
+überlastsicher
+hohe Flexibilität
+
+# Nachteile von historischen Hämmern 
+
+(bei modernen Hämmern durch gute Isolierung weitgehend zu vernachlässigen)
+
+hohe Fundamentbelastung
+starke Vibrationen
+
+# Literatur 
+
+Hårvard Bergland: Die Kunst des Schmiedens. Das große Lehrbuch der traditionellen Technik. 4., unveränderte Auflage der deutschen Ausgabe. Wieland, Bruckmühl 2013, ISBN 978-3-9808709-4-8, S. 163–184: Kapitel 8: Maschinenhämmer und Fundamentierung; S. 185–208: Kapitel 9: Hilfswerkzeug für das Schmieden mit dem Maschinenhammer.
+Dubbels Taschenbuch für den Maschinenbau. 11. Auflage, Springer-Verlag Berlin / Göttingen / Heidelberg 1955, Band II, S. 661 ff.
+Otto Lueger: Lexikon der gesamten Technik: Dampfhämmer bei Zeno.org.
+
+# Weblinks 
+
+# Einzelnachweise 
+

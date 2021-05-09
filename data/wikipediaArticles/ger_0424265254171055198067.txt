@@ -1,0 +1,20 @@
+
+## Einverständnis (Strafrecht)
+
+Beim tatbestandsausschließenden Einverständnis im Strafrecht ist das potentielle Opfer mit der Verletzung seiner Rechtsgüter einverstanden. Bei Delikten, die ein Handeln gegen oder ohne den Willen des Rechtsgutträgers voraussetzen, entfällt dann der objektive Tatbestand (und damit die Strafbarkeit insgesamt), weil das entsprechende Tatbestandsmerkmal nicht erfüllt ist. 
+
+Beispiel: § 123 StGB (eindringt), § 242 StGB (wegnimmt)Abzugrenzen ist das Einverständnis von der Einwilligung, die nur rechtfertigend wirkt. Gemeinsamer Oberbegriff des Begriffspaars ist das Einvernehmen.
+
+# Grundsätze 
+
+Die Voraussetzungen des Einverständnisses sind vom jeweiligen Tatbestand abhängig. Leitlinien:
+
+Es genügt die natürliche Willensfähigkeit des Rechtsgutträgers; das Einverständnis muss nur faktisch vorliegen.
+Entscheidend ist nur die bewusste innere Zustimmung. Diese muss nicht ausdrücklich oder konkludent zum Ausdruck gebracht werden.
+Das Einverständnis muss freiwillig zu Stande kommen. Dabei ist grundsätzlich unerheblich, ob es durch Täuschung erschlichen wurde.
+In Einzelfällen kann ein generelles Einverständnis genügen.Beispiel: Für das Betreten von öffentlichen Räumen gilt eine generelle Erlaubnis, die den Hausfriedensbruch nach § 123 StGB (eindringt) ausschließt. Diese wird auch durch die negativen Absichten des Täters nicht negiert.Glaubt der Täter irrtümlich an das Vorliegen eines Einverständnisses, handelt er nach § 16 StGB ohne Vorsatz. (→ Tatbestandsirrtum)
+Ist dem Täter umgekehrt nicht bewusst, dass ein Einverständnis vorliegt, so lässt das Einverständnis trotzdem den objektiven Tatbestand entfallen. In Frage kommt aber eine Strafbarkeit wegen (untauglichen) Versuchs.
+
+# Literatur 
+
+Claus Roxin: Strafrecht. Allgemeiner Teil. (Band 1). 3. Auflage. Beck Verlag, München 1997, ISBN 3-406-42507-0, S. 457 f.

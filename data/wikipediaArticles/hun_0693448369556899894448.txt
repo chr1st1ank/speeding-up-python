@@ -1,0 +1,20 @@
+
+## Escrow
+
+Az escrow egy szerződéses megegyezés, ahol egy harmadik fél pénzt vagy dokumentumokat kap és folyósít az elsődleges felek között úgy, hogy a kifizetés a felek által közösen elfogadott feltételek teljesítésétől függ. A kifejezés az ófrancia escroue szóból ered, jelentése papírdarab, vagy pergament.
+
+# Típusok 
+
+Az escrow általában a tranzakciós feleket képviselő harmadik fél által kezelt pénzre utal. Többnyire céges részvények vásárlásához használják. Az Egyesült Államokbeli ingatlanpiacon a legelterjedtebb (főleg jelzálognál használják, ahol a jelzálogtársaság létrehoz egy escrow számlát, hogy ingatlanadót és biztosítást fizessenek a jelzálogkötvény idejére).
+
+# Escrow számla 
+
+Az escrow számla az elkülönített számlák egyik fajtája, lényegében a bankszámla-tulajdonos szabad rendelkezése alól kikerült pénzeszközök
+nyilvántartására szolgáló bankszámla, amely az elkülönítés tartalma alatt csak meghatározott célra használható.
+
+# Internetes escrow 
+
+Az internetes escrow az internetes aukciók és kereskedelem kezdete óta van jelen. Egyike volt többek közt azon fejlesztéseknek, amelyek lehetővé tették a kölcsönös bizalom létrejöttét az online szférában.
+
+# Források 
+

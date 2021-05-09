@@ -1,0 +1,606 @@
+
+## Toestel van Atwood
+
+Het Toestel van Atwood werd in 1784 uitgevonden door de Engelse dominee en wiskundige George Atwood als laboratoriumproef om de eenparig versnelde beweging te onderzoeken. Het toestel van Atwood is een standaard demonstratieproef voor mechanica in de natuurkundeles.
+Het volmaakte toestel van Atwood bestaat uit twee voorwerpen (gewichten) met massa m1 en m2, verbonden door een onveerkrachtig (inelastisch) touw over een ideale massa- en wrijvingsloze katrol.
+Als 
+ 
+ 
+ 
+ 
+ m
+ 
+ 1
+ 
+ 
+ 
+
+ 
+ m
+ 
+ 2
+ 
+ 
+ 
+ 
+ {\displaystyle m_{1}=m_{2}}
+ verkeert het toestel in evenwicht, onverschillig hoe hoog de gewichten hangen.
+Als 
+ 
+ 
+ 
+ 
+ m
+ 
+ 2
+ 
+ 
+ >
+ 
+ m
+ 
+ 1
+ 
+ 
+ 
+ 
+ {\displaystyle m_{2}>m_{1}}
+ (of omgekeerd) worden beide gewichten eenparig versneld.
+
+# Eenparige versnelling 
+
+In het ideale geval spelen alleen de spankracht (T) en de beide massa's (m) een rol. Om de som van de krachten 
+ 
+ 
+ 
+ ∑
+ F
+ 
+ 
+ {\displaystyle \sum F}
+ te vinden bekijken we de krachten op iedere massa afzonderlijk.
+Krachten op m1 : 
+ 
+ 
+ 
+ T
+ −
+ 
+ m
+ 
+ 1
+ 
+ 
+ g
+ 
+ 
+ {\displaystyle T-m_{1}g}
+ 
+Krachten op m2 : 
+ 
+ 
+ 
+ 
+ m
+ 
+ 2
+ 
+ 
+ g
+ −
+ T
+ 
+ 
+ {\displaystyle m_{2}g-T}
+ 
+Samen: 
+ 
+ 
+ 
+ ∑
+ F
+ 
+
+ (
+ 
+ m
+ 
+ 2
+ 
+ 
+ g
+ −
+ T
+ )
+ +
+ (
+ T
+ −
+ 
+ m
+ 
+ 1
+ 
+ 
+ g
+ )
+ 
+
+ g
+ (
+ 
+ m
+ 
+ 2
+ 
+ 
+ −
+ 
+ m
+ 
+ 1
+ 
+ 
+ )
+ 
+ 
+ {\displaystyle \sum F=(m_{2}g-T)+(T-m_{1}g)=g(m_{2}-m_{1})}
+ 
+Met Newtons Tweede Wet vinden we een uitdrukking voor de versnelling van het stelsel van gewichten en touw.
+
+ 
+ 
+ 
+ ∑
+ F
+ 
+
+ m
+ a
+ 
+ 
+ {\displaystyle \sum F=ma}
+ , dus
+ 
+ 
+ 
+ a
+ 
+
+ 
+ 
+ 
+ ∑
+ F
+ 
+ m
+ 
+ 
+ 
+ 
+ {\displaystyle a={\sum F \over m}}
+ . We hadden al
+ 
+ 
+ 
+ ∑
+ F
+ 
+
+ g
+ (
+ 
+ m
+ 
+ 2
+ 
+ 
+ −
+ 
+ m
+ 
+ 1
+ 
+ 
+ )
+ 
+ 
+ {\displaystyle \sum F=g(m_{2}-m_{1})}
+ 
+ 
+ 
+ 
+ 
+ m
+ 
+
+ 
+ m
+ 
+ 1
+ 
+ 
+ +
+ 
+ m
+ 
+ 2
+ 
+ 
+ 
+ 
+ {\displaystyle \;m=m_{1}+m_{2}}
+ is de totale massa, zodat
+ 
+ 
+ 
+ a
+ 
+
+ g
+ 
+ 
+ 
+ 
+ m
+ 
+ 2
+ 
+ 
+ −
+ 
+ m
+ 
+ 1
+ 
+ 
+ 
+ 
+ 
+ m
+ 
+ 1
+ 
+ 
+ +
+ 
+ m
+ 
+ 2
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle a=g{m_{2}-m_{1} \over m_{1}+m_{2}}}
+ Omgekeerd kan de valversnelling g gevonden worden door de tijdsduur t van de beweging van de gewichten op te schrijven en de eenparige versnelling a te berekenen uit de afgelegde weg d:
+
+ 
+ 
+ 
+ d
+ 
+
+ 
+ 
+ 1
+ 2
+ 
+ 
+ a
+ 
+ t
+ 
+ 2
+ 
+ 
+ 
+ 
+ {\displaystyle d={1 \over 2}at^{2}}
+ .Soms wordt het toestel van Atwood gebruikt als voorbeeld hoe men met de Lagrangiaan bewegingsvergelijkingen kan vinden.
+
+# Spankracht 
+
+De spankracht T in het touw wordt als volgt gevonden uit de bovenstaande vergelijking voor beide massa's.
+
+ 
+ 
+ 
+ a
+ 
+
+ g
+ 
+ 
+ 
+ 
+ m
+ 
+ 2
+ 
+ 
+ −
+ 
+ m
+ 
+ 1
+ 
+ 
+ 
+ 
+ 
+ m
+ 
+ 1
+ 
+ 
+ +
+ 
+ m
+ 
+ 2
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle a=g{m_{2}-m_{1} \over m_{1}+m_{2}}}
+ Voorbeeld: door substitutie in 
+ 
+ 
+ 
+ 
+ m
+ 
+ 1
+ 
+ 
+ a
+ 
+
+ T
+ −
+ 
+ m
+ 
+ 1
+ 
+ 
+ g
+ 
+ 
+ {\displaystyle m_{1}a=T-m_{1}g}
+ krijgen we
+
+ 
+ 
+ 
+ T
+ 
+
+ g
+ 
+ 
+ 
+ 2
+ 
+ m
+ 
+ 1
+ 
+ 
+ 
+ m
+ 
+ 2
+ 
+ 
+ 
+ 
+ 
+ m
+ 
+ 1
+ 
+ 
+ +
+ 
+ m
+ 
+ 2
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle T=g{2m_{1}m_{2} \over m_{1}+m_{2}}}
+ Een andere afleiding van de spankracht maakt gebruik van 
+ 
+ 
+ 
+ 
+ m
+ 
+ 2
+ 
+ 
+ a
+ 
+
+ 
+ m
+ 
+ 2
+ 
+ 
+ g
+ −
+ T
+ 
+ 
+ {\displaystyle m_{2}a=m_{2}g-T}
+ 
+De spankracht is naar natuurkundebegrippen gelijk aan de veerkracht van een voorwerp.
+
+# Realistische katrol 
+
+Als de massa's m1 en m2 weinig verschillen, kan het traagheidsmoment I van de katrol met straal r niet worden verwaarloosd. De hoekversnelling is dan
+
+ 
+ 
+ 
+ α
+ 
+
+ 
+ 
+ a
+ r
+ 
+ 
+ 
+ 
+ {\displaystyle \alpha ={a \over r}}
+ Het totale moment 
+ 
+ 
+ 
+ τ
+ 
+ 
+ {\displaystyle \tau }
+ voor het stelsel wordt:
+
+ 
+ 
+ 
+ 
+ τ
+ 
+ T
+ o
+ t
+ a
+ l
+ 
+ 
+ 
+
+ 
+ (
+ 
+ 
+ T
+ 
+ 2
+ 
+ 
+ −
+ 
+ T
+ 
+ 1
+ 
+ 
+ 
+ )
+ 
+ r
+ 
+
+ I
+ α
+ +
+ 
+ τ
+ 
+ w
+ r
+ i
+ j
+ v
+ i
+ n
+ g
+ 
+ 
+ 
+ 
+ {\displaystyle \tau _{Total}=\left(T_{2}-T_{1}\right)r=I\alpha +\tau _{wrijving}}
+ met 
+ 
+ 
+ 
+ 
+ T
+ 
+ 1
+ 
+ 
+ 
+ 
+ {\displaystyle T_{1}}
+ en 
+ 
+ 
+ 
+ 
+ T
+ 
+ 2
+ 
+ 
+ 
+ 
+ {\displaystyle T_{2}}
+ de spankrachten van het touw aan de kanten van respectievelijk 
+ 
+ 
+ 
+ 
+ m
+ 
+ 1
+ 
+ 
+ 
+ 
+ {\displaystyle m_{1}}
+ en 
+ 
+ 
+ 
+ 
+ m
+ 
+ 2
+ 
+ 
+ 
+ 
+ {\displaystyle m_{2}}
+ .
+
+# Praktische toepassing 
+
+In Atwoods oorspronkelijke tekeningen rustte de as van de hoofdkatrol op de omtrek van vier andere wielen om de wrijving van de lagers zo klein mogelijk te houden. Vele historische vormen van het toestel van Atwood passen dit ontwerp toe.
+Een lift met contragewicht benadert het ideale toestel van Atwood, zodat de motor alleen de verschillen in gewicht en traagheid tussen kooi en contragewicht moet overwinnen. Ook kabelbanen passen dit beginsel toe.
+
+# Zie ook 
+
+Slinger van Kater
+Slinger van Atwood
+
+# Externe links 
+
+(en) Professor Greenslade legt het toestel uit met foto's
+(en) Atwood's Machine door Enrique Zeleny, The Wolfram Demonstrations Project. Een simulatie.
+
+# Verwijzingen 
+

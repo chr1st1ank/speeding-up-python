@@ -1,3 +1,4 @@
+import pathlib
 from collections import namedtuple
 import random
 from functools import lru_cache
@@ -28,7 +29,7 @@ def alphabet():
     include_ranges = [
         (0x0021, 0x0021, 1),
         (0x0023, 0x0026, 1),
-        (0x0028, 0x007E, 10),
+        (0x0028, 0x007E, 100),
         (0x00A1, 0x00AC, 1),
         (0x00AE, 0x00FF, 1),
         (0x0100, 0x017F, 1),
@@ -65,17 +66,37 @@ def string_slice_benchmark() -> Benchmark:
     )
 
 
+@lru_cache()
+def load_txt(pathlib_obj):
+    with pathlib_obj.open('r') as f:
+        return f.read()
+
+def iter_wikipedia_docs(max_docs=1000):
+    data_path = pathlib.Path(__file__).parent.parent / 'data' / 'wikipediaArticles'
+    for i, p in enumerate(data_path.glob('*.txt')):
+        if i > max_docs:
+            break
+        yield load_txt(p)
+
 def ngram_count_benchmark() -> Benchmark:
-    allowed_chars = alphabet()
+    # allowed_chars = alphabet()
+    #
+    # def rand_string(max_len):
+    #     return ''.join(random.choice(allowed_chars) for _ in range(random.randint(0, max_len)))
 
-    def rand_string(max_len):
-        return ''.join(random.choice(allowed_chars) for _ in range(random.randint(0, max_len)))
+    # l = 10
+    # return Benchmark(
+    #     name="ngram_count",
+    #     data={
+    #         "strings": l*[rand_string(20000)],
+    #         "ngram_n": 3
+    #     }
+    # )
 
-    l = 1000
     return Benchmark(
         name="ngram_count",
         data={
-            "strings": [rand_string(200) for _ in range(l)],
+            "strings": list(iter_wikipedia_docs(100)),
             "ngram_n": 3
         }
     )

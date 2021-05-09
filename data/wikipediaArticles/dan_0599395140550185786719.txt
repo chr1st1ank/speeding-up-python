@@ -1,0 +1,5 @@
+
+## Asystoli
+
+Asystoli ("ingen systole") er den tilstand i hjertet, når det er gået helt i stå, og ingen elektisk impuls bliver dannet. På en EKG vises det som en flad linje. Der findes dog også asystoli med p-takker, hvor atrierne stadigvæk trækker sig sammen men impulsen når ikke videre (av-blok) og av-knuden udsender ikke selv sine egne impulser, så ventriklerne trækker sig ikke sammen men står stille. På en EKG vises det som en flad linje med små takker.
+Man kan ikke defibrillere mod asystoli. I stedet behandles med atropin og adrenalin, disse medikamenter kan ændre asystolien til en ventrikelflimmer, dette er muligt at defibrillere, og herved forhåbentligt opnår en normal hjerterytme.

@@ -1,0 +1,10 @@
+
+## Monipeli
+
+Monipeli on Veikkauksen kosketusnäytöllinen rahapelikone, joka sisältää 5 peliä:
+
+Pohjantähti
+Jokeripokeri
+Ässäkisa
+Keno
+Korttikeno

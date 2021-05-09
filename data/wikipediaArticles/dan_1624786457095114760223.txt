@@ -1,0 +1,68 @@
+
+## Kriseteori (økonomi)
+
+Kriseteori i faget økonomi omhandler årsagerne til og konsekvenserne af økonomisk recession, som fører til lavkonjunktur. Kriseteorier er generelt associeret til marxistisk økonomi, især til tesen om profitraten og dennes tendens til fald.
+Tidligere analyser blev leveret af Jean Charles Léonard de Sismondi, der fremsatte det første forslag af til krisens systematik. John Stuart Mill benytter i sit værk Principles of Political Economy begrebet tendensen til at overskuddet nærmer sig minimum i kapitel IV i Bog IV, og i Kapitel V analyserer han konsekvenserne af denne tendens. Her gennemgår han en række af de centrale elementer hos David Ricardo, men uden at have benyttet Karl Marx' teoretiske arbejde.
+En undersøgelse af de konkurrerende teorier om krise i de forskellige grene af den politiske økonomi og økonomi blev foretaget af Anwar Shaikh i 1978.
+
+# Historisk udvikling 
+
+Marx' kriseteori blev livligt diskuteret blandt ledende marxister i begyndelsen af det 20. århundrede. En relativt lille gruppe, der inkluderede Lenin og Rosa Luxemburg forsvarede den teoretisk, mens andre, med Eduard Bernstein og senere Hilferding som væsentlige bidragydere, tvivlede på dens anvendelighed i praksis.Wall Street-krakket, som førte til ødelæggelsen af samfundsmæssige værdier og havde store konsekvenser for mennesker, ejendom og kapital, kunne således tolkes som en bekræftelse af Marx' kriseteori. Som kontrast hertil blev der foretaget flere forsøg på at omformulere Marx' analyse med mindre revolutionære konsekvenser, for eksempel i Joseph Schumpeters koncept om kreativ destruktion. I denne sammenhæng refererer "krise" til en særlig voldsom cyklus i de almindelige op-og nedture Også John Maynard Keynes så kriserne som et mønster i en "kaotisk" kapitalistisk udvikling, som udvikler sig til en recession eller depression, hvis ingen kompenserende foranstaltninger er indtruffet.Efterkrigstidens lange periode med kapitalistisk vækst og ekspansion skabte vedvarende udfordringer til de marxister, der forsøgte at fastholde Marx' teoretiske resultater og omdømme.Andrew Kliman har blandt andet bidraget med et filosofisk forsvar for den teoretiske konsistens i Marx' analyser i et forsøg på at modgå de kritikpunkter, der blev anført imod vigtige aspekter af Marx' teori i halvfjerdserne. Efter finanskrisen er der blevet fornyet interesse for Karl Marx' kriseteori i akademiske kredse.
+
+# Årsagerne til kriser 
+
+Karl Marx betragtede kriseteorien som sin mest betydelige teoretiske præstation.Han præsenterer den i sin mest udviklede form med profitratens tendens til fald, som han kombinerer med en diskussion af forskellige modvirkende tendenser, der kan bremse eller ændre dens indflydelse på kapitalapparatet.
+
+# Ligheder (og forskelle) hos John Stuart Mill & Marx 
+
+Der er flere elementer i Marx' analyse, som viser hans kendskab til Mills formuleringer, især Mills behandling af, hvad Marx efterfølgende kaldte de modvirkende tendenser: ødelæggelse af kapital gennem konkurser (§5), forbedringer i produktionsapparatet (§6), import af produkter (§7) og kapitalflugt (§8). For begge gælder det således, at der er tale om en tendens, der kan modvirkes af foranstaltninger, som ophæver den teoretiske virkning. Disse modvirkende kræfter er som følger:
+
+(1) En stigning i arbejdsintensiteten (via intensivering af arbejdet eller forlængelse af arbejdsdagen)(2) Ved at presse af lønningerne under deres værdi(3) Billiggørelse af den konstante kapital (via øget produktivitet)(4) Relativ overproduktion (som fastholder mange arbejdere, der er ansat i relativt tilbagestående industrier, hvor den organiske sammensætning af kapitalen er lavere end gennemsnittet(5) Udenrigshandel (som tilbyder billigere råvarer og mere rentable kanaler med investeringer(6) forøgelse af aktiekapitalen (rentebærende kapital, hvis afkast er lavere end gennemsnittet med andre.Især vedrørende effekten af øget produktivitet, billiggørelse af råvarer og udenrigshandel er Marx og Mill er i overensstemmelse med hinanden.
+
+# Forskel mellem marxister og keynesianere 
+
+Keynesiansk økonomi kan ses som forsøg på en "middelvej" mellem "laissez-faire", den uforfalskede kapitalisme og marxismen. Keynes anbefalede, at staten udøver en vis kontrol med den økonomiske aktivitet, hvor kriser håndteres med en politisk styring, der kompenserer for markedets imperfektioner.
+Keynes havde kun overfladisk studeret Marx' skrifter, fordi han anså disse for forældede. Han var derfor formentlig uvidende om, at de som fælles udgangspunkt havde kritikken af den klassiske ligevægtsteori, ligesom de begge afviste Says lov.Selv om Marx og Keynes ligeledes var enige om, at kriser er et indbygget element i den kapitalistiske produktionsmåde, anvender de begrebet økonomisk krise på forskellig og delvis modsatrettet vis. Den keynesianske tilgang forholder sig strengt inden for det økonomiske felt og beskriver en 'boom' og en 'bust'-cyklus, der på langt sigt skaber balance i økonomien. Marx mente derimod, at den økonomiske krise nødvendigvis udvikles af modsætningerne i den kapitalistiske produktions relationer.
+"Hvor Marx adskiller sig fra Keynes er netop spørgsmålet om den faldende profitrate. Det er ikke tilbøjeligheden til at forbruge eller subjektive forventninger om fremtidig rentabilitet, der er afgørende for Marx. Det er graden af udbytning og arbejdskraftens sociale produktivitet, som er de centrale overvejelser, set i forhold til det eksisterende kapitalapparat. Mens det for Keynes er kapitalens lave marginale produktivitet , der forårsager en overflod af kapital i forhold til forventningerne til afkast og derfor til en 'potentiel' overproduktion af råvarer (når kapitalisten ikke vil investere). For Marx er overproduktion af kapital kun relateret til arbejdskraftens samfundsmæssige produktivitet og de eksisterende betingelser for udbytning. Det udgør en utilstrækkelig masse af merværdi i forhold til den samlede kapital. Så for Marx kan krisen kun løses ved at udvide den rentable produktion og akkumulation, mens det for Keynes angiveligt kan afhjælpes ved at øge den "effektive efterspørgsel", og dette giver en mulighed for, at staten stimulerer produktionen."
+Yaffe bemærkede i 1972, at "... passager i Kapitalens bind III, der henviser til massernes underkonsumption på ingen måde kan tolkes som en kriseteori om manglende efterspørgsel. Marx skriver ganske vist, at "den sidste årsag til alle virkelige kriser altid forbliver den fattigdom og det begrænsede forbrug hos masserne, som sammenlignet med tendensen i den kapitalistiske produktion til at udvikle produktivkræfterne, på en sådan måde, at kun den absolutte magt over forbruget af hele samfundet vil sætte grænsen." 
+Den ovenstående passage indeholder en blot en beskrivelse eller en tilpasning til de kapitalistiske produktionsforhold. Marx kaldte det en tautologi at forklare krisen ved manglende effektivt forbrug ... Fuld beskæftigelse er ifølge Marx mulig, når kapitalakkumulationen øger efterspørgslen efter arbejdskraft, som påvirker lønningerne. Hvis lønningerne stiger "for meget", falder profitraten, hvilket medfører en recession. Hos Keynes er fuld beskæftigelse et tegn på overophedning af økonomien, som staten bør modvirke ved at stramme finanspolitikken. Samspillet mellem beskæftigelse og løn er i øvrigt matematisk formaliseret i Goodwins model.
+
+# Henvisninger 
+
+# Yderligere læsning 
+
+Allen, Tony et al. [1978] The Recession: Capitalist Offensive and the Working Class RCP 3, July 1978, Junius
+Allen, Tony [1981] World in Recession in RCP 7, July 1981, Junius
+Brooks, Mick [2012] Capitalist Crisis Theory and Practice: A Marxist Analysis of the Great Recession 2007–11 eXpedia ISBN 978-83-934266-0-7
+Bullock, Paul and Yaffe, David [1975] Inflation, the Crisis and the Post-War Boom RC 3/4 November 1975, RCG
+Chesnais, François [1984] Marx's Crisis Theory Today in Christopher Freeman ed. Design, Innovation and Long Cycles in Economic Development 2nd ed. 1984 Frances Pinter, London
+Chesnais, François [Feb 2012] World Economy - The Roots of the World Economic Crisis in International Viewpoint Online magazine : IV445
+Clarke, Simon [1994] Marx's Theory of Crisis Macmillan
+Day, Richard B [1981] The 'Crisis' and the 'Crash': Soviet Studies of the West (1917–1939) NLB
+Grossman, Henryk [1922] The Theory of Economic Crises
+Grossman, Henryk [1941] Marx, Classical Political Economy and the Problem of Dynamics
+Grossman, Henryk [1929,1992] The Law of Accumulation and Breakdown of the Capitalist System Pluto
+Grossman, Henryk [1932,2013] Fifty years of struggle over Marxism 1883‐1932
+Kliman, Andrew [2007] Reclaiming "Marx’s ‘Capital’: A Refutation of the Myth of Inconsistency, Lexington, Lanham
+Kliman, Andrew [2011] The Failure of Capitalist Production: Underlying Causes of the Great Recession, Pluto
+Kliman, Andrew [2015] The Great Recession and Marx's Crisis Theory. American Journal of Economics and Sociology, 74: 236–277. [1]
+Kuhn, Rick Economic Crisis and Socialist Revolution: Henryk Grossman’s Law of accumulation, Its First Critics and His Responses
+Kuhn, Rick [2007] Henryk Grossman and the Recovery of Marxism Urbana and Chicago: University of Illinois Press. ISBN 0-252-07352-5
+Kuhn, Rick [2007] ‘Henryk Grossman Capitalist Expansion and Imperialism’ ‘Henryk Grossman Capitalist Expansion and Imperialism’ in ISR Issue 56 November-December
+Kuhn, Rick [2013] Marxist crisis theory to 1932 and to the present: reflections on Henryk Grossman’s ‘Fifty years of struggle over Marxism’ paper to Society of Heterodox Economists Conference, University of New South Wales, Sydney, 2–3 December 2013
+Kuruma, Samezō [1929] An Introduction to the Study of Crisis Sep. 1929 issue of Journal of the Ohara Institute for Social Research, (vol. VI, no. 1) Translated by Michael Schauerte
+Kuruma, Samezō [1936] An Overview of Marx’s Theory of Crisis first published in August 1936 issue of 'Journal of the Ohara Institute for Social Research'. Translated by Michael Schauerte
+Lenin V.I. [1916] Imperialism, the Highest Stage of Capitalism
+Mattick, Paul [1971] Marx and Keynes Merlin; dansk udgave: ''Marx og Keynes'' [1973], Røde Hane
+Mattick, Paul [1981] Economic Crisis and Crisis Theory Merlin Press
+Mattick, Paul [2008]. Review of David Harvey’s The Limits to Capital in Historical Materialism 16 (4):213-224.
+Norfield, Tony [2016] The City: London and the Global Power of Finance, Verso, London
+Pradella, Lucia [2009] Globalisation and the Critique of Political Economy: New insights from Marx's writings. Routledge’
+Rosdolsky, Roman [1980] The Making of Marx's 'Capital' Pluto
+Rubin, Isaak Illich [1979] A History of Economic Thought, InkLinks, London
+Shaikh, Anwar [1978] An Introduction to the History of Crisis Theories in 'U.S. Capitalism in Crisis', URPE, New York
+Shoul, Bernice [1947] The Marxian Theory of Capitalist Breakdown
+Ticktin, Hillel, 'A Marxist Political Economy of Capitalist Instability and the Current Crisis', Critique, Vol.37.
+Vort-Ronald, Pat, [1974] Marxist Theory of Economic Crisis, Australian Left Review, 1(43), 1974, 6-13.
+Yaffe, David [1972] The Marxian Theory of Crisis, Capital and the State, Bulletin of the Conference of Socialist Economists, Winter 1972, pp 5–58
+Yaffe, David [1978] The State and the Capitalist Crisis 2nd ed RCG Reprint

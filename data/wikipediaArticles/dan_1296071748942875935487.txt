@@ -1,0 +1,8 @@
+
+## Målesender
+
+En målesender er et apparat, der kan levere elektriske vekselspændinger ved høje frekvenser, som bruges indenfor elektronikken ved udvikling, afprøvning og reparation af radioudstyr. En målesender kan sammenlignes med en tonegenerator, men mens tonegeneratoren kan levere forskellige signaltyper ved begrænsede frekvenser, kan målesenderen almindeligvis "kun" lave sinusformede signaler. Til gengæld kan målesenderen arbejde ved meget høje frekvenser, og kan modulere (dvs. variere) frekvensen eller amplituden på måder, der af radioudstyr opfattes som signaler fra f.eks. en radioantenne.
+De krav, der stilles til målesendere er, at de er frekvensstabile, har lavt støjtal og har en kalibreret attenuator i udgangen, så man kender det eksakte signalniveau.
+Normalt benyttes dBm eller dBµV over tilsvarende belastning (pd), eller dBµV EMF. Forskellen mellem disse 2 spændinger/effekter er 3 dB. 
+De fleste målesendere benytter 50 Ω (ohm) som udgangsimpedans, da det er den mest brugte antenneimpedans.
+Udstyr til målinger på alm. radio/TV har dog impedansen 75 ohm.

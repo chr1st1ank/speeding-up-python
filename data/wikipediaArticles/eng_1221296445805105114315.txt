@@ -1,0 +1,45 @@
+
+## Jan Tinbergen
+
+Jan Tinbergen (; Dutch: [ˈtɪnˌbɛrɣə(n)]; April 12, 1903 – June 9, 1994) was an important Dutch economist. He was awarded the first Nobel Memorial Prize in Economic Sciences in 1969, which he shared with Ragnar Frisch for having developed and applied dynamic models for the analysis of economic processes. He is widely considered to be one of the most influential economists of the 20th century and one of the founding fathers of econometrics. It has been argued that the development of the first macroeconometric models, the solution of the identification problem, and the understanding of dynamic models are his three most important legacies to econometrics. Tinbergen was a founding trustee of Economists for Peace and Security. In 1945, he founded the Bureau for Economic Policy Analysis (CPB) and was the agency's first director.
+
+# Biography 
+
+Jan Tinbergen was the eldest of five children of Dirk Cornelis Tinbergen and Jeannette van Eek. His brother Nikolaas "Niko" Tinbergen would also win a Nobel Prize (for physiology, during 1973) for his work in ethology, while his youngest brother Luuk would become a famous ornithologist. Jan and Nikolaas Tinbergen are the only siblings to have both won Nobel Prizes. Between 1921 and 1925, Tinbergen studied mathematics and physics at the University of Leiden under Paul Ehrenfest. During those years at Leiden he had numerous discussions with Ehrenfest, Kamerlingh Onnes, Hendrik Lorentz, Pieter Zeeman, and Albert Einstein.After graduating, Tinbergen fulfilled his community service in the administration of a prison in Rotterdam and at the Central Bureau of Statistics (CBS) in The Hague. He then returned to the University of Leiden and in 1929 defended his PhD thesis titled "Minimumproblemen in de natuurkunde en de economie" (Minimisation problems in Physics and Economics). This topic was suggested by Ehrenfest and allowed Tinbergen to combine his interests in mathematics, physics, economics and politics. At that time, CBS established a new department of business surveys and mathematical statistics, and Tinbergen became its first chairman, working at CBS until 1945. Access to the vast CBS data helped Tinbergen in testing his theoretical models. In parallel, starting from 1931 he was professor of statistics at the University of Amsterdam, and in 1933 he was appointed associate professor of mathematics and statistics at The Netherlands School of Economics, Rotterdam, where he stayed until 1973.From 1929 to 1945 he worked for the Dutch statistical office and briefly served as consultant to the League of Nations (1936–1938). In 1945 he became the first director of the Netherlands Bureau for Economic Policy Analysis and left this position in 1955 to focus on education. He spent one year as a visiting professor at the Harvard University and then returned to the Dutch Economic Institute (the successor of the Netherlands School of Economics). In parallel, he provided consulting services to international organizations and governments of various developing countries, such as United Arab Republic, Turkey, Venezuela, Surinam, Indonesia and Pakistan.Tinbergen was a member of the Royal Netherlands Academy of Arts and Science and of the International Academy of Science. In 1956 he founded the Econometric Institute at the Erasmus Universiteit Rotterdam together with Henri Theil, who also was his successor in Rotterdam. In 1960 he was elected as a Fellow of the American Statistical Association. The Tinbergen Institute was named in his honour. The International Institute of Social Studies (ISS) awarded its Honorary Fellowship to Jan Tinbergen in 1962. In 1968, he received an honorary doctorate from Sir George Williams University, which later became Concordia University.
+
+# Work 
+
+For many, Jan Tinbergen became known for the so-called 'Tinbergen Norm' often discussed long after his death. There is no written work of Tinbergen in which he himself states it formally. It is generally believed to be the principle that, if the ratio between the greatest and least income exceeds 5, it becomes disadvantageous for the societal unit involved. Tinbergen himself discussed some technicalities of a five-to-one income distribution ratio in an article published in 1981. Apart from specifics about a five-to-one ratio, it is true in general that Tinbergen's grand theme was income distribution and the search for an optimal social order.
+Tinbergen developed the first national comprehensive macroeconomic model, which he first developed in 1936 for the Netherlands, and later applied to the United States and the United Kingdom.In his work on macroeconomic modelling and economic policy making, Tinbergen classified some economic quantities as targets and others as instruments. Targets are those macroeconomic variables the policy maker wishes to influence, whereas instruments are the variables that the policy maker can control directly. Tinbergen emphasized that achieving the desired values of a certain number of targets requires the policy maker to control an equal number of instruments.
+Tinbergen's classification remains influential today, underlying the theory of monetary policy used by central banks. Many central banks today regard the inflation rate as their target; the policy instrument they use to control inflation is the short-term interest rate.Tinbergen's work on macroeconomic models was later continued by Lawrence Klein, contributing to another Nobel Memorial Prize in Economic Sciences. For his cultural contributions, he was given the Gouden Ganzenveer in 1985.Tinbergen’s econometric modelling lead to a lively debate with several known participants including J.M. Keynes, Ragnar Frisch and Milton Friedman. The debate is sometime referred to as the Tinbergen debate.
+
+# Selected publications 
+
+Business Cycles in the United States, 1919–1932, Geneva, 1939 and New York, 1968
+Business Cycles in the United Kingdom, 1870–1914, Amsterdam, 1951
+On the Theory of Economic Policy. Second edition (1952) is Volume 1 of Contributions to Economic Analysis, Amsterdam: North-Holland.
+Centralization and Decentralization in Economic Policy, Amsterdam, 1954 ISBN 0-313-23077-3.
+Economic Policy: Principles and Design, Amsterdam, 1956
+The Element of Space in Development Planning (together with L.B.M. Mennes and J.G. Waardenburg), Amsterdam, 1969
+The Dynamics of Business Cycles: A Study in Economic Fluctuations. Chicago: U of Chicago P, 1974. ISBN 0-226-80418-6.
+Der Dialog Nord-Süd: Informationen zur Entwicklungspolitik. Frankfurt am Main: Europ. Verlagsanstalt, 1977.
+Economic policy: Principles and Design. Amsterdam, 1978. ISBN 0-7204-3129-8.About TinbergenAcocella, Nicola, Di Bartolomeo, Giovanni (2006), ‘Tinbergen and Theil meet Nash: controllability in policy games’, in: ‘Economics Letters’, 90(2): 213-218.
+Acocella, Nicola, Di Bartolomeo, Giovanni and Hughes Hallett, A. [2010], ‘Policy games, policy neutrality and Tinbergen controllability under rational expectations’, in: ‘Journal of Macroeconomics’, 32(1): 55-67.
+Acocella, Nicola Di Bartolomeo, Giovanni and Hughes Hallett, A. [2011], ‘Tinbergen controllability and n-player LQ-games’, in: ‘Economics Letters’, 113: 32-4.
+
+# See also 
+
+List of economists
+Gravity Model of Trade
+
+# References 
+
+# External links 
+
+Jan Tinbergen at the Mathematics Genealogy Project
+TINBERGEN, Jan in: Biografisch Woordenboek van het Socialisme en de Arbeidersbeweging in Nederland
+Jan Tinbergen College (Dutch website)
+IDEAS/RePEc
+Profile at The International Institute of Social Studies (ISS)
+Jan Tinbergen (1903–1994). The Concise Encyclopedia of Economics. Library of Economics and Liberty (2nd ed.). Liberty Fund. 2008.
+Newspaper clippings about Jan Tinbergen in the 20th Century Press Archives of the ZBW

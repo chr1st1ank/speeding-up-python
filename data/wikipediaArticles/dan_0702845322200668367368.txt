@@ -1,0 +1,36 @@
+
+## Debet og kredit
+
+Debet er en regnskabsteknisk betegnelse, som anvendes når en debetkonto tilskrives penge. Ligeledes anvendes kredit for en kreditkonto, der tilskrives penge. Skal man fjerne penge fra en konto, skal man derfor ved en debetkonto kreditere beløbet og ved en kreditkonto debitere beløbet.
+For at kunne anvende debet og kredit korrekt, skal man derfor vide, hvilke konti der er debetkonti og hvilke der er kreditkonti:
+
+Ved en virksomheds aktiver forstår man alt det, som virksomheden har af værdi. F.eks. penge, biler, tilgodehavende og varelager.
+Ved en virksomheds passiver forstår man alt det, der finansierer aktiverne. F.eks. egenkapital, kassekredit, varekreditorer og langvarige lån.
+Betegnelserne debet og kredit er faste bestanddele i "Det dobbelte Bogholderi" – dobbelt, fordi man altid posterer et bilag i både debet og kredit.
+Eksempel:
+Jeg køber en sav for 400 kr, og kassen betaler. Jeg skal anvende de to konti: 1) Kasse og 2) Værktøj
+
+Beløbet krediteres i kassen, da kassen er en del af virksomhedens aktiver og derved en debetkonto. Skal man mindske den, skal man derfor kreditere (se tabellen ovenfor).
+Beløbet debiteres i værktøj, da det er en udgift.
+Når moms skal med i billedet bliver bogføringen således:
+
+En trekantspostering. Der er gået 500 kr ud af kassen (kredit). Pengene er posteret som en udgift på kontoen værktøj (400 kr debet) og momsbeløbet er posteret som et tilgodehavende på kontoen købsmoms(100 kr debet).
+Bemærk at bogføringen af en transaktion altid munder ud i en situation, hvor der er anført lige meget i de to kolonner debet og kredit. Det er i denne sammenhæng ikke af betydning hvorvidt debet- og kreditbeløbene er fordelt over lige mange konti, det afgørende er når regnskabet betragtes som en helhed, skal summen af saldiene for alle kreditkolonner skal være lig summen af saldiene for alle debetkolonner.
+Uanset hvor mange transaktioner der er bogført, vil der altid være angivet lige meget i debet og kredit. Det er nøglen til det magiske og essentielle ved det dobbelte bogholderi, nemlig, at summen af alle debetkolonner giver samme resultat som summen af alle kreditkolonner. Hvis dette ikke er tilfældet, er der fejl i bogføringen. Denne mulighed for at afsløre bogføringsfejl er en stor del af grunden til det dobbelte bogholderis udbredelse gennem igennem århundreder, hvor regnskabsføring skete med pen og blæk uden moderne hjælpemidler. I dag benytter computerprogrammer sig af denne egenskab, og denne fejlkontrol sker automatisk i moderne bogføringssystemer, hvilket hjælper bogholderne med at udarbejde et korrekt regnskab.
+
+# De fem grundlæggende kontotyper i regnskabsvæsen 
+
+Regnskabsvæsen indeholder fem grundlæggende kontotyper; Aktiver (engelsk: assets), Passiver (liabilities), Egenkapital (equity), Omsætning (income) og Omkostninger (expenses). Omsætning skal forstås som en indtægt, og må ikke forveksles med hverken indtjening, overskud eller profit (Π). For alle fem gælder, at de kan påvirkes i positiv eller negativ retning. Det er en misforståelse at tro at en kreditpostering altid medfører en positiv transaktion, og tilsvarende må debet ikke automatisk opfattes som en negativ størrelse.
+Aktivkonti (fx bankkonti) ses dog omtalt som debetkonti (debit accounts), fordi disse har den egenskab, at en debetpostering medfører en forøgelse af kontoens saldo, men udtrykket er uhensigtsmæssigt, da det ikke må forveksles med en debitorkonto. Sidstnævntes modstykke er en kreditorkonto, og de bruges til at opgøre hhv. fordringer på kunder (debitorkonti) og kreditorers fordringer på firmaet selv (kreditorkonti).
+Når et firma har købt et aktiv (fx en montørvogn), vil transaktionen påvirke debetsiden af firmaets aktivkonto som vist herunder:
+
+I eksemplet ovenfor angiver "X"'et i debetkolonnen at en debettransaktion på en aktivkonto vil forøge aktivkontoens saldo (summen af debetposteringer minus summen af kreditposteringer), idet en debitering af en aktivkonto udgør en forøgelse. Den ovenstående aktivkonto er blevet forøget med værdien X, dvs. posteringen har opskrevet kontoens saldo med X kr.
+Modsat gælder at for nedenstående passivkonto vil posteringen X i kreditkolonnen medføre en forøgelse af passivkontoens saldo (summen af kreditposteringer fratrukket summen af debetposteringer), idet en kreditering af en passivkonto udgør en forøgelse.
+En forsimplet huskeregel er at alle regnskabsposteringer skal have både en debet- og en kredit-side, hvorefter man forestiller sig, at der er tale om en kontanttransaktion og mentalt "følger pengene". En debitering af en kontantbeholdning eller bankkonto (aktivkonto) medfører en forøgelse, og en kreditering af en aktivkonto medfører en formindskelse. Dvs. det følger logisk at et kontantsalg til en kunde vil betyde en debitering af en aktivkonto (kassebeholdningen) og dermed en kreditering af en omsætningskonto (varesalg). Tilsvarende kan huskereglen anvendes i ovenstående eksempel med indkøb af en montørbil; da firmaet har afholdt en udgift medfører det, at en aktivkonto (driftskontoen i banken) krediteres for købssummen, ergo følger det logisk at modposten er en debitering af aktivkontoen. Huskereglens forsimpling består i udeladelsen af både debitor- og kreditorkonti samt indgående og udgående moms.
+Alle "regnskabskolonner" i dette afsnit bliver forøget når der foretages en postering i kolonnen mærket "X".
+
+Opsummering af de fem kontotyper. Posteringer i kolonnen mærket med "+" vil forøge den pågældende kontos værdi, posteringer i kolonnen med med "-" vil reducere kontoens værdi:
+
+# Kilder 
+
+Saldi Det frie danske økonomiprogram – Selvstudie side 3

@@ -1,0 +1,703 @@
+
+## Mouvement rectiligne
+
+En physique, et plus particulièrement en mécanique, un mouvement rectiligne est un mouvement qui s'effectue le long d'une ligne droite. Au cours d'un mouvement rectiligne, le vecteur vitesse 
+ 
+ 
+ 
+ 
+ 
+ 
+ v
+ →
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\vec {v}}}
+ conserve sa direction, sa valeur pouvant rester constante (mouvement rectiligne uniforme) ou bien varier (mouvement rectiligne non-uniforme) .
+Dans le cas théorique du mouvement d'un objet ponctuel, le mouvement peut être entièrement décrit par une équation à une seule dimension typiquement x=f(t) où x est la position du système et t le temps. Dans le cas concret d'un objet non-ponctuel, on ramène souvent l'étude du système à celle de son centre d'inertie, négligeant dans ce cas, tous les effets des rotations éventuelles de l'objet.
+
+# Cinématique du point 
+
+En considérant un point M en mouvement rectiligne le long d'un axe (
+ 
+ 
+ 
+ 
+ 
+ O
+ 
+ ,
+ 
+ 
+ 
+ i
+ →
+ 
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle \scriptstyle \mathrm {O} ,{\vec {i}}}
+ ), M est repéré par son abscisse x(t) : 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ O
+ M
+ 
+ 
+ →
+ 
+ 
+ 
+
+ x
+ (
+ t
+ )
+ 
+ 
+ 
+ 
+ i
+ →
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\overrightarrow {\textstyle {OM}}}=x(t)\,{\vec {i}}}
+ 
+
+# Déplacement du système 
+
+Le déplacement est la distance parcourue à la vitesse v par le système durant une durée Δt. Son unité est le mètre (m) dans le Système international d'unités. 
+Lorsque le système passe d'une position 
+ 
+ 
+ 
+ 
+ 
+ M
+ 
+ 1
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle \scriptstyle M_{1}}
+ à la position 
+ 
+ 
+ 
+ 
+ 
+ M
+ 
+ 2
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle \scriptstyle M_{2}}
+ , son déplacement est égal à 
+ 
+ 
+ 
+ 
+ 
+ x
+ 
+ 2
+ 
+ 
+ −
+ 
+ x
+ 
+ 1
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle \textstyle x_{2}-x_{1}}
+ .
+
+# Vitesse 
+
+La vitesse d'un point M est la dérivée du vecteur position 
+ 
+ 
+ 
+ 
+ 
+ 
+ O
+ M
+ 
+ →
+ 
+ 
+ 
+ 
+ {\displaystyle {\overrightarrow {OM}}}
+ par rapport au temps 
+ 
+ 
+ 
+ 
+ 
+ 
+ v
+ →
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ d
+ 
+ 
+ 
+ 
+ 
+ O
+ M
+ 
+ 
+ →
+ 
+ 
+ 
+ 
+ 
+ d
+ 
+ t
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\vec {v}}={\frac {\mathrm {d} {\overrightarrow {\textstyle {OM}}}}{\mathrm {d} t}}}
+ ,. 
+Dans le cas d'un mouvement rectiligne, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ O
+ M
+ 
+ 
+ →
+ 
+ 
+ 
+
+ x
+ (
+ t
+ )
+ 
+ 
+ 
+ 
+ i
+ →
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\overrightarrow {\textstyle {OM}}}=x(t)\,{\vec {i}}}
+ , il vient : 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ v
+ →
+ 
+ 
+ 
+ (
+ t
+ )
+ 
+
+ 
+ 
+ 
+ 
+ d
+ 
+ x
+ (
+ t
+ )
+ 
+ 
+ 
+ d
+ 
+ t
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ i
+ →
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\vec {v}}(t)={\frac {\mathrm {d} x(t)}{\mathrm {d} t}}\,{\vec {i}}}
+ Ceci implique que la direction de 
+ 
+ 
+ 
+ 
+ 
+ 
+ v
+ →
+ 
+ 
+ 
+ (
+ t
+ )
+ 
+ 
+ {\displaystyle {\vec {v}}(t)}
+ est constante et sa valeur vaut 
+ 
+ 
+ 
+ v
+ (
+ t
+ )
+ 
+
+ 
+ 
+ 
+ 
+ d
+ 
+ x
+ (
+ t
+ )
+ 
+ 
+ 
+ d
+ 
+ t
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle v(t)={\frac {\mathrm {d} x(t)}{\mathrm {d} t}}}
+ .
+
+# Vitesse constante 
+
+Si le déplacement se fait à vitesse constante, le mouvement est dit rectiligne uniforme. La vitesse est alors le rapport de la longueur d'un déplacement quelconque à la durée de ce déplacement :
+
+ 
+ 
+ 
+ v
+ (
+ t
+ )
+ 
+
+ 
+ 
+ 
+ 
+ x
+ 
+ 2
+ 
+ 
+ −
+ 
+ x
+ 
+ 1
+ 
+ 
+ 
+ 
+ 
+ t
+ 
+ 2
+ 
+ 
+ −
+ 
+ t
+ 
+ 1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle v(t)={\frac {x_{2}-x_{1}}{t_{2}-t_{1}}}}
+ 
+
+# Accélération 
+
+L'accélération d'un point M est la dérivée du vecteur vitesse 
+ 
+ 
+ 
+ 
+ 
+ 
+ v
+ →
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\vec {v}}}
+ par rapport au temps 
+ 
+ 
+ 
+ 
+ 
+ 
+ a
+ →
+ 
+ 
+ 
+ (
+ t
+ )
+ 
+
+ 
+ 
+ 
+ 
+ d
+ 
+ 
+ 
+ 
+ v
+ →
+ 
+ 
+ 
+ (
+ t
+ )
+ 
+ 
+ 
+ d
+ 
+ t
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ d
+ 
+ v
+ (
+ t
+ )
+ 
+ 
+ 
+ d
+ 
+ t
+ 
+ 
+ 
+ 
+ 
+ 
+ i
+ →
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\vec {a}}(t)={\frac {\mathrm {d} {\vec {v}}(t)}{\mathrm {d} t}}={\frac {\mathrm {d} v(t)}{\mathrm {d} t}}{\vec {i}}}
+ ,. 
+Si le mouvement de M est rectiligne alors la direction du vecteur 
+ 
+ 
+ 
+ 
+ 
+ 
+ a
+ →
+ 
+ 
+ 
+ (
+ t
+ )
+ 
+ 
+ {\displaystyle {\vec {a}}(t)}
+ reste constante donc 
+ 
+ 
+ 
+ a
+ 
+
+ 
+ 
+ 
+ 
+ d
+ 
+ v
+ (
+ t
+ )
+ 
+ 
+ 
+ d
+ 
+ t
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle a={\frac {\mathrm {d} v(t)}{\mathrm {d} t}}}
+ .
+
+# Forces et mouvement rectiligne 
+
+# Mouvement rectiligne uniforme 
+
+D'après la première loi de Newton, s'il n'y a pas de force qui s'exerce sur un corps (corps isolé), ou si la somme des forces s'exerçant sur lui est nulle (corps pseudo-isolé), alors son mouvement dans un référentiel galiléen sera à la fois rectiligne (direction constante de la vitesse) et uniforme (valeur de la vitesse constante),.
+
+# Mouvement rectiligne non-uniforme 
+
+D'après la deuxième loi de Newton, si la masse du corps est constante, l'accélération subie par ce corps dans un référentiel galiléen est proportionnelle à la résultante des forces qu'il subit, et inversement proportionnelle à sa masse m. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ a
+ →
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 1
+ m
+ 
+ 
+ ∑
+ 
+ 
+ 
+ 
+ F
+ 
+ →
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\vec {a}}={\frac {1}{m}}\sum {\vec {\mathrm {F} }}}
+ Or l'accélération est la dérivée de la vitesse par rapport au temps : 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ a
+ →
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ d
+ 
+ 
+ 
+ 
+ v
+ →
+ 
+ 
+ 
+ 
+ 
+ 
+ d
+ 
+ t
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\vec {a}}={\frac {\mathrm {d} {\vec {v}}}{\mathrm {d} t}}}
+ donc 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ d
+ 
+ 
+ 
+ 
+ v
+ →
+ 
+ 
+ 
+ 
+ 
+ 
+ d
+ 
+ t
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 1
+ m
+ 
+ 
+ ∑
+ 
+ 
+ 
+ 
+ F
+ 
+ →
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\frac {\mathrm {d} {\vec {v}}}{\mathrm {d} t}}={\frac {1}{m}}\sum {\vec {\mathrm {F} }}}
+ La dérivée du vecteur vitesse est colinéaire à la résultante des forces donc si la résultante des forces reste dans la direction de 
+ 
+ 
+ 
+ 
+ 
+ 
+ v
+ →
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\vec {v}}}
+ alors la direction du vecteur 
+ 
+ 
+ 
+ 
+ 
+ 
+ v
+ →
+ 
+ 
+ 
+ 
+ 
+ {\displaystyle {\vec {v}}}
+ ne change pas et le mouvement est rectiligne.
+
+# Génie industriel 
+
+Dans une machine, on peut obtenir qu'une pièce ait un mouvement rectiligne soit en la faisant coulisser dans une glissière rectiligne, soit en utilisant un mécanisme à développement rectiligne.
+
+# Propagation de la lumière 
+
+La lumière a un mouvement rectiligne (et uniforme) dans tout milieu transparent homogène, en particulier le vide ou l'air très sec. Cette propriété est à la base de l'optique géométrique.
+
+# Références 
+
+ Portail de la physique

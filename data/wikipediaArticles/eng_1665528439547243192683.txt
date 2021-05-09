@@ -1,0 +1,40 @@
+
+## AS/NZS 1200
+
+The AS/NZS 1200 standard is a joint Australian/New Zealand Standard, for the requirements of pressure equipment which aims to promote safety and uniformity throughout Australia and New Zealand.
+
+# History 
+
+This Standard was originally published in 1931 as CB1 - SAA Boiler Code. It was subsequently issued in 1963 and 1967. In 1972, the Standard was issued under the designation AS 1200. The 2nd, 3rd and 4th editions were published in 1978, 1981 and 1988 respectively. In 1994 the Standard was jointed revised and issued under the designation AS/NZS 1200. The latest and 6th edition was published in 2000.
+
+# Abstract 
+
+This Standard is a 'parent' document which sets out basic requirements and good practice for the design, materials, manufacture, examination, testing, installation, conformity assessment, commissioning, operation, inspection, maintenance, repair, alteration and disposal of pressure equipment (boilers, pressure vessels and pressure piping) but excluding gas cylinders, blast furnaces, pipelines, fire extinguishers, storage tanks to name a few.As a 'parent' document this Standard specifies specific requirements to pressure equipment by making reference to a range of Australian, New Zealand and other Standards.
+
+# Requirements and Compliance 
+
+Equipment to be used in Australia or New Zealand must meet the following requirements:
+
+Compliance with the Standards listed in this Standard, including international Standards, or those equivalently agreed between all parties.
+Compliance with all applicable legal jurisdictions.
+Compliance with the contract documents.When a selected Standard is used (local or international) as listed in this Standard, it shall be used in its entirety except when compliance with more appropriate requirements of other Standards. Irrespective of the Standard used, the Standard should only be considered as the minimal requirements and not necessarily holistic, therefore judgement needs to be exercised to ensure all relevant matters are covered.
+
+# Pressure Equipment Standards 
+
+AS/NZS 1200 is a 'parent' Standard that specifies the requirements and Standards specific to pressure equipment. The following provides a sample of some of the Standards applicable to pressure equipment under this Standard.
+
+# Conformity Assessment 
+
+# Australia 
+
+National
+Pressure equipment is to be in accordance with AS/NZS 1200 per the Australian Government legislation as stipulated in Regulations 4.05(2)(d) and 4.51 (4)(b) of the Occupational Health and Safety (Safety Standards) Regulations 1994.Queensland
+Some pressure equipment (excluding pressure piping) is regulated in the state of Queensland as per Schedule 4 (13) of the Workplace Health and Safety Regulation 2008. In this Schedule, it refers to certain criteria being met per AS 4343, which scope is to classify hazard levels of pressure equipment to AS/NZS 1200.New South Wales
+Pressure equipment is regulated in the state of New South Wales as per Clause 94 (a) of the Occupational Health and Safety Regulation 2001. This Clause refers to AS 4343 and AS 1210, which are main Standards referenced in the 'parent' Standard AS/NZS 1200.
+
+# New Zealand 
+
+Pressure equipment is to be in accordance with AS/NZS 1200 under New Zealand legislation as stipulated in section 3.4.1(1) of the Approved Code of Practice (ACOP) for Pressure Equipment (Excluding Boilers). This ACOP supports the requirements of the Health and Safety in Employment (Pressure Equipment, Cranes and Passenger Ropeways) Regulations 1999.
+
+# References 
+

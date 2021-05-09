@@ -1,0 +1,28 @@
+
+## Lascadh paicéad
+
+Is teicníocht chumarsáide é lascadh paicéad (packet switching i mBéarla), an modh cumarsáide idir ríomhairí, ar an Idirlíon ina measc. Úsáidtear lascadh paicéad i líonraí ríomhaireachta le paicéid (aonaid eolais) a ródú idir nóid thar cainéil chumarsáide a roinntear le trácht eile. Is féidir codarsnacht a dhéanamh idir seo agus an phríomhtheicníocht chumarsáide eile ar a thugtar ciorcadlascadh.
+Sa chás seo, cruthaítear ceangal ar leith idir dhá nód ar feadh an ama atá siad i mbun teagmhála. Tá lascadh paicéad i bhfad níos éifeachtaí mar mhodh cumarsáide ná ciorcadlascadh mar go mbaineann sé úsáid níos fearr as an mbandaraon atá ar fáil, íslíonn sé an aga folaigh aistrithe agus méadaíonn sé láidreacht na cumarsáide.
+
+# Ródú na bPaicéad 
+
+Déantar ródú ar phaicéid de réir algartam ródaithe. Oibríonn sé seo amach an cosán is fearr do na paicéid thar an líonra bunaithe ar mhéadracha éagsúla (ar nós an aga folaigh íseal nó líon céimeanna íseal). D'fhéadfadh tomhaiseanna do na méadracha seo athrú am ar bith agus mar sin, is féidir le paicéid ón fhoinse chéanna, cosáin éagsúla a thaisteal ar a mbealach go dtí an ceann scríbe céanna.
+
+# Lascadh Paicéad in Úsáid 
+
+Is í an úsáid is cáiliúla a bhaintear as lascadh paicéad ná san Idirlíon. Baintear úsáid as an bprótacal TCP/IP le paicéid a ródú thar an Idirlíon.
+
+# Stair 
+
+Nuair a bhí ríomhairí óg, sna 1950-60idí, agus gá le cumarsáid idir dhá ríomhaire nó idir teirminéal éigin is ríomhaire a bhí roinnt ciliméadar ó chéile (abair), dhéantaí glaoch teileafóin agus bhaintí feidhm as na ciorcaid teileafóin chun na sonraí digiteacha, an fhaisnéis, a tharchur. 
+Bhíodh roinnt nóiméad i gceist sa cheangal iomlán, agus d'ídítí roinnt soicindí ag déanamh an cheangail. 
+Mar mhalairt air sin, bhí na ríomhairí in ann sonraí a tharchur ag minicíocht suas go dtí oiread meigeabheart in aghaidh an tsoicind, agus ní bheadh ach cúpla milleasoicind i dteachtaireacht go minic. 
+
+Caolas amach is amach a bhí sna ciorcaid lasctha teileafóin. Phléigh Donald Davies leis an bhfadhb seo sa tSaotharlann Náisiúnta Fisice sa Bhreatain, agus sna 1960idí tháinig sé ar an smaoineamh go mb'fhéidir go mb'éifeachtaí an teachtaireacht féin a lascadh, mar a dhéantaí sa chóras teileagrafaíochta ag an am, in ionad lascadh na gciorcad mar a bhí sa chóras teileafóin. Is é a dhéantaí ina leithéid de chóras an teachtaireacht a ghearradh ina sraith leanúnach fo-chodanna nó paicéad, gach paicéad a stóráil is ansin a tharchur nuair a bheadh an líne le fáil, paicéad i ndiaidh paicéid, go mbeadh an teachtaireacht uile tarchurtha.
+Dhéantaí an teachtaireacht bhriste a stóráil is a tharchur ag gach lasc sa chóras teileagrafaíochta. Bhuail an smaoineamh Davies freisin gurbh fhéidir an modh tarchurtha a dhéanamh níos éifeachtaí dá mb'fhéidir an mhoill ag gach lasc a laghdú.
+Thaispeáin sé gur bhraith an mhoill sin ar an líon teachtaireachtaí nó paicéid teachtaireachtaí a bhí le tarchur, fad an phaicéid ina ngearrfaí an teachtaireacht, agus an mhinicíocht tarchuir ón lasco 1.5 meigeaghiotán in aghaidh an tsoicind a bhí sa mhinicíocht seo sa bhliain 1965. 
+
+Chinn Davies ar uasfhad 1 chileaghiotán don phaicéad, agus thaispeáin gur laghdaigh sé seo an mhoill sa líne feithimh ag gach lasc go dtí dhá oiread fhad tarchuir paicéid amháin, níos lú ná 2 mhilleasoicind ina chás siúd. Bíodh go bhfuil ríomhairí is líonraí ríomhaireachta i bhfad níos tapa inniu ná an t-am sin, an tIdirlíon mar shampla, is ar an modh céanna seo a bhunaítear an chumarsáid eatarthu.
+
+# Tagairtí 
+

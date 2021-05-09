@@ -1,0 +1,16 @@
+
+## Optische Phasenkonjugation
+
+Die Optische Phasenkonjugation ist ein Effekt aus der Nichtlinearen Optik.
+Bei der Phasenkonjugation entsteht zu einem kohärenten monochromatischen, also einfarbigen, Lichtstrahl ein „zeitinverser“ Strahl, der sich entgegengesetzt dem ursprünglichen Strahl ausbreitet und zu diesem „phasenkonjugierter Strahl“ genannt wird. Bei diesem Strahl weist der Wellenvektor genau in die entgegengesetzte Richtung wie beim Ausgangsstrahl. Die Bezeichnung stammt aus der mathematischen Beschreibung des Sachverhalts durch monochromatische ebene Wellen. 
+Hierbei wird die Amplitude der Welle erhalten und lediglich die Phase konjugiert. Ein divergenter Lichtstrahl wird so am phasenkonjugierenden Spiegel als konvergenter Strahl reflektiert, im Gegensatz zur normalen Reflexion, bei der er weiter divergiert. Des Weiteren gehorcht er nicht dem Reflexionsgesetz eines gewöhnlichen Spiegels, sondern läuft in sich selbst zurück.
+Die optische Phasenkonjugation findet Anwendung in Form von phasenkonjugierenden Spiegeln, die jeden einlaufenden Lichtstrahl exakt in sich selbst reflektieren. Diese optischen Elemente unterscheiden sich also in ihren Eigenschaften deutlich von konventionellen Spiegeln. Die Werkstoffe müssen eine hohe dielektrische Suszeptibilität dritter Ordnung aufweisen.
+Die möglichen Anwendungen von phasenkonjugierenden Spiegeln reichen von optischen Resonatoren, Signalübertragung, Mustererkennung bis zur laserinduzierten Kernfusion.
+Die technische Realisierung phasenkonjugierender Spiegel erfolgt vor allem durch die Vier-Wellen-Mischung. 
+Die optische Phasenkonjugation wurde 1972 von Boris Jakowlewitsch Seldowitsch in Russland eingeführt. Die Realisierung über Vier-Wellen-Mischung führte Robert Hellwarth 1977 ein.
+
+# Weiterführendes 
+
+Boris Zeldovich, Nikolai Pilipetskii, Vladimir Shkunov Principles of phase conjugation, Springer Series in Optical Sciences, Band 42, 1985
+Steven Lehar: An Intuitive Explanation of Phase Conjugation. Abgerufen am 7. Februar 2018 (englisch). 
+Robert W. Boyd: Nonlinear Optics. 3. Auflage. Academic Press, New York 2008, ISBN 978-0-12-369470-6.

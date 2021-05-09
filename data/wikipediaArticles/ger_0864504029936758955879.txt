@@ -1,0 +1,25 @@
+
+## Registriermikrometer
+
+Das Registriermikrometer oder unpersönliches Mikrometer ist ein Zusatzgerät zur Steigerung der Genauigkeit von astronomischen und astrogeodätischen Messungen. Es ermöglicht, die bei der Messung von Sterndurchgängen unvermeidliche Reaktionszeit – die so genannte Persönliche Gleichung – und den Durchgangsfehler entscheidend zu vermindern. Es wurde 1867 von Carl Braun erfunden. 1889 wurde es vom deutschen Instrumentenhersteller Johann Adolf Repsold in einfacherer Form neu konstruiert.
+
+# Bauweise 
+
+Das Mikrometer ist im Okular größerer Messinstrumente (DKM3-A, Wild T4) eingebaut, bei denen das Fadennetz neben den festen Strichen auch einen beweglichen Faden enthält. Wenn der Beobachter damit dem Stern kontinuierlich nachfährt, werden in genau definierten Winkelabständen elektrische Kontakte geschlossen, die eine Zeitregistrierung auslösen.
+Statt einen Sterndurchgang an vielen einzelnen "Fäden" eines Fadennetzes zu beobachten, erlaubt das Unpersönliche Mikrometer, einen "beweglichen Faden" dem Stern kontinuierlich nachzuführen. Währenddessen schließt das (mit einer Meßspindel verbundene) Mikrometer alle paar Sekunden elektrische Kontakte an definierten Stellen, so dass der Sterndurchgang mit derselben Genauigkeit registriert werden kann, mit welcher der Beobachter dem Stern nachfährt.
+Der Hauptvorteil des Instruments ist die verringerte Auswirkung der Reaktionszeit, die in der Astronomie "persönliche Gleichung" genannt wird. Während sie bei Zeitnehmung mit Hand und digitaler Stoppuhr bei verschiedenen Personen etwa zwischen 0,1 und 0,3 Sekunden liegt und je nach momentaner Verfassung um etwa 0,04 Sekunden variiert, senkt das Registriermikrometer beide Werte um etwa die Hälfte.
+
+# Siehe auch 
+
+Reaktionszeit, systematischer Fehler, Zeitmessung
+Längenbestimmung, Okularmikrometer
+Montierung zur Nachführung bei Fernrohren
+
+# Fachliteratur und Weblink 
+
+K. Ramsayer, 1969: Geodätische Astronomie, Band IIa des Handbuchs der Vermessungskunde, J.B. Metzler-Verlag Stuttgart.
+G. Gerstbach, 1975: Analyse persönlicher Fehler bei Durchgangs-Beobachtungen von Sternen. Geowissenschaftliche Mitteilungen, Band 7, S. 51–102, TU Wien.
+A. Schödlbauer, 2000: Geodätische Astronomie – Grundlagen und Konzepte., De Gruyter-Verlag Berlin/ New York.
+
+# Einzelnachweise 
+

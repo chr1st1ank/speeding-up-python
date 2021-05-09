@@ -1,0 +1,35 @@
+
+## Atom (Texteditor)
+
+Atom ist ein Open-Source-Texteditor auf Basis von Electron, der von dem Projekt-Hosting-Dienst GitHub für Windows, macOS und Linux entwickelt wird. Electron besteht aus dem Webbrowser Chromium und dem JavaScript-Framework Node.js und erlaubt es, beliebige Anwendungen mit JavaScript, HTML und CSS zu erstellen. Atom integriert einen Paketmanager namens apm und Git-Versionsverwaltung. Aufgrund der Rendering-Engine als Unterbau bietet Atom Syntaxhervorhebung für viele Programmiersprachen und erlaubt den Anwendern, das Programm beliebig mit Plug-ins und Themes zu erweitern.
+
+# Geschichte 
+
+Am 26. Februar 2014 stellte der Projekt-Hosting-Dienst GitHub eine erste Beta-Version des Texteditors vor. Zunächst sah es so aus, dass der Editor nicht unter einer Open-Source-Lizenz freigegeben werden würde. Anfangs wurden nur Erweiterungen und Pakete, die nicht Teil des Atom-Kerns sind, unter einer Open-Source-Lizenz veröffentlicht. Am 6. Mai 2014 wurde auch die restliche Atom-Software (inklusive des Kerns und der Atom Shell, jetzt Electron) unter der freien MIT-Lizenz veröffentlicht.Am 26. Juni 2015 wurde die Version 1.0 veröffentlicht. Von Version 1.2.0 an wird automatischer Zeilenumbruch bei CJK-Zeichen unterstützt.Die erste stabile Version 1.5 wurde am 9. Februar 2016 veröffentlicht. Die Version 1.6 unterstützt Block Decorations.Version 1.9 unterstützt Display Layers, außerdem lässt sich das Layout nun per Drag and Drop anpassen.Die aktuelle stabile Version ist 1.40.1 und die aktuelle Vorabversion ist 1.41.0-beta1 (beide vom 20. August 2019).
+
+# Funktionsumfang 
+
+Atom macht mit seinen Editorfunktionen Anleihen bei Sublime Text und ist eng mit Github verzahnt. Einen Überblick über den Funktionsumfang kann man sich mit der Kommandopalette verschaffen, über deren Volltextsuche sich Befehle und Tastaturkommandos anzeigen lassen, sodass man überwiegend ohne Maus arbeiten kann. Zu den Grundfunktionen gehören unter anderem eine Kommandopalette, Syntaxhervorhebung, automatische Sprachenerkennung, Code-Faltung, automatische Textvervollständigung, projektweites Suchen und Ersetzen, Shell-Kommandos, Snippet-Unterstützung, multiple Fenster (Panes) und eine leistungsstarke Fuzzy-Suche.
+Multiple Cursors und Selektionen wurden von Sublime entlehnt. Mit Atom lassen sich plattformübergreifende Desktop- und Web-Apps entwickeln. Dafür stehen in den integrierten Entwicklungsumgebungen Grammatiken für zahlreiche Programmiersprachen zur Verfügung, wie JavaScript, Perl, Python, C, C++ oder Java. Außer als Code-Editor eignet sich Atom auch als normales Textwerkzeug, etwa für Projektdokumentationen oder Blog-Einträge.
+
+# Packages und Themes 
+
+Auf der Atom-Website sind über 8.000 Erweiterungen und 2.700 Themes abrufbar. Die Packages und Themes lassen sich über den internen Paketmanager verwalten.
+
+# Electron 
+
+Atom ist eng mit der Entwicklung von Electron verbandelt. Electron (ehemals Atom Shell) wurde von GitHub als Unterbau für den Editor entwickelt.
+
+# Siehe auch 
+
+Liste von Texteditoren
+
+# Weblinks 
+
+Offizielle Website
+Atom Flight Manual. Handbuch für Endanwender.
+Atom Documentation mit API-Referenz für Entwickler.
+GitHub Repository
+
+# Einzelnachweise 
+

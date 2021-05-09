@@ -1,0 +1,6 @@
+
+## Luasaire cáithnín
+
+Is luasaire cáithnín é an cioglatrón a bhíonn in úsáid go minic le prótóin a
+luasghéarú. Bíonn na cáithníní á luasghéarú agus iad ag dul idir
+dhá leictreoid darb ainm “dee-nna”.

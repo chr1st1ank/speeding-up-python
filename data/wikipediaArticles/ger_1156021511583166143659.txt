@@ -1,0 +1,24 @@
+
+## Intel MCS-96
+
+MCS-96 ist die Bezeichnung einer 1982 von Intel vorgestellten Familie von 16-Bit-Mikrocontrollern. Sie besteht aus den Grundtypen 8094, 8095, 8096, 8097 und 8098. Besonderheit dieser Familie ist eine Registerarchitektur, bei der die CPU auf allen Registern einer Registerbank gleichwertig ohne den Akkumulator als Flaschenhals arbeiten kann.
+MCS-96-Mikrocontroller sind im 48-Pin- oder 68-Pin-Gehäuse verfügbar, mit oder ohne A/D-Wandler sowie mit 8 KByte oder ohne Festwertspeicher (809x ohne ROM, 839x mit ROM; 879x mit EPROM). Alle Ausführungen verfügen über eine serielle Schnittstelle samt Taktgenerator.
+
+# 8x196/8xC196 Familie 
+
+Später brachte Intel die 8XC196-Reihe heraus, die der MCS-96 Familie den Durchbruch brachte. In der 80XC196 Familie gab es mehrere Unterfamilien:
+HSIO (High Speed I/O) mit den Controllern 8XC196KB, KC und KD mit ADC und einem optionalen PTS (Peripheral Transaction Server), einer Art DMA-Controller
+EPA (Event Processor Array) mit den Controllern 8XC196KR, KT, NT und NP mit bis zu 1 MB externem Speicher und diversen seriellen Bussen
+MC (Motion Control) mit den Controllern 8XC196MC und MD mit 3-phasigem Waveform-Generator
+
+# Literatur und Datenblätter 
+
+Microcontroller Handbook, Intel Corporation 1984, Order number 210918-002, S. 1-1 – 5-10.
+Intel: 809XBH/839XBH/879XBH Commerical/Express HMOS Microcontroller (Preliminary)
+Intel: MCS-96 809X-90, 839X-90, Order #270016-004, T-49-19-16; T-49-19-59, Oct 1987 (Preliminary)
+Intel 8098/8398/8798 Commerical/Express HMOS Microcontroller (Preliminary)
+
+# Einzelnachweise 
+
+# Weblinks 
+

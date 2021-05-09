@@ -1,0 +1,98 @@
+
+## Échographie de stress
+
+L' échocardiographie de stress est une modalité d'échocardiographie consistant à visualiser et à analyser les modifications de la contraction du muscle cardiaque lors d'un stress constitué par un effort ou par injection de certains médicaments.
+Cet examen est essentiellement utilisée pour la détection d'une ischémie myocardique (défaut d'oxygénation du muscle cardiaque), témoin d'une atteinte d'une artère coronaire. Il permet également d'en estimer la viabilité.
+
+# Historique 
+
+Cette technique a vu le jour au milieu des années 1980 et s'est diffusée à partir des années 1990.
+
+# Matériel 
+
+L'échographie de stress nécessite un échographe de bonne qualité afin d'avoir une qualité d'imagerie optimale permettant une interprétation correcte des images. Idéalement, il doit disposer d'un système d'enregistrement numérique de boucles d'image afin de pouvoir superposer sur un même écran les acquisitions faites à différentes étapes du stress. De même, la cadence d'acquisition doit pouvoir être élevée afin de pouvoir disposer d'au moins une vingtaine d'images par cycle (intervalle entre deux battements du cœur), même si le rythme cardiaque est très élevé (typiquement 220-âge du patient). La comparaison des boucles d'images est grandement facilitée si le temps du cycle peut être normalisé lors de l'affichage.
+La salle d'examen doit comporter également : 
+
+un électrocardiographe douze pistes permettant de visualiser l'ECG du patient en temps réel ;
+un tensiomètre automatique permettant la surveillance régulière de la pression artérielle ;
+du matériel de réanimation, dont un défibrillateur.S'il s'agit d'une échographie d'effort, la salle doit être munie d'une table d'examen spéciale, muni d'un pédalier dont la résistance doit être réglable et pouvant être inclinée sur le côté gauche, condition optimale pour avoir les meilleurs images possibles.
+
+# Le stress 
+
+Deux techniques sont couramment utilisées : l'échographie-dobutamine et l'échographie d'effort.
+Le but du stress est d'augmenter la consommation en oxygène du muscle cardiaque. Si l'apport en est insuffisant, par exemple en cas de rétrécissement significatif d'une artère coronaire, le muscle devient alors ischémique et sa contraction faiblit, voire, s'annule, ce qui peut être visualisé grâce à l'échographie.
+
+# Écho-dobutamine 
+
+La dobutamine est un médicament administré par voie intra-veineuse, stimulant les récepteurs béta-adrénergiques. Il provoque une accélération progressive de la fréquence cardiaque et augmente la contractilité du myocarde. Son délai d'action ainsi que sa demi-vie sont courts, permettant de bien moduler son effet en jouant sur les doses. Son antidote est un médicament bêtabloquant. 
+L'échographie-dobutamine nécessite la mise en place d'une perfusion et la dobutamine est administrée à doses croissantes par une seringue électrique suivant un protocole établi. Il ne peut naturellement être fait si le patient est déjà sous médicaments bêtabloquants, ou alors, ces derniers devront être arrêtés quelques jours avant. Si la fréquence cardiaque obtenue reste insuffisante, l'injection d'atropine permet d'augmenter celle-ci.
+
+# Échographie d'effort 
+
+Historiquement, les premières échographies d'effort consistaient à coupler une épreuve d'effort banale avec une échocardiographie. Cette dernière était cependant techniquement difficile, le patient n'étant pas dans une position optimale et une immobilité relative étant difficile à obtenir. Souvent on se contentait d'une acquisition au repos et à la fin de l'effort. Elle est beaucoup plus facile depuis l'émergence des tables adaptées à l'échocardiographie d'effort (permettant de pédaler dans une position semi allongée, le thorax incliné sur le côté afin de faciliter l'échographie).
+L'échographie d'effort ne nécessite pas la mise en place d'une perfusion. L'effort doit cependant être réalisable à un niveau suffisamment important pour que le test soit significatif. Il n'est donc pas indiqué dans tous les cas où l'effort est difficile ou impossible (personnes très âgées, insuffisance respiratoire…)
+
+# Autres techniques 
+
+Elles sont moins employées.
+
+Échographie-dipyridamole (en) : cette dernière molécule provoque une vaso-dilatation des artères coronaires mais qui ne peut avoir lieu en cas de lésion de cette dernière, provoquant alors une ischémie relative. Cette modalité ne peut cependant être finement modulée contrairement aux deux techniques précédentes.
+Échographie par stimulation œsophagienne : la stimulation électrique par l'intermédiaire d'une sonde avalée dont l'extrémité se trouve dans l'œsophage moyen permet de stimuler l'oreillette gauche, se situant en regard. On peut ainsi augmenter graduellement la fréquence cardiaque mais l'examen reste inconfortable.
+En cas de port d'un stimulateur cardiaque, on peut commander l'augmentation de la fréquence de stimulation.
+
+# Réalisation 
+
+Il s'agit d'un examen non invasif. L'information du patient sur les modalités de l'examen et ses risques est indispensable.
+Une première acquisition échographique est faite avant tout stress, permettant d'apprécier la contraction de l'ensemble des parois du ventricule gauche. 
+Le stress (dobutamine ou effort) est alors débuté suivant un protocole établi et sous surveillance électrocardiographique et tensionnelle. Le stress se décompose en plusieurs stades avec une acquisition échocardiographique à la fin de chacune de ces derniers.
+Le stress est arrêté lorsque la fréquence cardiaque atteint la “fréquence maximale théorique” (équivalent à 220 moins l'âge du patient) ou lorsque des anomalies sont détectées au niveau électrocardiographique ou échographique.
+Après l'arrêt du stress se situe la phase, dite de récupération. Une dernière acquisition est faite lorsque la fréquence cardiaque est retournée à peu près à son niveau de départ.
+
+# Résultats 
+
+Chaque segment du muscle cardiaque est coté suivant sa contractilité (normale, hypokinésie ou contractilité diminuée, akinésie ou contractilité abolie, dyskinésie ou contractilité dans le sens inverse). Cette cotation est faite avant tout stress, à différentes étapes de ce dernier et à la fin de la phase de récupération.
+L'évolution de la contraction de chaque segment est analysée.
+Un segment qui diminue sa contractilité durant le stress témoigne d'une possible ischémie à son niveau, et donc d'un rétrécissement de l'artère coronaire irriguant ce segment. Cela inciterait à une revascularisation de cette dernière si cela est possible (angioplastie ou pontage aorto-coronaire).
+Au contraire, un segment initialement akinétique et qui devient hypokinétique, voire normokinétique au décours du stress, serait le témoin d'une viabilité du muscle cardiaque et inciterait, de même, à une revascularisation.
+Un segment qui reste akinétique quel que soit le niveau du stress est un segment sans viabilité. Il s'agit d'une séquelle (infarctus du myocarde constitué) sans indication à une revascularisation.
+
+# Limitations 
+
+Comme toute échocardiographie, l'examen reste examinateur dépendant : la qualité de son interprétation dépend de l'habitude du médecin vis-à-vis de cette technique qui reste délicate. Il dépend également de la qualité de l'image obtenue, qui doit être optimale pour la quasi-totalité des segments du ventricule gauche : on ne peut naturellement rien dire sur la présence ou non d'une ischémie en cas d'absence de bonne visualisation d'un segment particulier. Dans des cas difficile, l'examen peut être aidé par l'injection de produit de contraste (bulles) qui permettent une meilleure délimitation du contour endo-ventriculaire.
+L'examen est difficilement interprétable en cas de fibrillation auriculaire.
+Sa spécificité et sa sensibilité, bien que très sensiblement meilleure que lors d'une épreuve d'effort et proche de celles d'une scintigraphie myocardique, n'est pas absolue.
+Il comporte les mêmes contre-indications absolues et relatives que l'épreuve d'effort : infarctus du myocarde récent, troubles du rythme ventriculaire non stabilisés, angine de poitrine instable…
+Sa tolérance reste bonne malgré des palpitations parfois mal tolérées. Les accidents sont rares. La mortalité est exceptionnelle, inférieure à 1⁄10000. Un infarctus du myocarde peut survenir dans 2/10 000 cas. Des troubles du rythme ventriculaire sont possibles, imposant la présence de matériel de réanimation dans la salle d'examen (dont un défibrillateur). Une fibrillation auriculaire, trouble du rythme beaucoup moins grave, peut survenir dans 1 % des examens.
+
+# Place par rapport aux autres techniques 
+
+L'examen a fait l'objet de la publication de plusieurs recommandations. Celles, américaines, concernant les indications, datent de 2008.
+Par rapport à l'épreuve d'effort, elle apporte une meilleure sensibilité et une meilleure spécificité et apporte des informations topographiques (siège de l'ischémie).
+Par rapport à une scintigraphie myocardique, sa sensibilité et spécificité sont proches. L'échocardiographie de stress est une technique moins lourde et moins coûteuse, mais beaucoup plus opérateur dépendant.
+L'échographie de stress permet d'aider à la quantification des rétrécissements des artères coronaires retrouvées au scanner coronaire ou à la coronarographie, distinguant celles qui ont une conséquence pour le patient de celles qui sont, en fait, non significatives.
+
+# L'échographie de stress dans l'évaluation des valvulopathies 
+
+Cet examen peut permettre de préciser la gravité de l'atteinte valvulaire et peut aider à porter une indication opératoire.
+
+# Rétrécissement aortique 
+
+Le rétrécissement aortique serré et avec symptômes est une indication opératoire formelle. Un test d'effort (standard ou couplée avec une échocardiographie) est théoriquement contre-indiqué.
+Un rétrécissement aortique, jugé moyennement serré, peut ne provoquer aucun signe fonctionnel, surtout chez la personne âgée qui peut minimiser, voire nier toute plainte. Une augmentation substantielle de la différence de pression (gradient de pression) entre le ventricule gauche et l'aorte, telle que mesurée à l'échographie-doppler à l'effort ou sous dobutamine, augmenterait le risque de survenue d'accidents cardiaques et serait un argument supplémentaire pour proposer une chirurgie.
+Le cas le plus délicat est la présence d'un rétrécissement aortique à faible gradient avec altération importante de la fonction systolique. L'échographie dobutamine est faite dans ce cas à petites doses de ce dernier. Il apporte deux types de renseignement : il confirme la présence d'un rétrécissement aortique serré si le gradient augmente significativement et il permet d'estimer la « réserve contractile » du ventricule gauche, c'est-à-dire, d'évaluer la fonction de ce dernier après chirurgie. Le pronostic est considérablement amélioré après chirurugie s'il existe une augmentation significative de la fonction cardiaque (attestée par l'augmentation de la fraction d'éjection) sous petites doses de dobutamine. 
+
+# Insuffisance aortique 
+
+Le rôle de l'échographie de stress n'est pas clairement établi pour ce type de valvulopathie.
+
+# Rétrécissement mitral 
+
+L'échographie de stress peut aider à prendre une décision opératoire (ou de valvuloplastie) en cas de rétrécissement mitral jugé limite, chez un patient symptomatique, ou jugé serré chez un patient symptomatique. Dans ce cas, une augmentation à l'effort de la différence de pression entre le ventricule gauche et l'oreillette gauche (gradient de pression) et/ou une augmentation de la pression systolique de l'artère pulmonaire sont des arguments importants pour pousser vers une intervention.
+
+# Insuffisance mitrale 
+
+L'échographie de stress est essentiellement utile pour apprécier une insuffisance mitrale d'origine ischémique.
+
+# Notes et références 
+
+ Portail de la médecine Portail de l’imagerie numérique

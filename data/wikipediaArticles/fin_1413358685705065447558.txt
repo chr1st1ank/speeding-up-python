@@ -1,0 +1,54 @@
+
+## Tsu (kana)
+
+つ hiraganalla tai ツ katakanalla ovat kaksi japanin kielen kirjoittamiseen käytettyä kana-merkkiä, jotka edustavat samaa tavua. Ne lausutaan /tsɯ/, ja ne ovat kana-aakkostojen 18. sijalla chi- ja te-tavujen välissä.
+
+# Alkuperä 
+
+Hiragana つ ja katakana ツ on johdettu man'yōgana-merkistön kautta kanjista 川.
+
+# Tarkkeet 
+
+Merkkeihin voidaan lisätä dakuten, jolloin muodostuvat tavut づ et ヅ, jotka lausutaan /dzɯ/ tai /zɯ/. Modernissa japanissa nämä merkit ovat harvinaisia ja ne on suureksi osaksi korvattu merkeillä ず ja ズ. Niitä käytetään pääosin kirjoittamaan soinnilliseksi muuttunutta äännettä yhdyssanan keskellä (rendaku).
+
+# Latinisaatio 
+
+Kanat latinisoidaan eri tavoin Hepburn-, Kunrei-shiki ja Nihon-shiki-järjestelmissä. Hepburn-järjestelmässä ne latinisoidaan « tsu » ja niiden soinnilliset vastineet « zu ». Kunrei-järjestelmässä vastaavat muodot ovat « tu » ja soinnillisena « zu ». Nihon-shikissä kanat latinisoidaan « tsu » ja niiden soinnilliset vastineet « du ».
+
+# Kirjoitus 
+
+Hiragana つ kirjoitetaan vain yhdellä vedolla:
+
+Vasemmalle avoin suuri kaari.
+Katakana ツ kirjoitetaan kolmella vedolla:
+
+Lyhyt diagonaalinen veto ylhäältä vasemmalta alhaalle oikealle.
+Samantyyppinen veto edellisen oikealle puolelle.
+Diagonaalinen, hieman kaareva veto oikealta ylhäältä alas vasemmalle.
+
+# Tietotekniikassa 
+
+Unicode-merkinnät:
+っ: U+3063
+つ: U+3064
+ッ: U+30C3
+ツ: U+30C4
+づ: U+3065
+ヅ: U+30C5
+
+# Käyttö 
+
+Pieni hiragana っ on nimeltään sokuon. Sitä käytetään pääosin osoittamaan seuraavan konsonantin kahdentumista. Pientä katakanaa ッ käytetään samaan tarkoitukseen.
+Katakana ツ voidaan yhdistää useisiin muihin kanoihin merkitsemään äänteitä, jotka eivät ole japanin kielelle alkuperäisiä:
+
+ツァ: « tsa »
+ツィ: « tsi »
+ツェ: « tse »
+ツォ: « tso »
+
+# Lähteet 
+
+Japanese Hiragana Omniglot. Viitattu 23. lokakuuta 2008. 
+Japanese Katakana Omniglot. Viitattu 23. lokakuuta 2008. 
+Hiragana Character Chart Unicode. Viitattu 23. lokakuuta 2008. 
+Katakana Character Chart Unicode. Viitattu 23. lokakuuta 2008.

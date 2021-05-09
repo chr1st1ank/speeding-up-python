@@ -1,0 +1,43 @@
+
+## Amphisbaenia
+
+Amphisbaenia (called amphisbaenians or worm lizards) is a group of usually legless squamates, comprising over 180 extant species. Amphisbaenians are characterized by their long bodies, the reduction or loss of the limbs, and rudimentary eyes. As many species have a pink body and scales arranged in rings, they have a superficial resemblance to earthworms. While the genus Bipes retains forelimbs, all other genera are limbless. Although superficially similar to the snakes and blind lizards, recent phylogenetic studies suggest that they are most closely related to the true lizards. Amphisbaenians are widely distributed, occurring in North America, Europe, Africa, South America, Western Asia and the Caribbean. They are not found east of the Caspian Sea. Most species are less than 6 inches (150 mm) long.
+
+# Description 
+
+Despite a superficial resemblance to some primitive snakes, amphisbaenians have many unique features that distinguish them from other reptiles. Internally, their right lung is reduced in size to fit their narrow bodies, whereas in snakes, it is always the left lung. Their skeletal structure and skin are also different from those of other squamates. Both genetic and recent fossil evidence indicate that amphisbaenians lost their legs independently from snakes.The head is stout, not set off from the neck, and either rounded, sloped, or sloped with a ridge down the middle. Most of the skull is solid bone, with a distinctive single median tooth in the upper jaw. It has no outer ears, and the eyes are deeply recessed and covered with skin and scales. These rudimentary eyes have a cornea, lens, and complex ciliary body, which allows them to detect light, but they are reduced in size and do not have an anterior chamber. The body is elongated, and the tail truncates in a manner that vaguely resembles the head. Their name is derived from Amphisbaena, a mythical serpent with a head at each end—referencing both the manner in which their tail truncates, and their ability to move just as well in reverse as forwards. The four species of Bipes are unusual in having a pair of forelimbs, but all limbless species have some remnants of the pelvic and pectoral girdles embedded within the body musculature.
+The skin of amphisbaenians is only loosely attached to the body, and they move using an accordion-like motion, in which the skin moves and the body seemingly just drags along behind it. Uniquely, they are also able to perform this motion in reverse just as effectively.
+Amphisbaenians are carnivorous, able to tear chunks out of larger prey with their powerful, interlocking teeth. Like lizards, some species are able to shed their tails (autotomy). Most species lay eggs, although at least some are known to be viviparous.The white worm lizard (Amphisbaena alba) is often found in association with leafcutter ants. This reptile is thought to forage in the ants' deep galleries where the insects deposit their waste. The presence of these reptiles is easily explained by the fact that they prey on the larvae of large beetles that also inhabit the leafcutter ants' galleries.
+
+# Distribution 
+
+Amphisbaenians are found in North America, Europe, Africa, South America, the Middle-East and the Caribbean, a surprisingly large distribution despite being small subterranean animals that rarely ever leave their burrows.
+A recent combination of molecular and fossil evidence suggests that amphisbenians originated in North America, where they underwent their first divergence around 107 million years ago. They then underwent another major diversification into North American and European forms 40-56 million years ago. Finally the African and South American forms split around 40 million years ago. This suggests that worm-lizards crossed the Atlantic Ocean (which had fully formed by 100 million years ago) twice, once just after the K-Pg extinction, and then again, later in the Palaeogene. It has been suggested that this occurred by rafting: natural erosion or a storm event loosened a large raft of soil and vegetation that drifted across the ocean until landing on another shore.
+
+# Taxonomy 
+
+Taxonomic classification of amphisbaenians was traditionally based on morphological characters, such as the number of preanal pores, body annuli, and tail annuli. Such characters are vulnerable to convergent evolution; in particular, the loss of the forelimbs and the evolution of specialized shovel-headed and keel-headed morphs appear to have occurred multiple times in the history of the group. Classifications based on mitochondrial DNA sequences and nuclear DNA sequences better reflect their true evolutionary history, and are now being used to distinguish genera of amphisbaenians.The most ancient branch of the tree is Rhineuridae. The remaining five families form a group to the exclusion of rhineurids. Bipedidae, Blanidae and Cadeidae represent the most ancient divergences within this grouping, with Trogonophidae and Amphisbaenidae diverging more recently. South American amphisbaenids apparently are derived from African amphisbaenids that rafted across the Atlantic in the Eocene, about 40 million years ago. Cuban cadeids may be similarly derived from blanids that rafted across from northwestern Africa or southwestern Europe in a similar time frame.Amphisbaenia has usually been considered a suborder of squamates. However, more recent studies indicate that it is part of the lizard clade Lacertoidea, ranked only as a superfamily, so it is now commonly described as an unranked clade.
+
+# Families 
+
+Six families of amphisbaenians are currently recognised:
+
+Amphisbaenidae Gray, 1865 – Amphisbaenids, tropical worm lizards of South America, some Caribbean islands, and Sub-Saharan Africa. (17 genera)
+Bipedidae Taylor, 1951 – Only in Mexico and commonly called ajolotes, but not to be confused with axolotls (1 genus)
+Blanidae Kearney & Stuart, 2004 - Anatolian, Iberian, and Moroccan worm lizards (1 genus)
+Cadeidae Vidal and Hedges, 2008 – Cuban keel-headed worm lizards (1 genus). Traditionally amphisbaenids, but shown by DNA to be closest to Blanidae.
+Rhineuridae Vanzolini, 1951 – North American worm lizards (1 genus)
+Trogonophidae Gray, 1865 – Palearctic worm lizards (4 genera)
+
+# Phylogeny 
+
+The following cladogram shows the relationships between the six amphisbaenian families determined in the phylogenetic analysis of mitochondrial and nuclear genes by Vidal et al. (2008).
+
+# References 
+
+# Further reading 
+
+Branch, Bill. 2004. Field Guide to Snakes and Other Reptiles of Southern Africa. Third Revised edition, Second Impression. Sanibel Island, Florida: Ralph Curtis Books. 399 pp. ISBN 0-88359-042-5. (Suborder Amphisbaenia, pp. 201–202.)
+Gans, C. 2005. Checklist and Bibliography of the Amphisbaenia of the World. Bull. American Mus. Nat. Hist. (289): 1-130.
+Goin, C.J.; O.B. Goin; G.R. Zug. 1978. Introduction to Herpetology, Third Edition. San Francisco: W.H. Freeman and Company. xi + 378 pp. ISBN 0-7167-0020-4. (Suborder Amphisbaenia, pp. 276–278.)
+Gray, J.E. 1844. Catalogue of the Tortoises, Crocodiles, and Amphisbænians, in the Collection of the British Museum. London: Trustees of the British Museum. (E. Newman, printer.) viii + 80 pp. (Order "Amphisbænia", p. 68.)
