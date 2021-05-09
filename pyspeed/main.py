@@ -31,6 +31,8 @@ def system_info():
 
 
 if __name__ == '__main__':
+    system_info()
+
     runner = BenchmarkRunner(solvers=[
             python_solver.PythonSolver(),
             numba_solver.NumbaSolver(),
@@ -59,4 +61,3 @@ if __name__ == '__main__':
             solver_time = " -" if results[mark][solver_name] is None else f"{round(results[mark][solver_name] * 1000)}ms"
             print(f"\t{solver_time.rjust(7)} - {solver_name}")
 
-    system_info()

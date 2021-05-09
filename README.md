@@ -1,5 +1,5 @@
 # python-metrics
-Small benchmarks to compare different options to speed up Python code.
+Small personal benchmarks to compare different options to speed up Python code.
 
 This small project should help to:
 - provide an overview of practical options to speed up Python code
@@ -106,28 +106,6 @@ Notes:
 Output of the last run on my laptop:
 
 ```
-mergesort
-	  238ms - Pure Python
-	  284ms - Numba
-	   91ms - Cythonized Python
-	   56ms - Julia
-	   17ms - C++
-	   11ms - Rust from Python
-groupby_sum
-	  130ms - Pure Python
-	      - - Numba
-	   80ms - Cythonized Python
-	      - - Julia
-	      - - C++
-	  100ms - Rust from Python
-string_slice
-	   25ms - Pure Python
-	      - - Numba
-	   20ms - Cythonized Python
-	      - - Julia
-	      - - C++
-	   62ms - Rust from Python
-
 System information:
 
 Architecture: x86_64 / 64bit
@@ -135,6 +113,34 @@ System: Linux / 5.11.11-arch1-1
 Python: CPython 3.9.2 built with ('glibc', '2.33')
 Processors: 
     4 x  Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz
+mergesort
+	  240ms - Pure Python
+	  272ms - Numba
+	   88ms - Cythonized Python
+	   56ms - Julia
+	   17ms - C++
+	   11ms - Rust
+groupby_sum
+	  129ms - Pure Python
+	      - - Numba
+	   82ms - Cythonized Python
+	      - - Julia
+	      - - C++
+	   99ms - Rust
+string_slice
+	   23ms - Pure Python
+	      - - Numba
+	   18ms - Cythonized Python
+	      - - Julia
+	      - - C++
+	   45ms - Rust
+ngram_count
+	  236ms - Pure Python
+	  257ms - Numba
+	  119ms - Cythonized Python
+	      - - Julia
+	      - - C++
+	  158ms - Rust
 ```
 
 ## Contributing

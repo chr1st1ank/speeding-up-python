@@ -11,7 +11,7 @@ from typing import List, Dict
 
 class RustSolver(BenchmarkSolver):
     def description(cls):
-        return "Rust from Python"
+        return "Rust"
 
     def mergesort(self, l: List) -> List:
         return pyspeed_rust.mergesort(l)
