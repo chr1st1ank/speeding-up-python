@@ -19,3 +19,7 @@ class BenchmarkSolver:
     @abc.abstractmethod
     def string_slice(self, test_data: typing.Dict) -> typing.List[str]:
         raise NotImplementedError("Method not implemented")
+
+    @abc.abstractmethod
+    def ngram_count(self, test_data):
+        raise NotImplementedError("Method not implemented")

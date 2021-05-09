@@ -33,3 +33,8 @@ class CythonSolver(BenchmarkSolver):
         start: int = test_data["start"]
         end: int = test_data["end"]
         return cython_backend.string_slice(string_list, start, end)
+
+    def ngram_count(self, test_data):
+        string_list: List[str] = test_data["strings"]
+        ngram_n: int = test_data["ngram_n"]
+        return cython_backend.count_ngrams_in_list(string_list, ngram_n)

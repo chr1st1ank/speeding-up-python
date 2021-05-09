@@ -1,10 +1,10 @@
 from collections import namedtuple
 import random
+from functools import lru_cache
 
 random.seed(123)
 
 Benchmark = namedtuple('Benchmark', field_names=['name', 'data'])
-
 
 def mergesort_benchmark() -> Benchmark:
     return Benchmark(name='mergesort', data=[random.randint(-1000000, 1000000) for _ in range(10000)])
@@ -23,7 +23,8 @@ def groupby_sum_benchmark() -> Benchmark:
     )
 
 
-def string_slice_benchmark() -> Benchmark:
+@lru_cache()
+def alphabet():
     include_ranges = [
         (0x0021, 0x0021, 1),
         (0x0023, 0x0026, 1),
@@ -40,11 +41,15 @@ def string_slice_benchmark() -> Benchmark:
         (0x038C, 0x038C, 1),
     ]
 
-    allowed_chars = ''.join(
+    return ''.join(
         chr(code_point) * weight
         for range_start, range_end, weight in include_ranges
         for code_point in range(range_start, range_end + 1)
     )
+
+
+def string_slice_benchmark() -> Benchmark:
+    allowed_chars = alphabet()
 
     def rand_string(max_len):
         return ''.join(random.choice(allowed_chars) for _ in range(random.randint(0, max_len)))
@@ -56,5 +61,21 @@ def string_slice_benchmark() -> Benchmark:
             "strings": [rand_string(200) for _ in range(l)],
             "start": 105,
             "end": 120
+        }
+    )
+
+
+def ngram_count_benchmark() -> Benchmark:
+    allowed_chars = alphabet()
+
+    def rand_string(max_len):
+        return ''.join(random.choice(allowed_chars) for _ in range(random.randint(0, max_len)))
+
+    l = 1000
+    return Benchmark(
+        name="ngram_count",
+        data={
+            "strings": [rand_string(200) for _ in range(l)],
+            "ngram_n": 3
         }
     )

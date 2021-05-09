@@ -1,8 +1,9 @@
 use pyo3::prelude::*;
-use pyo3::wrap_pyfunction;
 use pyo3::types::PyDict;
+use pyo3::wrap_pyfunction;
 use std::collections::HashMap;
 use substring::Substring;
+use unicode_segmentation::UnicodeSegmentation;
 
 fn merge(left: &[i64], right: &[i64]) -> Vec<i64> {
     let mut ret: Vec<i64> = Vec::new();
@@ -48,19 +49,16 @@ fn mergesort_rs(l: &[i64]) -> Vec<i64> {
     return merge(&left, &right);
 }
 
-
 #[pyfunction]
 fn mergesort(l: Vec<i64>) -> PyResult<Vec<i64>> {
     Ok(mergesort_rs(&l))
 }
-
 
 /// Formats the sum of two numbers as string.
 #[pyfunction]
 pub fn sum_as_string(a: usize, b: usize) -> PyResult<String> {
     Ok((a + b).to_string())
 }
-
 
 /// Formats the sum of a list of numbers as string.
 #[pyfunction]
@@ -76,7 +74,9 @@ pub fn sum_of_list(l: Vec<i64>) -> PyResult<String> {
 pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
     let keys = match data_table.get_item("keys") {
         Some(l) => l,
-        None => { return Err(pyo3::exceptions::PyValueError::new_err("keys missing")); }
+        None => {
+            return Err(pyo3::exceptions::PyValueError::new_err("keys missing"));
+        }
     };
     // let keys = keys.downcast::<PyList>()?;
     let keys: Vec<i64> = keys.extract()?;
@@ -85,7 +85,7 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
     groups.dedup();
 
     // let result_dict = PyDict::new(py);
-    let mut result_dict : HashMap<String, Vec<i64>> = HashMap::new();
+    let mut result_dict: HashMap<String, Vec<i64>> = HashMap::new();
 
     for (column, values) in data_table.iter() {
         let column: String = column.extract()?;
@@ -98,7 +98,7 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
             if let Some(key) = keys.get(i) {
                 let s = if let Some(old_sum) = sums.get(key) {
                     values[i] + old_sum
-                }else{
+                } else {
                     values[i]
                 };
                 sums.insert(key, s);
@@ -121,9 +121,55 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
 fn string_slice(strings: Vec<&str>, start: usize, end: usize) -> PyResult<Vec<&str>> {
     let mut new_strings = Vec::with_capacity(strings.len());
     for s in strings {
-        new_strings.push(s.substring(start, end+1));
+        new_strings.push(s.substring(start, end + 1));
     }
     Ok(new_strings)
+}
+
+#[inline]
+fn count_ngrams_rs(s: &str, ngram_n: usize) -> HashMap<String, i32> {
+    let mut padded = String::with_capacity(s.len() + 2 * ngram_n - 2);
+    for _ in 0..(ngram_n - 1) {
+        padded.push('$')
+    }
+    padded.push_str(s);
+    for _ in 0..(ngram_n - 1) {
+        padded.push('$')
+    }
+
+    let mut counts: HashMap<String, i32> = HashMap::new();
+    let mut iter = padded.graphemes(true);
+    loop {
+        let ngram = iter.as_str().substring(0, ngram_n).to_string();
+        if ngram.len() < ngram_n {
+            break;
+        }
+        let new_count = if let Some(old_count) = counts.get(&ngram) {
+            old_count  + 1
+        } else {
+            1
+        };
+        counts.insert(ngram, new_count);
+        iter.next();
+    }
+
+    counts
+}
+
+#[pyfunction]
+fn count_ngrams(py: Python, s: &str, ngram_n: usize) -> PyResult<PyObject> {
+    Ok(count_ngrams_rs(s, ngram_n).into_py(py))
+}
+
+#[pyfunction]
+fn count_ngrams_list(py: Python, strings: Vec<&str>, ngram_n: usize) -> PyResult<PyObject> {
+    let mut results : Vec<HashMap<String, i32>> = Vec::with_capacity(strings.len());
+
+    for s in strings {
+        results.push(count_ngrams_rs(s, ngram_n));
+    }
+
+    Ok(results.into_py(py))
 }
 
 #[pymodule]
@@ -134,6 +180,8 @@ fn pyspeed_rust(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(sum_of_list, m)?)?;
     m.add_function(wrap_pyfunction!(groupby_sum, m)?)?;
     m.add_function(wrap_pyfunction!(string_slice, m)?)?;
+    m.add_function(wrap_pyfunction!(count_ngrams, m)?)?;
+    m.add_function(wrap_pyfunction!(count_ngrams_list, m)?)?;
 
     Ok(())
 }

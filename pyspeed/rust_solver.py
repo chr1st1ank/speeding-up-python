@@ -25,21 +25,10 @@ class RustSolver(BenchmarkSolver):
         end: int = test_data["end"]
         return pyspeed_rust.string_slice(string_list, start, end)
 
-
-
-class RustSolver2(BenchmarkSolver):
-    def description(cls):
-        return "Rust2 from Python"
-
-    def mergesort(self, l: List) -> List:
-        return pyspeed_rust.mergesort(l)
-
-    def groupby_sum(self, data):
-        return pyspeed_rust.groupby_sum(data)
-
-    def string_slice(self, test_data: Dict):
+    def ngram_count(self, test_data):
         string_list: List[str] = test_data["strings"]
-        start: int = test_data["start"]
-        end: int = test_data["end"]
-        return pyspeed_rust.string_slice(string_list, start, end)
-        # return [pyspeed_rust.string_slice_unicode(s, start, end) for s in string_list]
+        ngram_n: int = test_data["ngram_n"]
+        # return pyspeed_rust.count_ngrams_list(string_list, ngram_n)
+        return [
+            pyspeed_rust.count_ngrams(s, ngram_n) for s in string_list
+        ]

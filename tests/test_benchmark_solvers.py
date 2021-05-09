@@ -75,6 +75,24 @@ def test_string_slice(solver: BenchmarkSolver):
     ]
 
 
+def test_ngram_count(solver: BenchmarkSolver):
+    data = {
+        "strings": [
+            "abac",
+            "abcabc",
+            "北京",
+            ""
+        ],
+        "ngram_n": 3,
+    }
+    p = solver.ngram_count(data)
+    assert p == [
+        {k: 1 for k in ["$$a", "$ab", "aba", "bac", "ac$", "c$$"]},
+        {k: (1 if k != "abc" else 2) for k in ["$$a", "$ab", "abc", "bca", "cab", "bc$", "c$$"]},
+        {k: 1 for k in ["$$北", "$北京", "北京$", "京$$"]},
+        {"$$$": 2}
+    ]
+
 def test_solver_results(runner):
     runner.time_it(1, 1)
     assert runner.verify_results()

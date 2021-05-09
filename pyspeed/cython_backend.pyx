@@ -43,3 +43,19 @@ def groupby_sum_cy(data_dict):
 
 def string_slice(string_list, start: int, end: int):
     return [s[start:end+1] for s in string_list]
+
+
+def count_ngrams_in_list(string_list, n):
+    return [
+        count_ngrams(s, n) for s in string_list
+    ]
+
+def count_ngrams(str s, int n):
+    cdef str padded = "$"*(n-1) + s + "$"*(n-1)
+    cdef dict counts = {}
+    cdef int i = 0
+    cdef int max_i = len(padded) - n + 1
+    for i in range(max_i):
+        k = padded[i: i + n]
+        counts[k] = counts.get(k, 0) + 1
+    return counts

@@ -53,3 +53,18 @@ class PythonSolver(BenchmarkSolver):
         start: int = test_data["start"]
         end: int = test_data["end"]
         return [s[start:end+1] for s in string_list]
+
+    def ngram_count(self, test_data):
+        string_list: List[str] = test_data["strings"]
+        ngram_n: int = test_data["ngram_n"]
+        return [
+            count_ngrams(s, ngram_n) for s in string_list
+        ]
+
+def count_ngrams(s, n):
+    padded = "$"*(n-1) + s + "$"*(n-1)
+    counts = {}
+    for i in range(len(padded) - n + 1):
+        k = padded[i: i + n]
+        counts[k] = counts.get(k, 0) + 1
+    return counts
