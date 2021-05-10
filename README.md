@@ -24,7 +24,7 @@ Input is a list of unicode strings. Every string has to be sliced and the first 
 
 ## Comments on the frameworks / languages used
 
-### 1. Pure Python
+### 1. Python
 The implementation in pure Python serves as reference for all other solutions.
 
 ### 2. Numba
@@ -134,7 +134,7 @@ Processors:
 mergesort
 	  243ms - Pure Python
 	  275ms - Numba
-	   88ms - Cythonized Python
+	   88ms - Cython
 	   55ms - Julia
 	   17ms - C++ (cython)
 	   17ms - C++ (pybind11)
@@ -142,7 +142,7 @@ mergesort
 groupby_sum
 	  129ms - Pure Python
 	      - - Numba
-	   81ms - Cythonized Python
+	   81ms - Cython
 	      - - Julia
 	      - - C++ (cython)
 	      - - C++ (pybind11)
@@ -150,7 +150,7 @@ groupby_sum
 string_slice
 	   24ms - Pure Python
 	      - - Numba
-	   18ms - Cythonized Python
+	   18ms - Cython
 	      - - Julia
 	      - - C++ (cython)
 	   64ms - C++ (pybind11)
@@ -158,7 +158,7 @@ string_slice
 ngram_count
 	  242ms - Pure Python
 	  257ms - Numba
-	  120ms - Cythonized Python
+	  120ms - Cython
 	      - - Julia
 	      - - C++ (cython)
 	  193ms - C++ (pybind11)

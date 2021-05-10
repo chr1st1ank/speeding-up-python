@@ -20,7 +20,7 @@ from typing import List
 
 class CythonSolver(BenchmarkSolver):
     def description(cls):
-        return "Cythonized Python"
+        return "Cython"
 
     def mergesort(self, l: List) -> List:
         return cython_backend.mergesort_cy(l)
