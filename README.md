@@ -69,7 +69,7 @@ Notes:
   - The compilation has to be carried out before running the Python program (done by the build_cpp.sh script).
 
       
-### 4. C++ via PyBind11
+### 5. C++ via PyBind11
 C++ implementation which is compiled and called with [pybind11](https://github.com/pybind/pybind11).
 
 Prerequisites:
@@ -86,7 +86,7 @@ Notes:
 - Pybind11 gives a comfortable mapping of python type to stdlib types, the conversion (copy!) is fast
 - Python objects can be directly accessed. This needs careful error handling because of untyped casts which are necessary.
 
-### 5. Julia
+### 6. Julia
 Solver using the [Julia programming language](https://julialang.org/) which has a comfortable binding for Python.
 
 Prerequisites:
@@ -105,7 +105,7 @@ Notes:
 - The code assumes that the standard "high-level" mode of PyJulia can be used, which needs Julia to be on the PATH
   variable. Alternative approaches are described on the [PyJulia page](https://github.com/JuliaPy/pyjulia)
       
-### 6. Rust
+### 7. Rust
 Implementation in the Rust programming language using the [Pyo3 bindings](https://pyo3.rs). It allows to compile native Python extensions with minimal overhead.
 
 Prerequisites:
