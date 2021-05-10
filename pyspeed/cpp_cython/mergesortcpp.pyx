@@ -1,5 +1,5 @@
 # distutils: language = c++
-# distutils: sources = pyspeed/cpp/mergesort.cpp
+# distutils: sources = ./mergesort.cpp
 
 from . cimport mergesortcpp
 from typing import List

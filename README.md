@@ -113,34 +113,39 @@ System: Linux / 5.11.11-arch1-1
 Python: CPython 3.9.2 built with ('glibc', '2.33')
 Processors: 
     4 x  Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz
+    
 mergesort
-	  240ms - Pure Python
-	  272ms - Numba
+	  243ms - Pure Python
+	  275ms - Numba
 	   88ms - Cythonized Python
-	   56ms - Julia
-	   17ms - C++
+	   55ms - Julia
+	   17ms - C++ (cython)
+	   17ms - C++ (pybind11)
 	   11ms - Rust
 groupby_sum
 	  129ms - Pure Python
 	      - - Numba
-	   82ms - Cythonized Python
+	   81ms - Cythonized Python
 	      - - Julia
-	      - - C++
-	   99ms - Rust
+	      - - C++ (cython)
+	      - - C++ (pybind11)
+	  100ms - Rust
 string_slice
-	   23ms - Pure Python
+	   24ms - Pure Python
 	      - - Numba
 	   18ms - Cythonized Python
 	      - - Julia
-	      - - C++
+	      - - C++ (cython)
+	   64ms - C++ (pybind11)
 	   45ms - Rust
 ngram_count
-	  236ms - Pure Python
+	  242ms - Pure Python
 	  257ms - Numba
-	  119ms - Cythonized Python
+	  120ms - Cythonized Python
 	      - - Julia
-	      - - C++
-	  158ms - Rust
+	      - - C++ (cython)
+	  193ms - C++ (pybind11)
+	  157ms - Rust
 ```
 
 ## Contributing

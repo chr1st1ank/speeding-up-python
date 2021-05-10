@@ -6,7 +6,7 @@ edition = "2018"
 
 [lib]
 name = "pyspeed_rust"
-path = "src/pyspeed.rs"
+path = "pyspeed/rust/pyspeed.rs"
 crate-type = ["cdylib"]
 
 [dependencies]

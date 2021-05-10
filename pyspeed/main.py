@@ -4,6 +4,7 @@ from collections import Counter
 
 import benchmark
 import cpp_solver
+import cpp_pyb11_solver
 import cython_solver
 import julia_solver
 import numba_solver
@@ -39,6 +40,7 @@ if __name__ == '__main__':
             cython_solver.CythonSolver(),
             julia_solver.JuliaSolver(),
             cpp_solver.CppSolver(),
+            cpp_pyb11_solver.CppPyb11Solver(),
             rust_solver.RustSolver(),
         ],
         benchmarks=[

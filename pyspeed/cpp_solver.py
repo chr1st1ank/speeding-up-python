@@ -17,14 +17,14 @@ Notes:
 """
 
 # import pyximport; pyximport.install(language_level=3)
-from cpp import mergesortcpp
+from cpp_cython import mergesortcpp
 
 from benchmark_solver import BenchmarkSolver
 from typing import List
 
 class CppSolver(BenchmarkSolver):
     def description(self):
-        return "C++"
+        return "C++ (cython)"
 
     def mergesort(self, l: List) -> List:
         return mergesortcpp.mergesort(l)

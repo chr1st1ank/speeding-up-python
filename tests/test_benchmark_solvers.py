@@ -8,16 +8,18 @@ import numba_solver
 import cython_solver
 import julia_solver
 import cpp_solver
+import cpp_pyb11_solver
 import rust_solver
 import pytest
 
 
 @pytest.fixture(scope="function", params=[
     python_solver.PythonSolver,
-    numba_solver.NumbaSolver,
-    cython_solver.CythonSolver,
-    julia_solver.JuliaSolver,
+    # numba_solver.NumbaSolver,
+    # cython_solver.CythonSolver,
+    # julia_solver.JuliaSolver,
     cpp_solver.CppSolver,
+    cpp_pyb11_solver.CppPyb11Solver,
     rust_solver.RustSolver
 
 ])
@@ -61,16 +63,16 @@ def test_string_slice(solver: BenchmarkSolver):
     data = {
         "strings": [
             "asdfgjkl",
-            "北京冬奥会多策并举力争实现碳中和",
+            "奥会多策并举力争实",
             ""
         ],
         "start": 3,
-        "end": 8
+        "end": 7
     }
     p = solver.string_slice(data)
     assert p == [
         "fgjkl",
-        "奥会多策并举",
+        "策并举力争",
         ""
     ]
 
