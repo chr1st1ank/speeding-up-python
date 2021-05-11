@@ -1,4 +1,4 @@
-# python-metrics
+# Speeding up Python
 Small personal benchmarks to compare different options to speed up Python code.
 
 This small project should help to:
