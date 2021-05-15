@@ -1,7 +1,10 @@
 import collections
+import pickle
 from typing import List, Dict
 from benchmark_solver import BenchmarkSolver
 import pandas as pd
+from datasketch.minhash import MinHash
+from datasketch.lsh import MinHashLSH
 
 
 class PythonSolver(BenchmarkSolver):
@@ -60,6 +63,26 @@ class PythonSolver(BenchmarkSolver):
         return [
             count_ngrams(s, ngram_n) for s in string_list
         ]
+
+    def lsh(self, test_data):
+        permutations = 100
+        lsh = MinHashLSH(threshold=0.5, num_perm=permutations)
+        strings = []
+        hashes = []
+        for i, s in enumerate(test_data["strings"]):
+            strings.append(' '.join(s))
+            mg = MinHash(permutations)
+            for w in s:
+                mg.update(w.encode('utf-8'))
+            # print(s, mg)
+            hashes.append(mg)
+            lsh.insert(i, mg, check_duplication=False)
+        print("Size:", len(pickle.dumps(lsh)))
+
+        matches = []
+        for i in range(len(strings)):
+            matches = set(lsh.query(hashes[i])) - {i}
+        return matches
 
 def count_ngrams(s, n):
     padded = "$"*(n-1) + s + "$"*(n-1)

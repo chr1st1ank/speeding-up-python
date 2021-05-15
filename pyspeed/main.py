@@ -36,18 +36,19 @@ if __name__ == '__main__':
 
     runner = BenchmarkRunner(solvers=[
             python_solver.PythonSolver(),
-            numba_solver.NumbaSolver(),
-            cython_solver.CythonSolver(),
-            julia_solver.JuliaSolver(),
-            cpp_solver.CppSolver(),
-            cpp_pyb11_solver.CppPyb11Solver(),
-            rust_solver.RustSolver(),
+            # numba_solver.NumbaSolver(),
+            # cython_solver.CythonSolver(),
+            # julia_solver.JuliaSolver(),
+            # cpp_solver.CppSolver(),
+            # cpp_pyb11_solver.CppPyb11Solver(),
+            # rust_solver.RustSolver(),
         ],
         benchmarks=[
-            benchmark.mergesort_benchmark(),
-            benchmark.groupby_sum_benchmark(),
-            benchmark.string_slice_benchmark(),
-            benchmark.ngram_count_benchmark()
+            # benchmark.mergesort_benchmark(),
+            # benchmark.groupby_sum_benchmark(),
+            # benchmark.string_slice_benchmark(),
+            # benchmark.ngram_count_benchmark(),
+            benchmark.lsh_benchmark()
         ]
     )
     runner.time_it()

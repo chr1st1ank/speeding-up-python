@@ -100,3 +100,23 @@ def ngram_count_benchmark() -> Benchmark:
             "ngram_n": 3
         }
     )
+
+def lsh_benchmark() -> Benchmark:
+    def iter_wiki_phrases(n_phrases, n_words=3):
+        n = 0
+        for doc in iter_wikipedia_docs(1000000):
+            words = doc.split()
+            for i in range(0, len(doc) - n_words, n_words):
+                phrase = words[i:i+n_words]
+                if phrase:
+                    yield phrase
+                n += 1
+                if n > n_phrases:
+                    return
+
+    return Benchmark(
+        name="lsh",
+        data={
+            "strings": list(iter_wiki_phrases(100000))
+        }
+    )
