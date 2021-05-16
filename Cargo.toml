@@ -9,9 +9,9 @@ name = "pyspeed_rust"
 path = "pyspeed/rust/pyspeed.rs"
 crate-type = ["cdylib"]
 
-[dependencies]
-substring = "1.4.5"
-unicode-segmentation = "1.7.1"
+#[dependencies]
+#substring = "1.4.5"
+#unicode-segmentation = "1.7.1"
 
 [dependencies.pyo3]
 version = "0.13.2"

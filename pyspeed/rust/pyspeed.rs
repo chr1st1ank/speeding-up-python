@@ -85,36 +85,44 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
     groups.dedup();
 
     // let result_dict = PyDict::new(py);
-    let mut result_dict: HashMap<String, Vec<i64>> = HashMap::new();
+    let mut result_dict: HashMap<String, PyObject> = HashMap::new();
 
     for (column, values) in data_table.iter() {
         let column: String = column.extract()?;
         if column == "keys" {
             continue;
         }
-        let mut sums = HashMap::new();
-        let values: Vec<i64> = values.extract()?;
-        for i in 0..values.len() {
-            if let Some(key) = keys.get(i) {
-                let s = if let Some(old_sum) = sums.get(key) {
-                    values[i] + old_sum
-                } else {
-                    values[i]
-                };
-                sums.insert(key, s);
-            }
+        if let Ok(values) = values.extract::<Vec<i64>>() {
+            let sum_vec: Vec<i64> = sum_by_group(&keys, &values, &groups);
+            result_dict.insert(column, sum_vec.into_py(py));
+        }else if let Ok(values) = values.extract::<Vec<f64>>() {
+            let sum_vec: Vec<f64> = sum_by_group(&keys, &values, &groups);
+            result_dict.insert(column, sum_vec.into_py(py));
         }
-        let mut sum_vec: Vec<i64> = Vec::new();
-        for k in &groups {
-            if let Some(sum) = sums.get(k) {
-                sum_vec.push(*sum);
-            }
-        }
-        result_dict.insert(column, sum_vec);
     }
-    result_dict.insert("keys".to_string(), groups);
+    result_dict.insert("keys".to_string(), groups.into_py(py));
 
     Ok(result_dict.into_py(py))
+}
+
+fn sum_by_group<T>(keys: &[i64], values: &[T], groups: &[i64]) -> Vec<T>
+where
+    T: std::ops::AddAssign<T> + Copy + Default
+{
+    let mut sums:HashMap<i64, T> = HashMap::new();
+
+    for (i, v) in values.iter().enumerate() {
+        if let Some(key) = keys.get(i) {
+            *(sums.entry(*key).or_default()) += *v;
+        }
+    }
+    let mut sum_vec: Vec<T> = Vec::new();
+    for k in groups {
+        if let Some(sum) = sums.get(k) {
+            sum_vec.push(*sum);
+        }
+    }
+    sum_vec
 }
 
 #[pyfunction]

@@ -1,55 +1,59 @@
-import pathlib
 from collections import namedtuple
 import random
-from functools import lru_cache
+
+from benchmark_helpers import alphabet, iter_wikipedia_docs
 
 random.seed(123)
 
 Benchmark = namedtuple('Benchmark', field_names=['name', 'data'])
 
+
 def mergesort_benchmark() -> Benchmark:
+    """Mergesort array sorting algorithm.
+
+    Input data: A List[int]
+    Expected output: A List[int] sorted ascendingly
+    """
     return Benchmark(name='mergesort', data=[random.randint(-1000000, 1000000) for _ in range(10000)])
 
 
 def groupby_sum_benchmark() -> Benchmark:
+    """Simple version of a dataframe groupby with sum() aggregation.
+
+    Input data: A dictionary with the following elements:
+
+        - "keys": List[int]  The keys to group by
+        - "uints": List[uint] Unsigned integers
+        - "ints": List[int] Signed integers
+
+    Expected output: A dictionary with the same keys and value types as before.
+        But now the elements in the lists are the sum for all elements with the same
+        keys and each key appears only once.
+    """
     l = 100000
     return Benchmark(
         name='groupby_sum',
         data={
             'keys': [random.randint(0, 100) for _ in range(l)],
-            'uints': [random.randint(-1000000, 1000000) for _ in range(l)],
-            'ints': [random.randint(0, 1000000) for _ in range(l)],
-            # 'floats': [(random.random() - 0.5) * 1000  for _ in range(l)]
+            'ints': [random.randint(-1000000, 1000000) for _ in range(l)],
+            'uints': [random.randint(0, 1000000) for _ in range(l)],
+            'floats': [(random.random() - 0.5) * 1000  for _ in range(l)]
         }
     )
 
 
-@lru_cache()
-def alphabet():
-    include_ranges = [
-        (0x0021, 0x0021, 1),
-        (0x0023, 0x0026, 1),
-        (0x0028, 0x007E, 100),
-        (0x00A1, 0x00AC, 1),
-        (0x00AE, 0x00FF, 1),
-        (0x0100, 0x017F, 1),
-        (0x0180, 0x024F, 1),
-        (0x2C60, 0x2C7F, 1),
-        (0x16A0, 0x16F0, 1),
-        (0x0370, 0x0377, 1),
-        (0x037A, 0x037E, 1),
-        (0x0384, 0x038A, 1),
-        (0x038C, 0x038C, 1),
-    ]
-
-    return ''.join(
-        chr(code_point) * weight
-        for range_start, range_end, weight in include_ranges
-        for code_point in range(range_start, range_end + 1)
-    )
-
-
 def string_slice_benchmark() -> Benchmark:
+    """Simply take a list of strings and return a slice [n:m] for each.
+    Indexing is meant in terms of unicode code points and the strings are unicode.
+
+    Input data: A dictionary with the following elements:
+
+        - "strings": A List[str] with the strings to slice
+        - "start": An integer with the index of the first unicode code point to return
+        - "end": An integer with the index of the last unicode code point to return
+
+    Expected output: A List[str] with the sliced strings
+    """
     allowed_chars = alphabet()
 
     def rand_string(max_len):
@@ -66,33 +70,16 @@ def string_slice_benchmark() -> Benchmark:
     )
 
 
-@lru_cache()
-def load_txt(pathlib_obj):
-    with pathlib_obj.open('r') as f:
-        return f.read()
-
-def iter_wikipedia_docs(max_docs=1000):
-    data_path = pathlib.Path(__file__).parent.parent / 'data' / 'wikipediaArticles'
-    for i, p in enumerate(data_path.glob('*.txt')):
-        if i > max_docs:
-            break
-        yield load_txt(p)
-
 def ngram_count_benchmark() -> Benchmark:
-    # allowed_chars = alphabet()
-    #
-    # def rand_string(max_len):
-    #     return ''.join(random.choice(allowed_chars) for _ in range(random.randint(0, max_len)))
+    """Take a list of strings and count all n-grams of unicode code points
 
-    # l = 10
-    # return Benchmark(
-    #     name="ngram_count",
-    #     data={
-    #         "strings": l*[rand_string(20000)],
-    #         "ngram_n": 3
-    #     }
-    # )
+    Input data: A dictionary with:
 
+        - "strings": List[str] with the strings to analyze
+        - "ngram_n": int, the length of n-grams to count
+
+    Expected output: A list of dictionaries. Each dictionary should have the form {"n-gram": count}.
+    """
     return Benchmark(
         name="ngram_count",
         data={

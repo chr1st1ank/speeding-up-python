@@ -20,7 +20,10 @@ The benchmarks can't tell if a certain language or framework is fast or slow. Fi
 The task is to calculate sums per group key on tabular data. Input is a dictionary of columns, output is a dictionary of aggregates in columns.
 
 ### 3. String slice
-Input is a list of unicode strings. Every string has to be sliced and the first n characters have to be returned. The difficulty lies in the proper handling of unicode characters. ASCII characters are overrepresented in the test strings (like in many real applications).
+Input is a list of unicode strings. Every string has to be sliced and the first n characters have to be returned. The difficulty lies in the proper handling of unicode characters.
+
+### 4. Ngram count
+Count the number of occurences of each character ngram in a list of strings.
 
 ## Comments on the frameworks / languages used
 
@@ -126,43 +129,43 @@ Output of the last run on my laptop:
 System information:
 
 Architecture: x86_64 / 64bit
-System: Linux / 5.11.11-arch1-1
-Python: CPython 3.9.2 built with ('glibc', '2.33')
+System: Linux / 5.12.3-arch1-1
+Python: CPython 3.9.5 built with ('glibc', '2.33')
 Processors: 
     4 x  Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz
     
 mergesort
-	  243ms - Pure Python
-	  275ms - Numba
-	   88ms - Cython
-	   55ms - Julia
-	   17ms - C++ (cython)
+	  236ms - Pure Python
+	  281ms - Numba
+	   89ms - Cython
+	   56ms - Julia
+	   16ms - C++ (cython)
 	   17ms - C++ (pybind11)
-	   11ms - Rust
+	   10ms - Rust
 groupby_sum
-	  129ms - Pure Python
+	  190ms - Pure Python
 	      - - Numba
-	   81ms - Cython
+	  115ms - Cython
 	      - - Julia
 	      - - C++ (cython)
 	      - - C++ (pybind11)
-	  100ms - Rust
+	  109ms - Rust
 string_slice
-	   24ms - Pure Python
+	   23ms - Pure Python
 	      - - Numba
-	   18ms - Cython
+	   19ms - Cython
 	      - - Julia
 	      - - C++ (cython)
-	   64ms - C++ (pybind11)
-	   45ms - Rust
+	   65ms - C++ (pybind11)
+	   46ms - Rust
 ngram_count
-	  242ms - Pure Python
-	  257ms - Numba
+	  239ms - Pure Python
+	  258ms - Numba
 	  120ms - Cython
 	      - - Julia
 	      - - C++ (cython)
-	  193ms - C++ (pybind11)
-	  157ms - Rust
+	  191ms - C++ (pybind11)
+	  170ms - Rust
 ```
 
 ## Contributing
