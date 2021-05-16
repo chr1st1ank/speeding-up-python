@@ -47,7 +47,8 @@ if __name__ == '__main__':
             benchmark.mergesort_benchmark(),
             benchmark.groupby_sum_benchmark(),
             benchmark.string_slice_benchmark(),
-            benchmark.ngram_count_benchmark()
+            benchmark.ngram_count_benchmark(),
+            benchmark.ngram_count_parallel_benchmark()
         ]
     )
     runner.time_it()

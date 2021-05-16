@@ -83,7 +83,26 @@ def ngram_count_benchmark() -> Benchmark:
     return Benchmark(
         name="ngram_count",
         data={
-            "strings": list(iter_wikipedia_docs(100)),
+            "strings": list(iter_wikipedia_docs(200)),
+            "ngram_n": 3
+        }
+    )
+
+
+def ngram_count_parallel_benchmark() -> Benchmark:
+    """Take a list of strings and count all n-grams of unicode code points
+
+    Input data: A dictionary with:
+
+        - "strings": List[str] with the strings to analyze
+        - "ngram_n": int, the length of n-grams to count
+
+    Expected output: A list of dictionaries. Each dictionary should have the form {"n-gram": count}.
+    """
+    return Benchmark(
+        name="ngram_count_parallel",
+        data={
+            "strings": list(iter_wikipedia_docs(200)),
             "ngram_n": 3
         }
     )

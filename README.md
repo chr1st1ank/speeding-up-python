@@ -25,6 +25,9 @@ Input is a list of unicode strings. Every string has to be sliced and the first 
 ### 4. Ngram count
 Count the number of occurences of each character ngram in a list of strings.
 
+### 5. Ngram count (parallel)
+Same as 4., but parallelism is allowed with unlimited threads or subprocesses.
+
 ## Comments on the frameworks / languages used
 
 ### 1. Python
@@ -135,37 +138,45 @@ Processors:
     4 x  Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz
     
 mergesort
-	  236ms - Pure Python
-	  281ms - Numba
-	   89ms - Cython
-	   56ms - Julia
+	  241ms - Pure Python
+	  293ms - Numba
+	   88ms - Cython
+	   57ms - Julia
 	   16ms - C++ (cython)
 	   17ms - C++ (pybind11)
 	   10ms - Rust
 groupby_sum
-	  190ms - Pure Python
+	  199ms - Pure Python
 	      - - Numba
-	  115ms - Cython
+	  117ms - Cython
 	      - - Julia
 	      - - C++ (cython)
 	      - - C++ (pybind11)
-	  109ms - Rust
+	  122ms - Rust
 string_slice
 	   23ms - Pure Python
 	      - - Numba
 	   19ms - Cython
 	      - - Julia
 	      - - C++ (cython)
-	   65ms - C++ (pybind11)
-	   46ms - Rust
+	   64ms - C++ (pybind11)
+	   55ms - Rust
 ngram_count
-	  239ms - Pure Python
-	  258ms - Numba
-	  120ms - Cython
+	  493ms - Pure Python
+	  512ms - Numba
+	  235ms - Cython
 	      - - Julia
 	      - - C++ (cython)
-	  191ms - C++ (pybind11)
-	  170ms - Rust
+	  387ms - C++ (pybind11)
+	  349ms - Rust
+ngram_count_parallel
+	  434ms - Pure Python
+	      - - Numba
+	      - - Cython
+	      - - Julia
+	      - - C++ (cython)
+	      - - C++ (pybind11)
+	  270ms - Rust
 ```
 
 ## Contributing

@@ -1,6 +1,7 @@
 use pyo3::prelude::*;
 use pyo3::types::PyDict;
 use pyo3::wrap_pyfunction;
+use rayon::prelude::*;
 use std::collections::HashMap;
 // use substring::Substring;
 // use unicode_segmentation::UnicodeSegmentation;
@@ -95,7 +96,7 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
         if let Ok(values) = values.extract::<Vec<i64>>() {
             let sum_vec: Vec<i64> = sum_by_group(&keys, &values, &groups);
             result_dict.insert(column, sum_vec.into_py(py));
-        }else if let Ok(values) = values.extract::<Vec<f64>>() {
+        } else if let Ok(values) = values.extract::<Vec<f64>>() {
             let sum_vec: Vec<f64> = sum_by_group(&keys, &values, &groups);
             result_dict.insert(column, sum_vec.into_py(py));
         }
@@ -107,9 +108,9 @@ pub fn groupby_sum(py: Python, data_table: &PyDict) -> PyResult<PyObject> {
 
 fn sum_by_group<T>(keys: &[i64], values: &[T], groups: &[i64]) -> Vec<T>
 where
-    T: std::ops::AddAssign<T> + Copy + Default
+    T: std::ops::AddAssign<T> + Copy + Default,
 {
-    let mut sums:HashMap<i64, T> = HashMap::new();
+    let mut sums: HashMap<i64, T> = HashMap::new();
 
     for (i, v) in values.iter().enumerate() {
         if let Some(key) = keys.get(i) {
@@ -132,21 +133,9 @@ fn string_slice(strings: Vec<&str>, start: usize, end: usize) -> PyResult<Vec<St
         .iter()
         .map(|s: &&str| s.chars().skip(start).take(end - start + 1).collect())
         .collect();
-    // let mut new_strings = Vec::with_capacity(strings.len());
-    // for s in strings {
-    //     let new_string : String = s.chars().skip(start).take(end-start+1).collect();
-    //     new_strings.push(new_string);
-    // }
     Ok(new_strings)
 }
-// #[pyfunction]
-// fn string_slice(strings: Vec<&str>, start: usize, end: usize) -> PyResult<Vec<&str>> {
-//     let mut new_strings = Vec::with_capacity(strings.len());
-//     for s in strings {
-//         new_strings.push(s.substring(start, end + 1));
-//     }
-//     Ok(new_strings)
-// }
+
 fn pad_both_sides(s: &str, pad_char: char, times: usize) -> String {
     let mut padded = String::with_capacity(s.len() + 2 * times);
     for _ in 0..(times) {
@@ -159,11 +148,11 @@ fn pad_both_sides(s: &str, pad_char: char, times: usize) -> String {
     padded
 }
 
-fn count_ngrams_rs(s: &str, ngram_n: usize) -> HashMap<String, i32> {
+fn count_ngrams_rs(s: &str, ngram_n: usize) -> HashMap<String, u32> {
     // Padding. Examle for ngram_n = 3: "abc" => "$$abc$$"
     let padded = pad_both_sides(s, '$', ngram_n - 1);
 
-    let mut counts: HashMap<String, i32> = HashMap::new();
+    let mut counts: HashMap<String, u32> = HashMap::new();
     // let mut iter = padded.graphemes(true);
     let mut iter = padded.chars();
     loop {
@@ -186,11 +175,23 @@ fn count_ngrams(py: Python, s: &str, ngram_n: usize) -> PyResult<PyObject> {
 
 #[pyfunction]
 fn count_ngrams_list(py: Python, strings: Vec<&str>, ngram_n: usize) -> PyResult<PyObject> {
-    let mut results: Vec<HashMap<String, i32>> = Vec::with_capacity(strings.len());
+    let results: Vec<HashMap<String, u32>> = strings
+        .iter()
+        .map(|s| count_ngrams_rs(s, ngram_n))
+        .collect();
+    Ok(results.into_py(py))
+}
 
-    for s in strings {
-        results.push(count_ngrams_rs(s, ngram_n));
-    }
+#[pyfunction]
+fn count_ngrams_list_parallel(
+    py: Python,
+    strings: Vec<&str>,
+    ngram_n: usize,
+) -> PyResult<PyObject> {
+    let results: Vec<HashMap<String, u32>> = strings
+        .into_par_iter()
+        .map(|s| count_ngrams_rs(s, ngram_n))
+        .collect();
 
     Ok(results.into_py(py))
 }
@@ -210,6 +211,7 @@ fn pyspeed_rust(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(string_slice, m)?)?;
     m.add_function(wrap_pyfunction!(count_ngrams, m)?)?;
     m.add_function(wrap_pyfunction!(count_ngrams_list, m)?)?;
+    m.add_function(wrap_pyfunction!(count_ngrams_list_parallel, m)?)?;
     m.add_function(wrap_pyfunction!(strlen, m)?)?;
 
     Ok(())

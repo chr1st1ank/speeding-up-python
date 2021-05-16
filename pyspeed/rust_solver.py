@@ -28,7 +28,9 @@ class RustSolver(BenchmarkSolver):
     def ngram_count(self, test_data):
         string_list: List[str] = test_data["strings"]
         ngram_n: int = test_data["ngram_n"]
-        # return pyspeed_rust.count_ngrams_list(string_list, ngram_n)
-        return [
-            pyspeed_rust.count_ngrams(s, ngram_n) for s in string_list
-        ]
+        return pyspeed_rust.count_ngrams_list(string_list, ngram_n)
+
+    def ngram_count_parallel(self, test_data):
+        string_list: List[str] = test_data["strings"]
+        ngram_n: int = test_data["ngram_n"]
+        return pyspeed_rust.count_ngrams_list_parallel(string_list, ngram_n)

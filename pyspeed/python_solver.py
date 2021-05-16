@@ -1,7 +1,7 @@
 import collections
 from typing import List, Dict
 from benchmark_solver import BenchmarkSolver
-import pandas as pd
+from joblib import Parallel, delayed
 
 
 class PythonSolver(BenchmarkSolver):
@@ -60,6 +60,11 @@ class PythonSolver(BenchmarkSolver):
         return [
             count_ngrams(s, ngram_n) for s in string_list
         ]
+
+    def ngram_count_parallel(self, test_data):
+        string_list: List[str] = test_data["strings"]
+        ngram_n: int = test_data["ngram_n"]
+        return Parallel(n_jobs=3)(delayed(count_ngrams)(s, ngram_n) for s in string_list)
 
 def count_ngrams(s, n):
     padded = "$"*(n-1) + s + "$"*(n-1)
