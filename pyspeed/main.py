@@ -2,15 +2,15 @@
 import platform
 from collections import Counter
 
-import benchmark
-import cpp_solver
-import cpp_pyb11_solver
-import cython_solver
-import julia_solver
-import numba_solver
-import python_solver
-import rust_solver
-from benchmark_runner import BenchmarkRunner
+from . import benchmark
+from . import cpp_solver
+from . import cpp_pyb11_solver
+from . import cython_solver
+from . import julia_solver
+from . import numba_solver
+from . import python_solver
+from . import rust_solver
+from .benchmark_runner import BenchmarkRunner
 
 
 def system_info():

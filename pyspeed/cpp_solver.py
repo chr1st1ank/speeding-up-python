@@ -17,9 +17,9 @@ Notes:
 """
 
 # import pyximport; pyximport.install(language_level=3)
-from cpp_cython import mergesortcpp
+from .cpp_cython import mergesortcpp
 
-from benchmark_solver import BenchmarkSolver
+from .benchmark_solver import BenchmarkSolver
 from typing import List
 
 class CppSolver(BenchmarkSolver):

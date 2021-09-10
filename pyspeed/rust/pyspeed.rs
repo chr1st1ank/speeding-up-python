@@ -1,5 +1,6 @@
 use pyo3::prelude::*;
 use pyo3::types::PyDict;
+use pyo3::types::PyList;
 use pyo3::wrap_pyfunction;
 use rayon::prelude::*;
 use std::collections::HashMap;
@@ -183,6 +184,14 @@ fn count_ngrams_list(py: Python, strings: Vec<&str>, ngram_n: usize) -> PyResult
 }
 
 #[pyfunction]
+fn count_ngrams_list_native(py: Python, strings: &PyList, ngram_n: usize) -> PyResult<PyObject> {
+    let results: Vec<HashMap<String, u32>> = strings.iter()
+        .map(|s| count_ngrams_rs("abc", ngram_n))
+        .collect();
+    Ok(results.into_py(py))
+}
+
+#[pyfunction]
 fn count_ngrams_list_parallel(
     py: Python,
     strings: Vec<&str>,
@@ -211,6 +220,7 @@ fn pyspeed_rust(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(string_slice, m)?)?;
     m.add_function(wrap_pyfunction!(count_ngrams, m)?)?;
     m.add_function(wrap_pyfunction!(count_ngrams_list, m)?)?;
+    m.add_function(wrap_pyfunction!(count_ngrams_list_native, m)?)?;
     m.add_function(wrap_pyfunction!(count_ngrams_list_parallel, m)?)?;
     m.add_function(wrap_pyfunction!(strlen, m)?)?;
 

@@ -1,6 +1,6 @@
 import collections
 from typing import List, Dict
-from benchmark_solver import BenchmarkSolver
+from .benchmark_solver import BenchmarkSolver
 from joblib import Parallel, delayed
 
 

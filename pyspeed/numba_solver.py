@@ -14,7 +14,7 @@ import numba
 from numba import int64
 from numba.typed import Dict, List
 
-from benchmark_solver import BenchmarkSolver
+from .benchmark_solver import BenchmarkSolver
 
 
 @numba.jit(nopython=True)

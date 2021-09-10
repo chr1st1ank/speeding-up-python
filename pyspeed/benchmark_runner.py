@@ -2,9 +2,9 @@
 import typing
 import timeit
 import random
-from benchmark_solver import BenchmarkSolver
-from benchmark import Benchmark
-from benchmark_result import BenchmarkResult
+from .benchmark_solver import BenchmarkSolver
+from .benchmark import Benchmark
+from .benchmark_result import BenchmarkResult
 
 
 class BenchmarkRunner:

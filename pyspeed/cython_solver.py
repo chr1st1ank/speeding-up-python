@@ -11,11 +11,11 @@ Notes:
 """
 
 import pyximport; pyximport.install(language_level=3)
-import cython_backend
+from . import cython_backend
 
 import pandas as pd
 
-from benchmark_solver import BenchmarkSolver
+from .benchmark_solver import BenchmarkSolver
 from typing import List
 
 class CythonSolver(BenchmarkSolver):

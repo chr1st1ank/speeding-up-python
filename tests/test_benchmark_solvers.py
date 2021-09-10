@@ -1,23 +1,23 @@
 
-from benchmark_runner import BenchmarkRunner
-import benchmark
-from benchmark_solver import BenchmarkSolver
-from benchmark_result import BenchmarkResult
-import python_solver
-import numba_solver
-import cython_solver
-import julia_solver
-import cpp_solver
-import cpp_pyb11_solver
-import rust_solver
+from pyspeed.benchmark_runner import BenchmarkRunner
+from pyspeed import benchmark
+from pyspeed.benchmark_solver import BenchmarkSolver
+from pyspeed.benchmark_result import BenchmarkResult
+from pyspeed import python_solver
+from pyspeed import numba_solver
+from pyspeed import cython_solver
+from pyspeed import julia_solver
+from pyspeed import cpp_solver
+from pyspeed import cpp_pyb11_solver
+from pyspeed import rust_solver
 import pytest
 
 
 @pytest.fixture(scope="function", params=[
     python_solver.PythonSolver,
-    # numba_solver.NumbaSolver,
-    # cython_solver.CythonSolver,
-    # julia_solver.JuliaSolver,
+    numba_solver.NumbaSolver,
+    cython_solver.CythonSolver,
+    julia_solver.JuliaSolver,
     cpp_solver.CppSolver,
     cpp_pyb11_solver.CppPyb11Solver,
     rust_solver.RustSolver
@@ -39,7 +39,10 @@ def runner(solver):
 
 
 def test_mergesort(solver):
-    s = solver.mergesort([1, 5, 3, -1])
+    try:
+        s = solver.mergesort([1, 5, 3, -1])
+    except NotImplementedError:
+        pytest.skip("Not implemented")
 
     assert isinstance(s, list), "Mergesort should return a Python list"
     assert s == [-1, 1, 3, 5]
@@ -51,7 +54,10 @@ def test_groupby_sum(solver):
         "v1": [1, 2, 3, 4],
         "v2": [-1, -2, -3, -4],
     }
-    p = solver.groupby_sum(data_table)
+    try:
+        p = solver.groupby_sum(data_table)
+    except NotImplementedError:
+        pytest.skip("Not implemented")
     assert p == {
         "keys": [-5, 4, 10],
         "v1": [5, 3, 2],
@@ -69,7 +75,10 @@ def test_string_slice(solver: BenchmarkSolver):
         "start": 3,
         "end": 7
     }
-    p = solver.string_slice(data)
+    try:
+        p = solver.string_slice(data)
+    except NotImplementedError:
+        pytest.skip("Not implemented")
     assert p == [
         "fgjkl",
         "策并举力争",
@@ -87,7 +96,10 @@ def test_ngram_count(solver: BenchmarkSolver):
         ],
         "ngram_n": 3,
     }
-    p = solver.ngram_count(data)
+    try:
+        p = solver.ngram_count(data)
+    except NotImplementedError:
+        pytest.skip("Not implemented")
     assert p == [
         {k: 1 for k in ["$$a", "$ab", "aba", "bac", "ac$", "c$$"]},
         {k: (1 if k != "abc" else 2) for k in ["$$a", "$ab", "abc", "bca", "cab", "bc$", "c$$"]},

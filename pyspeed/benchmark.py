@@ -1,7 +1,7 @@
 from collections import namedtuple
 import random
 
-from benchmark_helpers import alphabet, iter_wikipedia_docs
+from .benchmark_helpers import alphabet, iter_wikipedia_docs
 
 random.seed(123)
 
