@@ -1,5 +1,5 @@
-import typing
 import abc
+import typing
 
 
 class BenchmarkSolver:

@@ -3,10 +3,10 @@
 Notes:
     * The functions to be compiled have to be in a separate file with *.so ending.
 """
-from . import pyspeed_rust
-
-from .benchmark_solver import BenchmarkSolver
 from typing import List, Dict
+
+from . import pyspeed_rust
+from .benchmark_solver import BenchmarkSolver
 
 
 class RustSolver(BenchmarkSolver):

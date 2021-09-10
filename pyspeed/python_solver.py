@@ -1,11 +1,12 @@
 import collections
 from typing import List, Dict
-from .benchmark_solver import BenchmarkSolver
+
 from joblib import Parallel, delayed
+
+from .benchmark_solver import BenchmarkSolver
 
 
 class PythonSolver(BenchmarkSolver):
-
     def description(cls):
         return "Pure Python"
 
@@ -29,17 +30,15 @@ class PythonSolver(BenchmarkSolver):
         # return sorted(l)  # Note that Python's sorted() is way faster. But it's a different algorithm and in plain C.
         if len(l) <= 1:
             return l
-        left = self.mergesort(l[:int(len(l) / 2)])
-        right = self.mergesort(l[int(len(l) / 2):])
+        left = self.mergesort(l[: int(len(l) / 2)])
+        right = self.mergesort(l[int(len(l) / 2) :])
         return self.merge(left, right)
 
     def groupby_sum(self, data_dict):
         # df = pd.DataFrame(data=data)
         # return df.groupby('keys').sum().to_dict(orient='list')
         sorted_keys = sorted(set(data_dict["keys"]))
-        output = {
-            "keys": sorted_keys
-        }
+        output = {"keys": sorted_keys}
         columns = [c for c in data_dict.keys() if c != "keys"]
         for column in columns:
             output[column] = {k: 0 for k in sorted_keys}
@@ -52,20 +51,21 @@ class PythonSolver(BenchmarkSolver):
         string_list: List[str] = test_data["strings"]
         start: int = test_data["start"]
         end: int = test_data["end"]
-        return [s[start:end+1] for s in string_list]
+        return [s[start : end + 1] for s in string_list]
 
     def ngram_count(self, test_data):
         string_list: List[str] = test_data["strings"]
         ngram_n: int = test_data["ngram_n"]
-        return [
-            count_ngrams(s, ngram_n) for s in string_list
-        ]
+        return [count_ngrams(s, ngram_n) for s in string_list]
 
     def ngram_count_parallel(self, test_data):
         string_list: List[str] = test_data["strings"]
         ngram_n: int = test_data["ngram_n"]
-        return Parallel(n_jobs=3)(delayed(count_ngrams)(s, ngram_n) for s in string_list)
+        return Parallel(n_jobs=3)(
+            delayed(count_ngrams)(s, ngram_n) for s in string_list
+        )
+
 
 def count_ngrams(s, n):
-    padded = "$"*(n-1) + s + "$"*(n-1)
-    return collections.Counter(padded[i: i + n] for i in range(len(padded) - n + 1))
+    padded = "$" * (n - 1) + s + "$" * (n - 1)
+    return collections.Counter(padded[i : i + n] for i in range(len(padded) - n + 1))

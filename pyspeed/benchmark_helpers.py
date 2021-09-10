@@ -20,7 +20,7 @@ def alphabet():
         (0x038C, 0x038C, 1),
     ]
 
-    return ''.join(
+    return "".join(
         chr(code_point) * weight
         for range_start, range_end, weight in include_ranges
         for code_point in range(range_start, range_end + 1)
@@ -29,13 +29,13 @@ def alphabet():
 
 @lru_cache()
 def load_txt(pathlib_obj):
-    with pathlib_obj.open('r') as f:
+    with pathlib_obj.open("r") as f:
         return f.read()
 
 
 def iter_wikipedia_docs(max_docs=1000):
-    data_path = pathlib.Path(__file__).parent.parent / 'data' / 'wikipediaArticles'
-    for i, p in enumerate(data_path.glob('*.txt')):
+    data_path = pathlib.Path(__file__).parent.parent / "data" / "wikipediaArticles"
+    for i, p in enumerate(data_path.glob("*.txt")):
         if i > max_docs:
             break
         yield load_txt(p)

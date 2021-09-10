@@ -13,10 +13,10 @@ Notes:
       - The compilation has to be carried out before running the Python program
 
 """
-from . import cpp_pyb11 as cpp
-
-from .benchmark_solver import BenchmarkSolver
 from typing import List, Dict
+
+from . import cpp_pyb11 as cpp
+from .benchmark_solver import BenchmarkSolver
 
 
 class CppPyb11Solver(BenchmarkSolver):

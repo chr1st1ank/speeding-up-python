@@ -13,21 +13,23 @@ Notes:
     * Julia seems to return numpy array instead of lists. This has to be taken care of.
 """
 
+import os
 from typing import List
+
+import julia
 from .benchmark_solver import BenchmarkSolver
 
-import os
-import julia
 
 class JuliaSolver(BenchmarkSolver):
     def __init__(self):
         self.julia = julia.Julia()
         directory = os.path.realpath(os.path.dirname(__file__))
-        self.mergesort_jl = self.julia.include(os.path.join(directory, "julia/mergesort.jl"))
+        self.mergesort_jl = self.julia.include(
+            os.path.join(directory, "julia/mergesort.jl")
+        )
 
     def description(self):
         return "Julia"
 
     def mergesort(self, l: List) -> List:
         return list(self.mergesort_jl(l))
-

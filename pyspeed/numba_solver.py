@@ -40,9 +40,10 @@ def merge(l: List[int64], r: List[int64]) -> List[int64]:
 def mergesort(l: List[int64]) -> List[int64]:
     if len(l) <= 1:
         return l
-    left = mergesort(l[:int(len(l) / 2)])
-    right = mergesort(l[int(len(l) / 2):])
+    left = mergesort(l[: int(len(l) / 2)])
+    right = mergesort(l[int(len(l) / 2) :])
     return merge(left, right)
+
 
 @numba.jit(nopython=True)
 def count_ngrams(string_list: List[str], n: numba.int32):
@@ -51,13 +52,14 @@ def count_ngrams(string_list: List[str], n: numba.int32):
         padded = "$" * (n - 1) + s + "$" * (n - 1)
         counts = Dict()
         for i in range(len(padded) - n + 1):
-            k = padded[i: i + n]
+            k = padded[i : i + n]
             if k in counts:
                 counts[k] += 1
             else:
                 counts[k] = 1
         all_counts.append(counts)
     return all_counts
+
 
 class NumbaSolver(BenchmarkSolver):
     def __init__(self):

@@ -10,13 +10,14 @@ Notes:
       as done here (with "pyximport"), or it can be done once beforehand with setup.py.
 """
 
-import pyximport; pyximport.install(language_level=3)
-from . import cython_backend
+import pyximport
 
-import pandas as pd
+pyximport.install(language_level=3)
+from . import cython_backend
 
 from .benchmark_solver import BenchmarkSolver
 from typing import List
+
 
 class CythonSolver(BenchmarkSolver):
     def description(cls):

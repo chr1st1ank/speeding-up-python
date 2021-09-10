@@ -1,14 +1,16 @@
-
-import typing
-import timeit
 import random
-from .benchmark_solver import BenchmarkSolver
+import timeit
+import typing
+
 from .benchmark import Benchmark
 from .benchmark_result import BenchmarkResult
+from .benchmark_solver import BenchmarkSolver
 
 
 class BenchmarkRunner:
-    def __init__(self, solvers: typing.List[BenchmarkSolver], benchmarks: typing.List[Benchmark]):
+    def __init__(
+        self, solvers: typing.List[BenchmarkSolver], benchmarks: typing.List[Benchmark]
+    ):
         random.seed(123)
         self.solvers = solvers
         self.results = []
@@ -25,7 +27,9 @@ class BenchmarkRunner:
             first_result = results[0].solution
             for r in results:
                 if r.solution is not None and r.solution != first_result:
-                    raise RuntimeError(f"Benchmark '{b}' yields differing result for solver {r.solver}")
+                    raise RuntimeError(
+                        f"Benchmark '{b}' yields differing result for solver {r.solver}"
+                    )
         return True
 
     def time_it(self, repeats=10, number=3):
@@ -35,19 +39,26 @@ class BenchmarkRunner:
                 print(f"\t{benchmark}")
                 try:
                     f = getattr(solver, benchmark)
-                    timer =timeit.Timer('f(input)', globals=dict(f=f, input=input), )
+                    timer = timeit.Timer(
+                        "f(input)",
+                        globals=dict(f=f, input=input),
+                    )
                     t = timer.repeat(repeat=repeats, number=number)
                     sol = f(input)
-                    self.results.append(BenchmarkResult(
-                        solver=solver.description(),
-                        benchmark=benchmark,
-                        time=min(t),
-                        solution=sol
-                    ))
+                    self.results.append(
+                        BenchmarkResult(
+                            solver=solver.description(),
+                            benchmark=benchmark,
+                            time=min(t),
+                            solution=sol,
+                        )
+                    )
                 except NotImplementedError:
-                    self.results.append(BenchmarkResult(
-                        solver=solver.description(),
-                        benchmark=benchmark,
-                        time=None,
-                        solution=None
-                    ))
+                    self.results.append(
+                        BenchmarkResult(
+                            solver=solver.description(),
+                            benchmark=benchmark,
+                            time=None,
+                            solution=None,
+                        )
+                    )

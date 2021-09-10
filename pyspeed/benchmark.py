@@ -1,11 +1,11 @@
-from collections import namedtuple
 import random
+from collections import namedtuple
 
 from .benchmark_helpers import alphabet, iter_wikipedia_docs
 
 random.seed(123)
 
-Benchmark = namedtuple('Benchmark', field_names=['name', 'data'])
+Benchmark = namedtuple("Benchmark", field_names=["name", "data"])
 
 
 def mergesort_benchmark() -> Benchmark:
@@ -14,7 +14,9 @@ def mergesort_benchmark() -> Benchmark:
     Input data: A List[int]
     Expected output: A List[int] sorted ascendingly
     """
-    return Benchmark(name='mergesort', data=[random.randint(-1000000, 1000000) for _ in range(10000)])
+    return Benchmark(
+        name="mergesort", data=[random.randint(-1000000, 1000000) for _ in range(10000)]
+    )
 
 
 def groupby_sum_benchmark() -> Benchmark:
@@ -32,13 +34,13 @@ def groupby_sum_benchmark() -> Benchmark:
     """
     l = 100000
     return Benchmark(
-        name='groupby_sum',
+        name="groupby_sum",
         data={
-            'keys': [random.randint(0, 100) for _ in range(l)],
-            'ints': [random.randint(-1000000, 1000000) for _ in range(l)],
-            'uints': [random.randint(0, 1000000) for _ in range(l)],
-            'floats': [(random.random() - 0.5) * 1000  for _ in range(l)]
-        }
+            "keys": [random.randint(0, 100) for _ in range(l)],
+            "ints": [random.randint(-1000000, 1000000) for _ in range(l)],
+            "uints": [random.randint(0, 1000000) for _ in range(l)],
+            "floats": [(random.random() - 0.5) * 1000 for _ in range(l)],
+        },
     )
 
 
@@ -57,7 +59,9 @@ def string_slice_benchmark() -> Benchmark:
     allowed_chars = alphabet()
 
     def rand_string(max_len):
-        return ''.join(random.choice(allowed_chars) for _ in range(random.randint(0, max_len)))
+        return "".join(
+            random.choice(allowed_chars) for _ in range(random.randint(0, max_len))
+        )
 
     l = 20000
     return Benchmark(
@@ -65,8 +69,8 @@ def string_slice_benchmark() -> Benchmark:
         data={
             "strings": [rand_string(200) for _ in range(l)],
             "start": 105,
-            "end": 120
-        }
+            "end": 120,
+        },
     )
 
 
@@ -82,10 +86,7 @@ def ngram_count_benchmark() -> Benchmark:
     """
     return Benchmark(
         name="ngram_count",
-        data={
-            "strings": list(iter_wikipedia_docs(200)),
-            "ngram_n": 3
-        }
+        data={"strings": list(iter_wikipedia_docs(200)), "ngram_n": 3},
     )
 
 
@@ -101,8 +102,5 @@ def ngram_count_parallel_benchmark() -> Benchmark:
     """
     return Benchmark(
         name="ngram_count_parallel",
-        data={
-            "strings": list(iter_wikipedia_docs(200)),
-            "ngram_n": 3
-        }
+        data={"strings": list(iter_wikipedia_docs(200)), "ngram_n": 3},
     )
