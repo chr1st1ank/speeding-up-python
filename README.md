@@ -132,51 +132,46 @@ Output of the last run on my laptop:
 System information:
 
 Architecture: x86_64 / 64bit
-System: Linux / 5.12.3-arch1-1
-Python: CPython 3.9.5 built with ('glibc', '2.33')
+System: Linux / 5.15.11-arch2-1
+Python: CPython 3.9.9 built with ('glibc', '2.33')
 Processors: 
-    4 x  Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz
+    16 x  AMD Ryzen 7 5700U with Radeon Graphics
     
 mergesort
-	  241ms - Pure Python
-	  293ms - Numba
-	   88ms - Cython
-	   57ms - Julia
-	   16ms - C++ (cython)
-	   17ms - C++ (pybind11)
-	   10ms - Rust
+	  107ms - Pure Python
+	  144ms - Numba
+	   34ms - Cython
+	    7ms - C++ (cython)
+	    8ms - C++ (pybind11)
+	    5ms - Rust
 groupby_sum
-	  199ms - Pure Python
+	   86ms - Pure Python
 	      - - Numba
-	  117ms - Cython
-	      - - Julia
+	   69ms - Cython
 	      - - C++ (cython)
 	      - - C++ (pybind11)
-	  122ms - Rust
+	   47ms - Rust
 string_slice
-	   23ms - Pure Python
+	    9ms - Pure Python
 	      - - Numba
-	   19ms - Cython
-	      - - Julia
+	    7ms - Cython
 	      - - C++ (cython)
-	   64ms - C++ (pybind11)
-	   55ms - Rust
+	   30ms - C++ (pybind11)
+	   22ms - Rust
 ngram_count
-	  493ms - Pure Python
-	  512ms - Numba
-	  235ms - Cython
-	      - - Julia
+	  453ms - Pure Python
+	  382ms - Numba
+	  234ms - Cython
 	      - - C++ (cython)
-	  387ms - C++ (pybind11)
-	  349ms - Rust
+	  277ms - C++ (pybind11)
+	  272ms - Rust
 ngram_count_parallel
-	  434ms - Pure Python
+	  248ms - Pure Python
 	      - - Numba
 	      - - Cython
-	      - - Julia
 	      - - C++ (cython)
 	      - - C++ (pybind11)
-	  270ms - Rust
+	  188ms - Rust
 ```
 
 ## Contributing
