@@ -1,15 +1,15 @@
 import platform
 from collections import Counter
 
-from . import benchmark
-from . import cpp_pyb11_solver
-from . import cpp_solver
-from . import cython_solver
-from . import julia_solver
-from . import numba_solver
-from . import python_solver
-from . import rust_solver
-from .benchmark_runner import BenchmarkRunner
+from pyspeed import benchmark
+from pyspeed import cpp_pyb11_solver
+from pyspeed import cpp_solver
+from pyspeed import cython_solver
+# from pyspeed import julia_solver
+from pyspeed import numba_solver
+from pyspeed import python_solver
+from pyspeed import rust_solver
+from pyspeed.benchmark_runner import BenchmarkRunner
 
 
 def system_info():
@@ -42,7 +42,7 @@ if __name__ == "__main__":
             python_solver.PythonSolver(),
             numba_solver.NumbaSolver(),
             cython_solver.CythonSolver(),
-            julia_solver.JuliaSolver(),
+            # julia_solver.JuliaSolver(),
             cpp_solver.CppSolver(),
             cpp_pyb11_solver.CppPyb11Solver(),
             rust_solver.RustSolver(),

@@ -6,7 +6,7 @@ from pyspeed.benchmark_result import BenchmarkResult
 from pyspeed import python_solver
 from pyspeed import numba_solver
 from pyspeed import cython_solver
-from pyspeed import julia_solver
+# from pyspeed import julia_solver
 from pyspeed import cpp_solver
 from pyspeed import cpp_pyb11_solver
 from pyspeed import rust_solver
@@ -17,10 +17,10 @@ import pytest
     python_solver.PythonSolver,
     numba_solver.NumbaSolver,
     cython_solver.CythonSolver,
-    julia_solver.JuliaSolver,
+    # julia_solver.JuliaSolver,
     cpp_solver.CppSolver,
     cpp_pyb11_solver.CppPyb11Solver,
-    rust_solver.RustSolver
+    rust_solver.RustSolver,
 
 ])
 def solver(request):

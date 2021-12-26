@@ -154,6 +154,7 @@ fn count_ngrams_rs(s: &str, ngram_n: usize) -> HashMap<String, u32> {
     let padded = pad_both_sides(s, '$', ngram_n - 1);
 
     let mut counts: HashMap<String, u32> = HashMap::new();
+    // counts.insert(String::from("x"), 1);
     // let mut iter = padded.graphemes(true);
     let mut iter = padded.chars();
     loop {
@@ -175,18 +176,29 @@ fn count_ngrams(py: Python, s: &str, ngram_n: usize) -> PyResult<PyObject> {
 }
 
 #[pyfunction]
-fn count_ngrams_list(py: Python, strings: Vec<&str>, ngram_n: usize) -> PyResult<PyObject> {
+fn count_ngrams_list_rs(strings: Vec<&str>, ngram_n: usize) -> Vec<HashMap<String, u32>> {
     let results: Vec<HashMap<String, u32>> = strings
         .iter()
         .map(|s| count_ngrams_rs(s, ngram_n))
         .collect();
+    results
+}
+
+#[pyfunction]
+fn count_ngrams_list(py: Python, strings: Vec<&str>, ngram_n: usize) -> PyResult<PyObject> {
+    let results: Vec<HashMap<String, u32>> = count_ngrams_list_rs(strings, ngram_n);
+    // let results: Vec<HashMap<String, u32>> = strings
+    //     .iter()
+    //     .map(|s| count_ngrams_rs(s, ngram_n))
+    //     .collect();
     Ok(results.into_py(py))
 }
 
 #[pyfunction]
 fn count_ngrams_list_native(py: Python, strings: &PyList, ngram_n: usize) -> PyResult<PyObject> {
     let results: Vec<HashMap<String, u32>> = strings.iter()
-        .map(|s| count_ngrams_rs("abc", ngram_n))
+        .map(|s| -> String {s.extract().unwrap()})
+        .map(|s| count_ngrams_rs(&s, ngram_n))
         .collect();
     Ok(results.into_py(py))
 }
@@ -226,3 +238,15 @@ fn pyspeed_rust(_py: Python, m: &PyModule) -> PyResult<()> {
 
     Ok(())
 }
+
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        assert_eq!("$$abc$$", pad_both_sides("abc", '$', 2));
+    }
+}
+

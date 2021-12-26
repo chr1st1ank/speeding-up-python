@@ -47,8 +47,7 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-# PyBuilder
-target/
+/local
 
 # Jupyter Notebook
 .ipynb_checkpoints

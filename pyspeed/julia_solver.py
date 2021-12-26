@@ -16,13 +16,13 @@ Notes:
 import os
 from typing import List
 
-import julia
+from julia import Main
 from .benchmark_solver import BenchmarkSolver
 
 
 class JuliaSolver(BenchmarkSolver):
     def __init__(self):
-        self.julia = julia.Julia()
+        self.julia = Main
         directory = os.path.realpath(os.path.dirname(__file__))
         self.mergesort_jl = self.julia.include(
             os.path.join(directory, "julia/mergesort.jl")

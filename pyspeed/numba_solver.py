@@ -61,12 +61,24 @@ def count_ngrams(string_list: List[str], n: numba.int32):
     return all_counts
 
 
+@numba.jit(nopython=False)
+def fix_array_or_list(l):
+    if not l:
+        List.empty_list(str)
+    dt = numba.typeof(l[0])
+    new_list = List.empty_list(dt)
+    for x in l:
+        new_list.append(x)
+    return new_list
+
+
 class NumbaSolver(BenchmarkSolver):
     def __init__(self):
         # Run once to cache compilation
         l = List()
         [l.append(x) for x in [1, 4, 2]]
         self.mergesort(l)
+        self.ngram_count({"strings": ["A"], "ngram_n": 1})
         pass
 
     def description(self):
@@ -81,6 +93,7 @@ class NumbaSolver(BenchmarkSolver):
         string_list: List[str] = test_data["strings"]
         ngram_n: int = test_data["ngram_n"]
         return list(count_ngrams(string_list, ngram_n))
+        # return list(count_ngrams(fix_array_or_list(string_list), ngram_n))
 
     # @staticmethod
     # def groupby_sum(data):
