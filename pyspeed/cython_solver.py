@@ -39,3 +39,8 @@ class CythonSolver(BenchmarkSolver):
         string_list: List[str] = test_data["strings"]
         ngram_n: int = test_data["ngram_n"]
         return cython_backend.count_ngrams_in_list(string_list, ngram_n)
+
+    def minhash(self, test_data):
+        shingle_list: List[List[str]] = test_data["shingle_list"]
+        n_hashes: int = test_data["n_hashes"]
+        return cython_backend.minhash(shingle_list, n_hashes, 42)

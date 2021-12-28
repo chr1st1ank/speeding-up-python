@@ -27,3 +27,7 @@ class BenchmarkSolver:
     @abc.abstractmethod
     def ngram_count_parallel(self, test_data):
         raise NotImplementedError("Method not implemented")
+
+    @abc.abstractmethod
+    def minhash(self, test_data):
+        raise NotImplementedError("Method not implemented")

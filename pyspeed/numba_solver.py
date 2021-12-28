@@ -10,9 +10,12 @@ Notes:
     * Entire Python classes could be compiled, but not if they inherit from a pure Python class which is not compiled
       with Numba
 """
+import binascii
+
 import numba
 from numba import int64
 from numba.typed import Dict, List
+import numpy as np
 
 from .benchmark_solver import BenchmarkSolver
 
@@ -71,6 +74,38 @@ def fix_array_or_list(l):
         new_list.append(x)
     return new_list
 
+_mersenne_prime = np.uint32((1 << 32) - 1)
+_max_hash = np.uint32((1 << 32) - 1)
+
+
+def hash32(data):
+    return binascii.crc32(data) & 0xffffffff
+
+
+@numba.jit(nopython=True)
+def permutate_and_take_min(h: np.array, A: np.array, B: np.array) -> np.array:
+    hashes = h.repeat(A.shape[0]).reshape(h.shape[0], A.shape[0])
+    hashes = (A * hashes + B) % _mersenne_prime
+    # minhashes = np.empty(hashes.shape[1])
+    # for i in range(hashes.shape[1]):
+    #     minhashes[i] = hashes[:, i].min()
+    minhashes = [hashes[:, i].min() for i in range(hashes.shape[1])]
+    return minhashes
+
+
+# @numba.jit(nopython=False)
+def calc_minhashes(shingles: List[str], A: np.array, B: np.array) -> np.array:
+    hashes = np.array(
+        [hash32(s.encode("utf-8")) for s in shingles], dtype=np.uint32
+    )
+    return permutate_and_take_min(hashes, A, B)
+
+def hash_primes(n_hashes: int, random_seed: int):
+    gen = np.random.RandomState(random_seed)
+    A = gen.randint(1, _mersenne_prime, size=n_hashes, dtype='uint32')
+    B = gen.randint(0, _mersenne_prime, size=n_hashes, dtype='uint32')
+    return A, B
+
 
 class NumbaSolver(BenchmarkSolver):
     def __init__(self):
@@ -95,15 +130,11 @@ class NumbaSolver(BenchmarkSolver):
         return list(count_ngrams(string_list, ngram_n))
         # return list(count_ngrams(fix_array_or_list(string_list), ngram_n))
 
-    # @staticmethod
-    # def groupby_sum(data):
-    #     keys = set(data['keys'])
-    #     results = {
-    #         key: {
-    #             'values1': 0,
-    #             'values2': 0
-    #         } for key in keys
-    #     }
-    #     for i in enumerate
-    #     df = pd.DataFrame(data=data)
-    #     return df.groupby('keys').sum().to_dict(orient='index')
+    # For some reason this gives wrong results as soon as the code is compiled with numba
+    # def minhash(self, test_data):
+    #     shingle_list: List[List[str]] = test_data["shingle_list"]
+    #     n_hashes: int = test_data["n_hashes"]
+    #     A, B = hash_primes(n_hashes=n_hashes, random_seed=42)
+    #     return [
+    #         calc_minhashes(shingles, A, B) for shingles in shingle_list
+    #     ]

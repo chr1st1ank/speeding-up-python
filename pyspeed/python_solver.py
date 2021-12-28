@@ -1,6 +1,8 @@
+import binascii
 import collections
-from typing import List, Dict
+from typing import List, Dict, Set
 
+import numpy as np
 from joblib import Parallel, delayed
 
 from .benchmark_solver import BenchmarkSolver
@@ -65,7 +67,39 @@ class PythonSolver(BenchmarkSolver):
             delayed(count_ngrams)(s, ngram_n) for s in string_list
         )
 
+    def minhash(self, test_data):
+        shingle_list: List[List[str]] = test_data["shingle_list"]
+        n_hashes: int = test_data["n_hashes"]
+        mh_gen = make_minhash_generator(n_hashes=n_hashes)
+        return [
+            list(map(int, mh_gen(shingles))) for shingles in shingle_list
+        ]
+
 
 def count_ngrams(s, n):
     padded = "$" * (n - 1) + s + "$" * (n - 1)
     return collections.Counter(padded[i : i + n] for i in range(len(padded) - n + 1))
+
+
+
+
+def make_minhash_generator(n_hashes=100, random_seed=42):
+    _mersenne_prime = np.uint32((1 << 32) - 1)
+    _max_hash = np.uint32((1 << 32) - 1)
+    gen = np.random.RandomState(random_seed)
+    A = gen.randint(1, _mersenne_prime, size=n_hashes, dtype='uint32')
+    B = gen.randint(0, _mersenne_prime, size=n_hashes, dtype='uint32')
+
+    def hash32(data):
+        return binascii.crc32(data) & 0xffffffff
+
+    def calc_minhashes(shingles: List[str]) -> np.array:
+        hashes = np.array(
+            [hash32(s.encode("utf-8")) for s in shingles], dtype=np.uint32
+        )
+        hashes = hashes.repeat(A.shape[0]).reshape(hashes.shape[0], A.shape[0])
+        hashes = (A * hashes + B) % _mersenne_prime
+        minhashes = np.min(hashes, axis=0)
+        return minhashes
+
+    return calc_minhashes

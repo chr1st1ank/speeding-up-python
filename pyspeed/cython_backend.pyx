@@ -59,3 +59,33 @@ def count_ngrams(str s, int n):
         k = padded[i: i + n]
         counts[k] = counts.get(k, 0) + 1
     return counts
+
+import binascii
+import numpy as np
+
+
+_mersenne_prime = np.uint32((1 << 32) - 1)
+_max_hash = np.uint32((1 << 32) - 1)
+
+cdef hash32(bytes data):
+    return binascii.crc32(data) & 0xffffffff
+
+cdef calc_minhashes(shingles, A, B):
+    hashes = np.array(
+        [hash32(s.encode("utf-8")) for s in shingles], dtype=np.uint32
+    )
+
+    hashes = hashes.repeat(A.shape[0]).reshape(hashes.shape[0], A.shape[0])
+    hashes = (A * hashes + B) % _mersenne_prime
+    minhashes = np.min(hashes, axis=0)
+
+    return minhashes
+    
+def minhash(shingle_list, int n_hashes, int random_seed):
+    gen = np.random.RandomState(random_seed)
+    A = gen.randint(1, _mersenne_prime, size=n_hashes, dtype='uint32')
+    B = gen.randint(0, _mersenne_prime, size=n_hashes, dtype='uint32')
+
+    return [
+        [int(h) for h in calc_minhashes(shingles, A, B)] for shingles in shingle_list
+    ]

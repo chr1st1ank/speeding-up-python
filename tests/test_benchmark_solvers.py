@@ -107,6 +107,27 @@ def test_ngram_count(solver: BenchmarkSolver):
         {"$$$": 2}
     ]
 
+
+def test_minhash(solver: BenchmarkSolver):
+    data = {
+        "shingle_list": [[
+            "abac",
+            "abcabc",
+            "北京",
+            ""
+        ]],
+        "n_hashes": 10,
+    }
+    try:
+        p = solver.minhash(data)
+    except NotImplementedError:
+        pytest.skip("Not implemented")
+    print(p)
+    assert len(p) == 1
+    assert len(p[0]) == 10
+    for h in p[0]:
+        assert isinstance(h, int), type(h)
+
 def test_solver_results(runner):
     runner.time_it(1, 1)
     assert runner.verify_results()

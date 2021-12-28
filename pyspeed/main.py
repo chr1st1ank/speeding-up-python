@@ -53,6 +53,7 @@ if __name__ == "__main__":
             benchmark.string_slice_benchmark(),
             benchmark.ngram_count_benchmark(),
             benchmark.ngram_count_parallel_benchmark(),
+            benchmark.minhash(),
         ],
     )
     runner.time_it()

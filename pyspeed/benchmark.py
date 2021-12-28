@@ -104,3 +104,20 @@ def ngram_count_parallel_benchmark() -> Benchmark:
         name="ngram_count_parallel",
         data={"strings": list(iter_wikipedia_docs(200)), "ngram_n": 3},
     )
+
+
+def minhash() -> Benchmark:
+    """Take a list of string sets and calculate a minhash fingerprint
+
+    Input data: A dictionary with:
+
+        - "shingle_list": List[List[str]] with the strings to analyze
+        - "n_hashes": Number of hashes to use
+
+    Expected output: A list of lists of integers (hash values per document).
+    """
+    shingles = [l.split() for d in iter_wikipedia_docs(100) for l in d.splitlines()]
+    return Benchmark(
+        name="minhash",
+        data={"shingle_list": [s for s in shingles if s], "n_hashes": 64},
+    )
