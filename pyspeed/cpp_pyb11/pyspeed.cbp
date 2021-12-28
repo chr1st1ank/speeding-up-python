@@ -42,8 +42,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="-std=c++20" />
 			<Add directory="extern/pybind11/include" />
-			<Add directory="/usr/include/python3.9" />
+			<Add directory="/usr/include/python3.10" />
 		</Compiler>
 		<Unit filename="main.cpp">
 			<Option target="Debug" />
@@ -51,6 +52,8 @@
 		</Unit>
 		<Unit filename="mergesort.cpp" />
 		<Unit filename="mergesort.hpp" />
+		<Unit filename="minhash.cpp" />
+		<Unit filename="minhash.hpp" />
 		<Unit filename="pyspeed.cpp">
 			<Option link="0" />
 		</Unit>

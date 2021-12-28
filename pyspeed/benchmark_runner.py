@@ -27,6 +27,8 @@ class BenchmarkRunner:
             first_result = results[0].solution
             for r in results:
                 if r.solution is not None and r.solution != first_result:
+                    print(first_result[0])
+                    print(r.solution[0])
                     raise RuntimeError(
                         f"Benchmark '{b}' yields differing result for solver {r.solver}"
                     )

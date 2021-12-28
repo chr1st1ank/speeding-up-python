@@ -1,3 +1,4 @@
+import binascii
 
 from pyspeed.benchmark_runner import BenchmarkRunner
 from pyspeed import benchmark
@@ -107,6 +108,9 @@ def test_ngram_count(solver: BenchmarkSolver):
         {"$$$": 2}
     ]
 
+def test_murmur():
+    import murmurhash.mrmr
+    assert murmurhash.mrmr.hash("abcd".encode("utf-8")) == cpp_pyb11_solver.cpp.murmur3("abcd")
 
 def test_minhash(solver: BenchmarkSolver):
     data = {

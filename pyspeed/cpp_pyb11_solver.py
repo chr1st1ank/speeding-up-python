@@ -39,3 +39,24 @@ class CppPyb11Solver(BenchmarkSolver):
         # return [
         #     cpp.count_ngrams(s, ngram_n) for s in string_list
         # ]
+
+    def minhash(self, test_data):
+        shingle_list: List[List[str]] = test_data["shingle_list"]
+        n_hashes: int = test_data["n_hashes"]
+        return minhash(shingle_list, n_hashes, 42)
+
+
+import numpy as np
+
+
+_mersenne_prime = np.uint32((1 << 32) - 1)
+
+
+def minhash(shingle_list, n_hashes, random_seed):
+    gen = np.random.RandomState(random_seed)
+    A = gen.randint(1, _mersenne_prime, size=n_hashes, dtype='uint32')
+    B = gen.randint(0, _mersenne_prime, size=n_hashes, dtype='uint32')
+
+    return [
+        [int(h) for h in cpp.calc_minhashes(shingles, A, B)] for shingles in shingle_list
+    ]

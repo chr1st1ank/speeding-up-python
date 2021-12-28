@@ -116,7 +116,7 @@ def minhash() -> Benchmark:
 
     Expected output: A list of lists of integers (hash values per document).
     """
-    shingles = [l.split() for d in iter_wikipedia_docs(100) for l in d.splitlines()]
+    shingles = [l.split() for d in iter_wikipedia_docs(200) for l in d.splitlines()]
     return Benchmark(
         name="minhash",
         data={"shingle_list": [s for s in shingles if s], "n_hashes": 64},

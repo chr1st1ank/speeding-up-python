@@ -72,6 +72,14 @@ optional = false
 python-versions = ">=3.7,<3.10"
 
 [[package]]
+name = "murmurhash"
+version = "1.0.6"
+description = "Cython bindings for MurmurHash"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "numba"
 version = "0.54.1"
 description = "compiling Python code using LLVM"
@@ -223,7 +231,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9,<3.10"
-content-hash = "3ba650e3474c39ebce039a10b9a7267448bb69b0fddbb0ed70c6f31a6a0b5ea6"
+content-hash = "7531ad6bd464dd46614be36338015156921a41b28ee3ed075f475b4939c9c3cf"
 
 [metadata.files]
 atomicwrites = [
@@ -318,6 +326,24 @@ llvmlite = [
     {file = "llvmlite-0.37.0-cp39-cp39-win32.whl", hash = "sha256:995c1a2c8b6a11a7f2c66e52576de6a28292d37842d383aae5be7b965b56d10f"},
     {file = "llvmlite-0.37.0-cp39-cp39-win_amd64.whl", hash = "sha256:7449acca596f45e9e12b20c0b72d184f83025341cc2d44d7ccf5fe31356dcd08"},
     {file = "llvmlite-0.37.0.tar.gz", hash = "sha256:6392b870cd018ec0c645d6bbb918d6aa0eeca8c62674baaee30862d6b6865b15"},
+]
+murmurhash = [
+    {file = "murmurhash-1.0.6-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:1431d817e1fff1ed35f8dc54dd5b4d70165ec98076de8aca351805f8037293f3"},
+    {file = "murmurhash-1.0.6-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5c7b8cc4a8db1c821b80f8ca70a25c3166b14d68ecef8693a117c6a0b1d74ace"},
+    {file = "murmurhash-1.0.6-cp310-cp310-win_amd64.whl", hash = "sha256:e40790fdaf65213d70da4ed9229f16f6d6376310dc8fc23eacc98e6151c6ae7e"},
+    {file = "murmurhash-1.0.6-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:a78d53f047c3410ce4c589d9b47090f628f844ed5694418144e63cfe7f3da7e9"},
+    {file = "murmurhash-1.0.6-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9d69cc0ffc0ef6d37399b8a0484a44f9877e531ebc164e55105e89738ed52089"},
+    {file = "murmurhash-1.0.6-cp36-cp36m-win_amd64.whl", hash = "sha256:8de08d145c85bb7ba89cb1b591742e3ef54cede73e35f62752af687a4a1859f7"},
+    {file = "murmurhash-1.0.6-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:7dc5a79346afa07f14384926c335c0c455226d687d1305b9378264875b450e51"},
+    {file = "murmurhash-1.0.6-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ab326b172dc470331490bda516d4d6d7578c91445ad83a2a3418ac1b9c5f9f55"},
+    {file = "murmurhash-1.0.6-cp37-cp37m-win_amd64.whl", hash = "sha256:2911bc3e8040dfaac536b141539b0351915f1439953f0aa9e957f082cff035a6"},
+    {file = "murmurhash-1.0.6-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:de267459d040c96727ba141075d5bc983ec69c6f75b6df1b703e3b5cd7090382"},
+    {file = "murmurhash-1.0.6-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:90a8e06872015d6f9f66a42669e003a1df8be229defef69cd98546f4cb25546d"},
+    {file = "murmurhash-1.0.6-cp38-cp38-win_amd64.whl", hash = "sha256:773411eba268bf524c012e781f4405aacb9ef4edc063d1f6b38bbf06358b988e"},
+    {file = "murmurhash-1.0.6-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:f4ef3b26229ff192032a12653d637313e1231d23e788b83a2f4a3d8e2bf2d031"},
+    {file = "murmurhash-1.0.6-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:92cd7196974307143ce8e9e9b6e22e0a57abf30bdd5a1effe696b4825677e616"},
+    {file = "murmurhash-1.0.6-cp39-cp39-win_amd64.whl", hash = "sha256:cdd1036688341413e5adef32b3fd58e8b44f24405f394f90129f39ed879e4f24"},
+    {file = "murmurhash-1.0.6.tar.gz", hash = "sha256:00a5252b569d3f914b5bd0bce72d2efe9c0fb91a9703556ea1b608b141c68f2d"},
 ]
 numba = [
     {file = "numba-0.54.1-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:c36e50271146c3c33f10111488307a6aa75416aa53384709b037599426a967ea"},

@@ -60,15 +60,15 @@ def count_ngrams(str s, int n):
         counts[k] = counts.get(k, 0) + 1
     return counts
 
-import binascii
 import numpy as np
+import murmurhash.mrmr
 
 
 _mersenne_prime = np.uint32((1 << 32) - 1)
 _max_hash = np.uint32((1 << 32) - 1)
 
 cdef hash32(bytes data):
-    return binascii.crc32(data) & 0xffffffff
+    return murmurhash.mrmr.hash(data)
 
 cdef calc_minhashes(shingles, A, B):
     hashes = np.array(

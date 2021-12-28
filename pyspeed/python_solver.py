@@ -2,6 +2,7 @@ import binascii
 import collections
 from typing import List, Dict, Set
 
+import murmurhash.mrmr
 import numpy as np
 from joblib import Parallel, delayed
 
@@ -91,14 +92,14 @@ def make_minhash_generator(n_hashes=100, random_seed=42):
     B = gen.randint(0, _mersenne_prime, size=n_hashes, dtype='uint32')
 
     def hash32(data):
-        return binascii.crc32(data) & 0xffffffff
+        return murmurhash.mrmr.hash(data)
 
     def calc_minhashes(shingles: List[str]) -> np.array:
         hashes = np.array(
             [hash32(s.encode("utf-8")) for s in shingles], dtype=np.uint32
         )
         hashes = hashes.repeat(A.shape[0]).reshape(hashes.shape[0], A.shape[0])
-        hashes = (A * hashes + B) % _mersenne_prime
+        hashes = ((A * hashes + B) % _mersenne_prime) & _max_hash
         minhashes = np.min(hashes, axis=0)
         return minhashes
 

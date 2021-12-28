@@ -92,3 +92,6 @@ pyspeed/cpp_cython/mergesortcpp.cpp
 # Added by cargo
 
 /target
+/pyspeed/cpp_pyb11/.objs/
+/pyspeed/cpp_pyb11/bin/Debug/
+/pyspeed/cpp_pyb11/obj/Debug/
