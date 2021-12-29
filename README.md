@@ -28,6 +28,10 @@ Count the number of occurences of each character ngram in a list of strings.
 ### 5. Ngram count (parallel)
 Same as 4., but parallelism is allowed with unlimited threads or subprocesses.
 
+### 6. Minhash
+An implementation of the basic Minhash algorithm for estimating Jaccard similarities as described in Leskovec, Rajaraman, and Ullman, “Mining of Massive Datasets.”, Chapter 3.
+As hash algorithm murmur3 is used because it is both a common choice and gives identical results on different languages and platforms.
+
 ## Comments on the frameworks / languages used
 
 ### 1. Python
@@ -138,40 +142,47 @@ Processors:
     16 x  AMD Ryzen 7 5700U with Radeon Graphics
     
 mergesort
-	  107ms - Pure Python
+	  106ms - Pure Python
 	  144ms - Numba
-	   34ms - Cython
+	   35ms - Cython
 	    7ms - C++ (cython)
 	    8ms - C++ (pybind11)
-	    5ms - Rust
+	    6ms - Rust
 groupby_sum
 	   86ms - Pure Python
 	      - - Numba
 	   69ms - Cython
 	      - - C++ (cython)
 	      - - C++ (pybind11)
-	   47ms - Rust
+	   58ms - Rust
 string_slice
-	    9ms - Pure Python
+	   10ms - Pure Python
 	      - - Numba
 	    7ms - Cython
 	      - - C++ (cython)
-	   30ms - C++ (pybind11)
+	   31ms - C++ (pybind11)
 	   22ms - Rust
 ngram_count
-	  453ms - Pure Python
-	  382ms - Numba
-	  234ms - Cython
+	  459ms - Pure Python
+	  386ms - Numba
+	  237ms - Cython
 	      - - C++ (cython)
-	  277ms - C++ (pybind11)
-	  272ms - Rust
+	  280ms - C++ (pybind11)
+	  288ms - Rust
 ngram_count_parallel
-	  248ms - Pure Python
+	  254ms - Pure Python
 	      - - Numba
 	      - - Cython
 	      - - C++ (cython)
 	      - - C++ (pybind11)
-	  188ms - Rust
+	  200ms - Rust
+minhash
+	  566ms - Pure Python
+	      - - Numba
+	  508ms - Cython
+	      - - C++ (cython)
+	  130ms - C++ (pybind11)
+	  109ms - Rust
 ```
 
 ## Contributing

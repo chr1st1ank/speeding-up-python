@@ -1,3 +1,5 @@
+use fasthash::murmur3;
+use numpy::PyReadonlyArray1;
 use pyo3::prelude::*;
 use pyo3::types::PyDict;
 use pyo3::types::PyList;
@@ -196,8 +198,9 @@ fn count_ngrams_list(py: Python, strings: Vec<&str>, ngram_n: usize) -> PyResult
 
 #[pyfunction]
 fn count_ngrams_list_native(py: Python, strings: &PyList, ngram_n: usize) -> PyResult<PyObject> {
-    let results: Vec<HashMap<String, u32>> = strings.iter()
-        .map(|s| -> String {s.extract().unwrap()})
+    let results: Vec<HashMap<String, u32>> = strings
+        .iter()
+        .map(|s| -> String { s.extract().unwrap() })
         .map(|s| count_ngrams_rs(&s, ngram_n))
         .collect();
     Ok(results.into_py(py))
@@ -222,6 +225,39 @@ fn strlen(s: &str) -> PyResult<usize> {
     Ok(s.chars().count())
 }
 
+const MERSENNE_PRIME: u32 = 4294967295u32; // mersenne prime (1 << 32) - 1
+
+#[pyfunction]
+fn murmur3(s: &str) -> u32 {
+    murmur3::hash32(s)
+}
+
+#[pyfunction]
+fn calc_minhashes<'py>(
+    _py: Python<'py>,
+    shingle_list: Vec<&str>,
+    a: PyReadonlyArray1<'_, u32>,
+    b: PyReadonlyArray1<'_, u32>,
+) -> PyResult<Vec<u32>> {
+    assert_eq!(a.ndim(), 1);
+    assert_eq!(b.ndim(), 1);
+    assert_eq!(a.shape()[0], b.shape()[0]);
+
+    let murmur_hashes: Vec<u32> = shingle_list.iter().map(|s| murmur3::hash32(s)).collect();
+    let mut minhashes: Vec<u32> = Vec::new();
+    let a_slice = a.as_slice()?;
+    let b_slice = b.as_slice()?;
+    for (a_i, b_i) in a_slice.iter().zip(b_slice) {
+        let minhash: u32 = murmur_hashes
+            .iter()
+            .map(|h| (a_i * h + b_i) % MERSENNE_PRIME)
+            .min()
+            .unwrap_or(MERSENNE_PRIME);
+        minhashes.push(minhash);
+    }
+    Ok(minhashes)
+}
+
 #[pymodule]
 fn pyspeed_rust(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add("__version__", env!("CARGO_PKG_VERSION"))?;
@@ -235,10 +271,11 @@ fn pyspeed_rust(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(count_ngrams_list_native, m)?)?;
     m.add_function(wrap_pyfunction!(count_ngrams_list_parallel, m)?)?;
     m.add_function(wrap_pyfunction!(strlen, m)?)?;
+    m.add_function(wrap_pyfunction!(murmur3, m)?)?;
+    m.add_function(wrap_pyfunction!(calc_minhashes, m)?)?;
 
     Ok(())
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -249,4 +286,3 @@ mod tests {
         assert_eq!("$$abc$$", pad_both_sides("abc", '$', 2));
     }
 }
-

@@ -22,7 +22,7 @@ def system_info():
         f"Python: {platform.python_implementation()} {platform.python_version()} built with {platform.libc_ver()}"
     )
 
-    print("Processors: ")  # TODO: Unix specific!
+    print("Processors: ")
     try:
         with open("/proc/cpuinfo", "r") as f:
             cpu_info = Counter(

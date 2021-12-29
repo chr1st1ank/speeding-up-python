@@ -2,7 +2,7 @@
 name = "pyspeed_rust"
 version = "0.1.0"
 authors = ["chr1st1ank <chr1st1ank@krudewig-online.de>"]
-edition = "2018"
+edition = "2021"
 
 [lib]
 name = "pyspeed_rust"
@@ -11,9 +11,12 @@ crate-type = ["cdylib"]
 
 [dependencies]
 rayon = "1.5.0"
+fasthash = "0.4.0"
+numpy = "0.15.0"
+#ndarray = { version = ">= 0.13, < 0.16", features = ["rayon", "approx"] }
 #substring = "1.4.5"
 #unicode-segmentation = "1.7.1"
 
 [dependencies.pyo3]
-version = "0.13.2"
+version = "0.15.1"
 features = ["extension-module"]

@@ -108,9 +108,13 @@ def test_ngram_count(solver: BenchmarkSolver):
         {"$$$": 2}
     ]
 
-def test_murmur():
+def test_murmur_cpp():
     import murmurhash.mrmr
     assert murmurhash.mrmr.hash("abcd".encode("utf-8")) == cpp_pyb11_solver.cpp.murmur3("abcd")
+
+def test_murmur_rust():
+    import murmurhash.mrmr
+    assert murmurhash.mrmr.hash("abcd".encode("utf-8")) == rust_solver.pyspeed_rust.murmur3("abcd")
 
 def test_minhash(solver: BenchmarkSolver):
     data = {
