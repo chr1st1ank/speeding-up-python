@@ -1,7 +1,7 @@
 CPP_CYTHON_DIR=pyspeed/cpp_cython
-CPP_CYTHON_LIB=mergesortcpp.cpython-39-x86_64-linux-gnu.so
+CPP_CYTHON_LIB=mergesortcpp.cpython-310-x86_64-linux-gnu.so
 CPP_PYB11_DIR=pyspeed/cpp_pyb11
-CPP_PYB11_LIB=pyspeed_pyb11.cpython-39-x86_64-linux-gnu.so
+CPP_PYB11_LIB=pyspeed_pyb11.cpython-310-x86_64-linux-gnu.so
 
 run: build
 	poetry run python pyspeed/main.py

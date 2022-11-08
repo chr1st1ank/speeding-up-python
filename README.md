@@ -40,52 +40,52 @@ System information:
 
 Architecture: x86_64 / 64bit
 System: Linux / 5.19.11-arch1-1
-Python: CPython 3.9.9 built with ('glibc', '2.36')
+Python: CPython 3.10.6 built with ('glibc', '2.36')
 Processors: 
     16 x  AMD Ryzen 7 5700U with Radeon Graphics
     
 mergesort
-	  107ms - Pure Python
-	  143ms - Numba
+	  108ms - Pure Python
+	  140ms - Numba
 	   34ms - Cython
 	    7ms - C++ (cython)
 	    7ms - C++ (pybind11)
 	    5ms - Rust
 groupby_sum
-	   88ms - Pure Python
+	   94ms - Pure Python
 	      - - Numba
-	   71ms - Cython
+	   73ms - Cython
 	      - - C++ (cython)
 	      - - C++ (pybind11)
-	   60ms - Rust
+	   51ms - Rust
 string_slice
 	    9ms - Pure Python
 	      - - Numba
 	    7ms - Cython
 	      - - C++ (cython)
 	   28ms - C++ (pybind11)
-	   20ms - Rust
+	   19ms - Rust
 ngram_count
-	  450ms - Pure Python
-	  384ms - Numba
-	  234ms - Cython
+	  434ms - Pure Python
+	  392ms - Numba
+	  225ms - Cython
 	      - - C++ (cython)
-	  299ms - C++ (pybind11)
-	  279ms - Rust
+	  300ms - C++ (pybind11)
+	  267ms - Rust
 ngram_count_parallel
-	  217ms - Pure Python
+	  218ms - Pure Python
 	      - - Numba
 	      - - Cython
 	      - - C++ (cython)
 	      - - C++ (pybind11)
-	  179ms - Rust
+	  163ms - Rust
 minhash
-	  552ms - Pure Python
+	  544ms - Pure Python
 	      - - Numba
-	  486ms - Cython
+	  482ms - Cython
 	      - - C++ (cython)
-	  114ms - C++ (pybind11)
-	  109ms - Rust
+	  115ms - C++ (pybind11)
+	  104ms - Rust
 ```
 
 ## Comments on the frameworks / languages used

@@ -9,7 +9,7 @@ packages = [{ include = "pyspeed" }]
 
 
 [tool.poetry.dependencies]
-python = "^3.9,<3.10"
+python = "^3.10,<3.11"
 numpy = "^1.23.4"
 numba = "^0.56.4"
 Cython = "^0.29.24"
