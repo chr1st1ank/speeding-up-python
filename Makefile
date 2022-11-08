@@ -3,6 +3,9 @@ CPP_CYTHON_LIB=mergesortcpp.cpython-39-x86_64-linux-gnu.so
 CPP_PYB11_DIR=pyspeed/cpp_pyb11
 CPP_PYB11_LIB=pyspeed_pyb11.cpython-39-x86_64-linux-gnu.so
 
+run: build
+	poetry run python pyspeed/main.py
+
 build: ${CPP_CYTHON_DIR}/${CPP_CYTHON_LIB} ${CPP_PYB11_DIR}/${CPP_PYB11_LIB} build_rust
 
 ${CPP_CYTHON_DIR}/${CPP_CYTHON_LIB}: ${CPP_CYTHON_DIR}/mergesort.cpp ${CPP_CYTHON_DIR}/mergesort.hpp ${CPP_CYTHON_DIR}/mergesortcpp.pxd ${CPP_CYTHON_DIR}/mergesortcpp.pyx
