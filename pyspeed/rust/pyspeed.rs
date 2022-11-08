@@ -6,8 +6,6 @@ use pyo3::types::PyList;
 use pyo3::wrap_pyfunction;
 use rayon::prelude::*;
 use std::collections::HashMap;
-// use substring::Substring;
-// use unicode_segmentation::UnicodeSegmentation;
 
 fn merge(left: &[i64], right: &[i64]) -> Vec<i64> {
     let mut ret: Vec<i64> = Vec::new();

@@ -4,7 +4,7 @@ Prerequisites:
     * The Python module pybind11 has to be installed and the C/C++ compiler used to compile the other Python modules
       has to be available (gcc on Linux and Mac, on windows most likely the Microsoft compiler is necessary).
       See <https://cython.readthedocs.io/en/latest/pymetrics/quickstart/install.html> for details.
-    * Run the build script build_cpp.sh to compile the C++ code before running the program.
+    * Run the build script setup.py to compile the C++ code before running the program.
 
 Notes:
     * Using C++ needs some overhead before it works:
