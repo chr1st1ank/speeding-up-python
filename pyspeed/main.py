@@ -6,7 +6,7 @@ from pyspeed import cpp_pyb11_solver
 from pyspeed import cpp_solver
 from pyspeed import cython_solver
 # from pyspeed import julia_solver
-from pyspeed import numba_solver
+# from pyspeed import numba_solver
 from pyspeed import python_solver
 from pyspeed import rust_solver
 from pyspeed.benchmark_runner import BenchmarkRunner
@@ -40,7 +40,7 @@ if __name__ == "__main__":
     runner = BenchmarkRunner(
         solvers=[
             python_solver.PythonSolver(),
-            numba_solver.NumbaSolver(),
+            # numba_solver.NumbaSolver(),
             cython_solver.CythonSolver(),
             # julia_solver.JuliaSolver(),
             cpp_solver.CppSolver(),
